@@ -55,6 +55,29 @@ $mobile: 767.98px;
 $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
+body {
+	.wrapper {
+		animation: appearance 1.5s ease;
+	}
+
+	&.loading {
+		.wrapper {
+			animation: none;
+			opacity: 0;
+		}
+	}
+}
+
+@keyframes appearance {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 // Buttons
 .button {
 	display: inline-block;

@@ -1,0 +1,47 @@
+.intro__body {
+  height: 100vh;
+  width: 100%;
+}
+.intro__logo, .intro__logo-mask {
+  --width: 100px;
+  position: absolute;
+  top: calc(50% - var(--width) / 2);
+  left: calc(50% - var(--width) / 2);
+  transform: scale(2.2);
+  width: var(--width);
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1439.98px) {
+  .intro__logo, .intro__logo-mask {
+    --width: 88px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .intro__logo, .intro__logo-mask {
+    --width: 72px;
+  }
+}
+@media (max-width: 767.98px) {
+  .intro__logo, .intro__logo-mask {
+    --width: 64px;
+  }
+}
+.intro__logo {
+  -webkit-clip-path: circle(42%);
+          clip-path: circle(42%);
+}
+.intro__logo-mask {
+  animation: spin 3s linear 1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) scale(2.2);
+  }
+  to {
+    transform: rotate(360deg) scale(2.2);
+  }
+}

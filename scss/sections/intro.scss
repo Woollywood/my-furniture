@@ -1,0 +1,60 @@
+$desktop: 1439.98px;
+$desktopLow: 1099.98px;
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileLow: 559.98px;
+$mobileSmall: 479.98px;
+
+.intro {
+	&__body {
+		height: 100vh;
+		width: 100%;
+	}
+
+	&__logo,
+	&__logo-mask {
+		--width: 100px;
+
+		@media (max-width: $desktop) {
+			--width: 88px;
+		}
+
+		@media (max-width: $desktopLow) {
+			--width: 72px;
+		}
+
+		@media (max-width: $mobile) {
+			--width: 64px;
+		}
+
+		position: absolute;
+		top: calc(50% - (var(--width) / 2));
+		left: calc(50% - (var(--width) / 2));
+		transform: scale(2.2);
+
+		width: var(--width);
+		aspect-ratio: 1;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__logo {
+		clip-path: circle(42%);
+	}
+
+	&__logo-mask {
+		animation: spin 3s linear 1;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg) scale(2.2);
+	}
+
+	to {
+		transform: rotate(360deg) scale(2.2);
+	}
+}
