@@ -1369,32 +1369,100 @@ function gsapAnimationInit() {
 	section13();
 
 	function mainBlock() {
-		const peopleList = document.querySelectorAll('.main-slider__people-bg');
-		const subTitleList = document.querySelectorAll('.main-slider__slide-subtitle');
-		const titleList = document.querySelectorAll('.main-slider__slide-title');
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const peopleList = document.querySelectorAll('.main-slider__people-bg');
+			const subTitleList = document.querySelectorAll('.main-slider__slide-subtitle');
+			const titleList = document.querySelectorAll('.main-slider__slide-title');
 
-		const timeline = gsap.timeline();
+			const timeline = gsap.timeline();
 
-		timeline
-			.from(peopleList, {
-				yPercent: 20,
-				duration: 0.6,
-				ease: 'power4.out',
-			})
-			.from([subTitleList, titleList], {
-				y: -400,
-				duration: 0.8,
-				opacity: 0,
-				ease: 'power4.out',
-			});
+			timeline
+				.from(peopleList, {
+					yPercent: 20,
+					duration: 0.6,
+					ease: 'power4.out',
+				})
+				.from([subTitleList, titleList], {
+					y: -400,
+					duration: 0.8,
+					opacity: 0,
+					ease: 'power4.out',
+				});
+		});
 	}
 
 	function section1() {
-		const cards = document.querySelectorAll('.section-1__card');
-		cards.forEach((card) => {
-			gsap.from(card, {
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const cards = document.querySelectorAll('.section-1__card');
+			cards.forEach((card) => {
+				gsap.from(card, {
+					opacity: 0,
+					y: 100,
+					scrollTrigger: {
+						trigger: card,
+						start: 'top 60%',
+					},
+				});
+			});
+		});
+	}
+
+	function section2() {
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const content = document.querySelector('.section-2__content');
+			gsap.from(content, {
+				x: 160,
 				opacity: 0,
-				y: 100,
+				scrollTrigger: {
+					trigger: content,
+					start: 'top 60%',
+				},
+			});
+		});
+	}
+
+	function section3() {
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const slider = document.querySelector('.section-3__slider');
+			const slides = document.querySelectorAll('.section-3__slide');
+			gsap.from(slides, {
+				y: 160,
+				opacity: 0,
+				stagger: 0.1,
+				scrollTrigger: {
+					trigger: slider,
+					start: 'top 60%',
+				},
+			});
+		});
+	}
+
+	function section5() {
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const content = document.querySelector('.section-5__content');
+			gsap.from(content, {
+				x: -160,
+				opacity: 0,
+				scrollTrigger: {
+					trigger: content,
+					start: 'top 60%',
+				},
+			});
+		});
+	}
+
+	function section6() {
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const card = document.querySelector('.section-6__inner-form');
+			gsap.from(card, {
+				y: 260,
+				opacity: 0,
 				scrollTrigger: {
 					trigger: card,
 					start: 'top 60%',
@@ -1403,168 +1471,136 @@ function gsapAnimationInit() {
 		});
 	}
 
-	function section2() {
-		const content = document.querySelector('.section-2__content');
-		gsap.from(content, {
-			x: 160,
-			opacity: 0,
-			scrollTrigger: {
-				trigger: content,
-				start: 'top 60%',
-			},
-		});
-	}
-
-	function section3() {
-		const slider = document.querySelector('.section-3__slider');
-		const slides = document.querySelectorAll('.section-3__slide');
-		gsap.from(slides, {
-			y: 160,
-			opacity: 0,
-			stagger: 0.1,
-			scrollTrigger: {
-				trigger: slider,
-				start: 'top 60%',
-			},
-		});
-	}
-
-	function section5() {
-		const content = document.querySelector('.section-5__content');
-		gsap.from(content, {
-			x: -160,
-			opacity: 0,
-			scrollTrigger: {
-				trigger: content,
-				start: 'top 60%',
-			},
-		});
-	}
-
-	function section6() {
-		const card = document.querySelector('.section-6__inner-form');
-		gsap.from(card, {
-			y: 260,
-			opacity: 0,
-			scrollTrigger: {
-				trigger: card,
-				start: 'top 60%',
-			},
-		});
-	}
-
 	function section7() {
-		const section = document.querySelector('.section-7');
-		const textWrapper = section.querySelector('.section-7__text-wrapper');
-		const icons = section.querySelectorAll('.section-7__item-icon');
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const section = document.querySelector('.section-7');
+			const textWrapper = section.querySelector('.section-7__text-wrapper');
+			const icons = section.querySelectorAll('.section-7__item-icon');
 
-		gsap.set(icons, {
-			opacity: 0,
-		});
+			gsap.set(icons, {
+				opacity: 0,
+			});
 
-		gsap.from(textWrapper, {
-			x: -160,
-			opacity: 0,
-			scrollTrigger: {
-				trigger: section,
-				start: 'top 60%',
-			},
+			gsap.from(textWrapper, {
+				x: -160,
+				opacity: 0,
+				scrollTrigger: {
+					trigger: section,
+					start: 'top 60%',
+				},
 
-			onComplete: () => {
-				gsap.fromTo(
-					icons,
-					{
-						stagger: 0.1,
-						opacity: 0,
-						scale: 2.2,
-						webkitFilter: 'blur(2px)',
-					},
-					{
-						stagger: 0.1,
-						opacity: 1,
-						scale: 1,
-						webkitFilter: 'blur(0px)',
-					}
-				);
-			},
+				onComplete: () => {
+					gsap.fromTo(
+						icons,
+						{
+							stagger: 0.1,
+							opacity: 0,
+							scale: 2.2,
+							webkitFilter: 'blur(2px)',
+						},
+						{
+							stagger: 0.1,
+							opacity: 1,
+							scale: 1,
+							webkitFilter: 'blur(0px)',
+						}
+					);
+				},
+			});
 		});
 	}
 
 	function section8() {
-		const slider = document.querySelector('.section-8__slider');
-		const slides = slider.querySelectorAll('.section-8__slide');
-		gsap.from(slides, {
-			opacity: 0,
-			y: 160,
-			stagger: 0.1,
-			scrollTrigger: {
-				trigger: slider,
-				start: 'top 60%',
-			},
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const slider = document.querySelector('.section-8__slider');
+			const slides = slider.querySelectorAll('.section-8__slide');
+			gsap.from(slides, {
+				opacity: 0,
+				y: 160,
+				stagger: 0.1,
+				scrollTrigger: {
+					trigger: slider,
+					start: 'top 60%',
+				},
+			});
 		});
 	}
 
 	function section9() {
-		const sectionContent = document.querySelector('.section-9__content');
-		const image = document.querySelector('.works-slide__image');
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const sectionContent = document.querySelector('.section-9__content');
+			const image = document.querySelector('.works-slide__image');
 
-		ScrollTrigger.create({
-			trigger: sectionContent,
-			start: 'top 60%',
-			animation: gsap.fromTo(
-				image,
-				{
-					opacity: 0,
-					scale: 2.2,
-					webkitFilter: 'blur(2px)',
-					duration: 0.4,
-					ease: 'power4.out',
-				},
-				{
-					opacity: 1,
-					scale: 1,
-					webkitFilter: 'blur(0px)',
-				}
-			),
+			ScrollTrigger.create({
+				trigger: sectionContent,
+				start: 'top 60%',
+				animation: gsap.fromTo(
+					image,
+					{
+						opacity: 0,
+						scale: 2.2,
+						webkitFilter: 'blur(2px)',
+						duration: 0.4,
+						ease: 'power4.out',
+					},
+					{
+						opacity: 1,
+						scale: 1,
+						webkitFilter: 'blur(0px)',
+					}
+				),
+			});
 		});
 	}
 
 	function section10() {
-		const slider = document.querySelector('.section-10__slider');
-		const slides = slider.querySelectorAll('.section-10__slide');
-		gsap.from(slides, {
-			opacity: 0,
-			y: 160,
-			scrollTrigger: {
-				trigger: slider,
-				start: 'top 60%',
-			},
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const slider = document.querySelector('.section-10__slider');
+			const slides = slider.querySelectorAll('.section-10__slide');
+			gsap.from(slides, {
+				opacity: 0,
+				y: 160,
+				scrollTrigger: {
+					trigger: slider,
+					start: 'top 60%',
+				},
+			});
 		});
 	}
 
 	function section12() {
-		const slider = document.querySelector('.section-12__slider');
-		const slides = slider.querySelectorAll('.section-12__slide');
-		gsap.from(slides, {
-			opacity: 0,
-			x: 260,
-			stagger: 0.1,
-			scrollTrigger: {
-				trigger: slider,
-				start: 'top 60%',
-			},
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const slider = document.querySelector('.section-12__slider');
+			const slides = slider.querySelectorAll('.section-12__slide');
+			gsap.from(slides, {
+				opacity: 0,
+				x: 260,
+				stagger: 0.1,
+				scrollTrigger: {
+					trigger: slider,
+					start: 'top 60%',
+				},
+			});
 		});
 	}
 
 	function section13() {
-		const content = document.querySelector('.section-13__left');
-		gsap.from(content, {
-			opacity: 0,
-			x: -160,
-			scrollTrigger: {
-				trigger: content,
-				start: 'top 60%',
-			},
+		const mm = gsap.matchMedia();
+		mm.add('(min-width: 767.98px)', () => {
+			const content = document.querySelector('.section-13__left');
+			gsap.from(content, {
+				opacity: 0,
+				x: -160,
+				scrollTrigger: {
+					trigger: content,
+					start: 'top 60%',
+				},
+			});
 		});
 	}
 }
