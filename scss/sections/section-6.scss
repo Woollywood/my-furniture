@@ -115,6 +115,8 @@ $mobileSmall: 479.98px;
 	}
 
 	&__tabs {
+		position: relative;
+		z-index: 1;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

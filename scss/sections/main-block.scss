@@ -116,8 +116,8 @@ $mobileSmall: 479.98px;
 				&::after {
 					content: '';
 					position: absolute;
-					top: calc((em(16) - em(8)) / 2 * -1);
-					left: calc((em(16) - em(8)) / 2 * -1);
+					top: calc((16px - 8px) / 2 * -1);
+					left: calc((16px - 8px) / 2 * -1);
 					width: 16px;
 					height: 16px;
 					border-radius: 50%;
