@@ -108,6 +108,15 @@
 @media (max-width: 1099.98px) {
   :root {
     --accordion-padding-bottom: 16px;
+    --accordion-title-text-size: 14px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  :root {
+    --accordion-padding-x: 0 !important;
+    --accordion-padding-bottom: 12px;
+    --accordion-panel-padding-top: 12px !important;
+    --accordion-title-text-size: 12px !important;
   }
 }
 

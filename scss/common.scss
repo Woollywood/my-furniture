@@ -153,6 +153,7 @@ $mobileSmall: 479.98px;
 	}
 
 	&__inner {
+		display: block;
 		cursor: pointer;
 		width: var(--checkbox-width);
 		height: var(--checkbox-height);

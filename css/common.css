@@ -1091,6 +1091,7 @@ h6 {
   background-size: cover;
 }
 .checkbox__inner {
+  display: block;
   cursor: pointer;
   width: var(--checkbox-width);
   height: var(--checkbox-height);
