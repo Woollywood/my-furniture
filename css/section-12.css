@@ -206,6 +206,9 @@
     margin-bottom: 24px;
   }
 }
+.section-12__slider .splide__arrows {
+  display: none;
+}
 @media (max-width: 991.98px) {
   .section-12__slider {
     padding-bottom: 40px;

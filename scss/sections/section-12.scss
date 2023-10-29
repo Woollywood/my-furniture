@@ -54,6 +54,10 @@ $mobileSmall: 479.98px;
 			}
 		}
 
+		.splide__arrows {
+			display: none;
+		}
+
 		@media (max-width: $tablet) {
 			padding-bottom: calc(24px + 16px);
 		}
