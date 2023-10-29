@@ -74,15 +74,29 @@ $mobileSmall: 479.98px;
 
 	&__item {
 		cursor: pointer;
+
+		&:hover {
+			.static {
+				display: none;
+			}
+
+			.hover {
+				display: block;
+			}
+
+			.section-4__item-text {
+				color: cl('green');
+			}
+
+			.section-4__item-title {
+				color: cl('green');
+			}
+		}
 	}
 
 	&__item-icon {
 		width: 56px;
-		height: 56px;
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		aspect-ratio: 1;
 
 		&:not(:last-child) {
 			margin-bottom: 32px;
@@ -92,14 +106,20 @@ $mobileSmall: 479.98px;
 			}
 		}
 
+		img {
+			object-fit: fill;
+		}
+
+		.hover {
+			display: none;
+		}
+
 		@media (max-width: $desktopLow) {
 			width: 56px;
-			height: 56px;
 		}
 
 		@media (max-width: $mobile) {
 			width: 40px;
-			height: 40px;
 		}
 	}
 

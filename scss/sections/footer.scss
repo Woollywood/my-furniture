@@ -106,6 +106,12 @@ $mobileSmall: 479.98px;
 				font-size: 12px;
 			}
 		}
+
+		&:hover {
+			span {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	&__action {
@@ -191,6 +197,11 @@ $mobileSmall: 479.98px;
 
 		@media (max-width: $mobileSmall) {
 			font-size: 12px;
+		}
+
+		transition: color 0.3s ease;
+		&:hover {
+			color: cl('green');
 		}
 	}
 }

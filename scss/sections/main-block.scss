@@ -63,20 +63,38 @@ $mobileSmall: 479.98px;
 		}
 		align-items: center;
 		justify-content: center;
+
+		&:hover {
+			.static {
+				display: none;
+			}
+
+			.hover {
+				display: block;
+			}
+
+			.main-block__benefit-text {
+				color: cl('green');
+			}
+		}
 	}
 
 	&__benefit-icon {
 		width: 56px;
-		height: 56px;
+		aspect-ratio: 1;
 
 		@media (max-width: $desktopLow) {
 			width: 40px;
 			height: 40px;
 		}
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		.hover {
+			display: none;
+		}
+
+		img {
+			object-fit: fill;
+		}
 	}
 
 	&__benefit-text {

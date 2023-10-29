@@ -283,6 +283,9 @@
     margin-bottom: 24px;
   }
 }
+.info-section__item:hover span {
+  text-decoration: underline;
+}
 .info-section__icon {
   flex: 0 0 24px;
   width: 24px;

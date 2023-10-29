@@ -83,6 +83,12 @@ $mobileSmall: 479.98px;
 				display: none;
 			}
 		}
+
+		&:hover {
+			span {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	&__logo {
@@ -340,6 +346,11 @@ $mobileSmall: 479.98px;
 
 	&__link {
 		white-space: nowrap;
+		transition: color 0.3s ease;
+
+		&:hover {
+			color: cl('green');
+		}
 	}
 
 	&__body-center {

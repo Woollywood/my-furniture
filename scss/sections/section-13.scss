@@ -136,6 +136,12 @@ $mobileSmall: 479.98px;
 				margin-bottom: 24px;
 			}
 		}
+
+		&:hover {
+			span {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	&__icon {
