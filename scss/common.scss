@@ -337,6 +337,8 @@ $mobileSmall: 479.98px;
 	}
 
 	&__trigger {
+		position: relative;
+		z-index: 1;
 		width: 100%;
 		display: flex;
 		align-items: center;
@@ -347,6 +349,7 @@ $mobileSmall: 479.98px;
 	&__header-text {
 		color: var(--accordion-title-text-color);
 		font-size: var(--accordion-title-text-size);
+		text-align: left;
 		transition: all 0.6s ease;
 
 		.open & {
@@ -358,12 +361,16 @@ $mobileSmall: 479.98px;
 
 	&__header-icon {
 		stroke: var(--accordion-title-text-color);
-		transform: rotate(180deg);
+		transform: rotate(0);
 		transition: all 0.6s ease;
 
 		.open & {
-			transform: rotate(0);
+			transform: rotate(180deg);
 			stroke: var(--accordion-open-title-text-color);
+		}
+
+		@media (max-width: $mobile) {
+			flex: 0 0 24px;
 		}
 	}
 
@@ -565,7 +572,6 @@ body {
 }
 
 .slider {
-
 	&__controlls {
 	}
 
@@ -595,4 +601,25 @@ body {
 
 	&__arrow--next {
 	}
+}
+
+.input-label {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	overflow: hidden;
+}
+
+.input-placeholder {
+	color: cl('white_grey');
+	font-size: 14px;
+}
+
+.input {
+	padding: 14px 16px;
+	border-radius: 4px;
+	border: 1px solid rgba(189, 225, 231, 0.1);
+	background-color: transparent;
+
+	color: cl('white');
 }

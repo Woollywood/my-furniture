@@ -958,6 +958,7 @@ accordions.forEach((accordion) => {
 	new Accordion(accordion, {
 		duration: OPEN_DURATION,
 		showMultiple: true,
+		onlyChildNodes: false,
 		elementClass: 'accordion',
 		triggerClass: 'accordion__trigger',
 		panelClass: 'accordion__panel',
@@ -1332,3 +1333,23 @@ const feedbackSlider = new Splide('#feedback-slider', {
 });
 
 feedbackSlider.mount();
+
+const certificateSlider = new Splide('#certificate-slider', {
+	type: 'slide',
+	perPage: 4,
+	gap: 32,
+	breakpoints: {
+		479.98: {
+			perPage: 1,
+		},
+		559.98: {
+			perPage: 2,
+		},
+		991.98: {
+			perPage: 3,
+			gap: 16,
+		},
+	},
+});
+
+certificateSlider.mount();

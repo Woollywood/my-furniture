@@ -1,0 +1,289 @@
+$desktop: 1439.98px;
+$desktopLow: 1099.98px;
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileLow: 559.98px;
+$mobileSmall: 479.98px;
+
+@import '../variables';
+
+.section-13 {
+	&__container {
+	}
+
+	&__body {
+		@media (min-width: $mobile) {
+			display: grid;
+			gap: 164px;
+			grid-template-columns: 1fr 60%;
+
+			@media (max-width: $desktop) {
+				grid-template-columns: 1fr 50%;
+			}
+
+			@media (max-width: $desktopLow) {
+				gap: 72px;
+			}
+		}
+	}
+
+	&__left {
+		@media (max-width: $mobile) {
+			&:not(:last-child) {
+				margin-bottom: 32px;
+			}
+		}
+	}
+
+	&__text-wrapper {
+		@media (min-width: $mobile) {
+			.section-13__title {
+				margin-right: -272px;
+			}
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 80px;
+
+			@media (max-width: $desktop) {
+				margin-bottom: 64px;
+			}
+			@media (max-width: $desktopLow) {
+				margin-bottom: 50px;
+			}
+			@media (max-width: $mobile) {
+				margin-bottom: 32px;
+			}
+		}
+	}
+
+	&__title {
+	}
+
+	&__subtitle {
+	}
+
+	&__info {
+	}
+
+	&__right {
+		@media (min-width: $mobile) {
+			padding-top: 96px;
+
+			@media (max-width: $desktop) {
+				padding-top: 88px;
+			}
+
+			@media (max-width: $desktopLow) {
+				padding-top: 72px;
+			}
+		}
+	}
+}
+
+.info-section {
+	&__title {
+		display: flex;
+		gap: 64px;
+		align-items: center;
+
+		color: cl('white_grey');
+		white-space: nowrap;
+
+		@media (max-width: $desktopLow) {
+			gap: 56px;
+		}
+
+		@media (max-width: $mobile) {
+			gap: 40px;
+		}
+
+		&::after {
+			content: '';
+			background-color: rgba(189, 225, 231, 0.1);
+			width: 100%;
+			height: 1px;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 32px;
+
+			@media (max-width: $desktopLow) {
+				margin-bottom: 24px;
+			}
+		}
+	}
+
+	&__items {
+		&:not(:last-child) {
+			margin-bottom: 40px;
+
+			@media (max-width: $mobile) {
+				margin-bottom: 32px;
+			}
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+
+		&:not(:last-child) {
+			margin-bottom: 32px;
+
+			@media (max-width: $desktopLow) {
+				margin-bottom: 24px;
+			}
+		}
+	}
+
+	&__icon {
+		flex: 0 0 24px;
+		width: 24px;
+		height: 24px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__schedule {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 32px;
+		row-gap: 16px;
+		align-items: center;
+		flex-wrap: wrap;
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			gap: 12px;
+			align-items: flex-start;
+		}
+	}
+
+	&__schedule-item {
+		white-space: nowrap;
+	}
+}
+
+.feedback-form {
+	&__body {
+		border-radius: 8px;
+		background-color: cl('dark_cards');
+		box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
+		padding: 40px;
+
+		@media (max-width: $desktopLow) {
+			padding: 32px;
+		}
+
+		@media (max-width: $mobile) {
+			padding: 24px;
+		}
+	}
+
+	&__fields {
+		@media (min-width: $desktop) {
+			display: grid;
+			gap: 32px;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__col {
+		@media (max-width: $desktop) {
+			&:not(:last-child) {
+				margin-bottom: 16px;
+
+				@media (max-width: $desktopLow) {
+					margin-bottom: 12px;
+				}
+			}
+
+			&--left {
+				@media (min-width: $tablet) {
+					display: grid;
+					column-gap: 16px;
+					row-gap: 0;
+					grid-template-columns: 1fr 1fr;
+				}
+			}
+		}
+	}
+
+	&__input {
+		&:not(:last-child) {
+			margin-bottom: 16px;
+
+			@media (max-width: $desktopLow) {
+				margin-bottom: 12px;
+			}
+		}
+
+		@media (max-width: $desktop) {
+			&--full-size {
+				grid-column: span 2;
+			}
+		}
+	}
+
+	&__textarea {
+		height: 100%;
+
+		.input {
+			flex: 1 1 auto;
+
+			@media (max-width: $desktop) {
+				min-height: 135px;
+			}
+			@media (max-width: $desktopLow) {
+				min-height: 97px;
+			}
+			@media (max-width: $mobile) {
+				min-height: 141px;
+			}
+		}
+	}
+
+	&__policy {
+		display: flex;
+		gap: 16px;
+		align-items: center;
+		font-size: 14px;
+
+		@media (max-width: $desktopLow) {
+			font-size: 12px;
+		}
+
+		a {
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__policy-text {
+	}
+
+	&__action {
+		@media (max-width: $mobileSmall) {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	&__button {
+	}
+}

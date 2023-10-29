@@ -1,0 +1,72 @@
+$desktop: 1439.98px;
+$desktopLow: 1099.98px;
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileLow: 559.98px;
+$mobileSmall: 479.98px;
+
+@import '../variables';
+
+.section-11 {
+	&__container {
+	}
+
+	&__body {
+	}
+
+	&__text-wrapper {
+		&:not(:last-child) {
+			margin-bottom: 80px;
+
+			@media (max-width: $desktop) {
+				margin-bottom: 64px;
+			}
+			@media (max-width: $desktopLow) {
+				margin-bottom: 50px;
+			}
+			@media (max-width: $mobile) {
+				margin-bottom: 32px;
+			}
+		}
+	}
+
+	&__title {
+	}
+
+	&__subtitle {
+	}
+
+	&__row {
+		@media (min-width: $mobile) {
+			display: grid;
+			gap: 32px;
+			grid-template-columns: repeat(2, 1fr);
+
+			@media (max-width: $desktopLow) {
+				gap: 16px;
+			}
+		}
+	}
+
+	&__col {
+		@media (max-width: $mobile) {
+			&:not(:last-child) {
+				margin-bottom: 12px;
+			}
+		}
+	}
+
+	&__accordion {
+		&:not(:last-child) {
+			margin-bottom: 32px;
+
+			@media (max-width: $desktop) {
+				margin-bottom: 24px;
+			}
+
+			@media (max-width: $desktopLow) {
+				margin-bottom: 16px;
+			}
+		}
+	}
+}
