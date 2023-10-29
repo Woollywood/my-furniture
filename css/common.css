@@ -782,7 +782,6 @@ html {
 
 html,
 body {
-  height: 100%;
   min-width: 320px;
 }
 
@@ -946,14 +945,14 @@ h6 {
   --h1-weight: 800;
   --h1-line-height: 89%;
   --h2-size: 64px;
-  --h1-weight: 800;
-  --h1-line-height: 100%;
+  --h2-weight: 800;
+  --h2-line-height: 100%;
   --h3-size: 24px;
   --h3-weight: 500;
-  --h1-line-height: normal;
+  --h3-line-height: normal;
   --h4-size: 20px;
   --h4-weight: 500;
-  --h1-line-height: normal;
+  --h4-line-height: normal;
   --text-accent-color: var(--color-black-title);
   --text-accent-size: 18px;
   --text-accent-weight: 700;
@@ -1054,10 +1053,10 @@ h6 {
 .tab:hover {
   color: var(--tab-hover-text-color);
 }
-.tab.active {
+.tab._tab-active {
   color: var(--tab-hover-text-color);
 }
-.tab.active::after {
+.tab._tab-active::after {
   opacity: 1;
   visibility: visible;
 }
@@ -1334,4 +1333,94 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.light-title {
+  position: relative;
+}
+.light-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-20%, -20%);
+  border-radius: 50%;
+  width: 344px;
+  height: 344px;
+  background: rgba(81, 99, 143, 0.4);
+  filter: blur(167.5px);
+}
+
+.section-title {
+  background: linear-gradient(180deg, rgba(201, 221, 224, 0.23) 0%, rgba(201, 221, 224, 0.06) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-gutter {
+  padding-bottom: 160px;
+}
+@media (max-width: 1439.98px) {
+  .section-gutter {
+    padding-bottom: 120px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .section-gutter {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-gutter {
+    padding-bottom: 64px;
+  }
+}
+
+.section-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.section-text-wrapper h3 {
+  color: var(--color-white_grey);
+}
+.section-text-wrapper p {
+  color: var(--color-white_grey);
+}
+@media (max-width: 1439.98px) {
+  .section-text-wrapper {
+    gap: 24px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .section-text-wrapper {
+    gap: 12px;
+  }
+}
+
+.splide__pagination li button.is-active {
+  position: relative;
+  background-color: var(--color-white_grey);
+}
+.splide__pagination li button.is-active::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-white_grey);
+}
+.splide__pagination li button {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-green);
+  transform: scale(1);
+}
+
+.splide__arrow {
+  background-color: transparent;
 }

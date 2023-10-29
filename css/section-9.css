@@ -150,3 +150,198 @@
     --text-body-mini-size: 10px;
   }
 }
+
+.section-9__text-wrapper:not(:last-child) {
+  margin-bottom: 80px;
+}
+@media (max-width: 1439.98px) {
+  .section-9__text-wrapper:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .section-9__text-wrapper:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-9__text-wrapper:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-9__tabs-navigation {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+    padding-bottom: 12px;
+  }
+}
+.section-9__tabs-navigation:not(:last-child) {
+  margin-bottom: 56px;
+}
+@media (max-width: 1439.98px) {
+  .section-9__tabs-navigation:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .section-9__tabs-navigation:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+.section-9__tabs-title {
+  white-space: nowrap;
+}
+.section-9__slider .splide__pagination {
+  display: none;
+}
+.section-9__slider-track {
+  position: relative;
+}
+.section-9__slider-controlls {
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+@media (min-width: 767.98px) {
+  .section-9__slider-controlls {
+    bottom: 0;
+    left: calc(68% + 164px);
+  }
+}
+@media (min-width: 767.98px) and (max-width: 1439.98px) {
+  .section-9__slider-controlls {
+    left: calc(64% + 32px);
+  }
+}
+@media (min-width: 767.98px) and (max-width: 1099.98px) {
+  .section-9__slider-controlls {
+    left: calc(50% + 22px);
+  }
+}
+@media (max-width: 767.98px) {
+  .section-9__slider-controlls {
+    width: 100%;
+    justify-content: space-between;
+    top: calc(var(--image-height) + 24px + 24px);
+    transform: translateY(-50%);
+    left: 0;
+  }
+}
+.section-9__slider-controlls button {
+  position: static;
+}
+
+@media (min-width: 767.98px) {
+  .works-slide {
+    display: grid;
+    gap: 164px;
+    grid-template-columns: 68% 1fr;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 1439.98px) {
+  .works-slide {
+    grid-template-columns: 64% 1fr;
+    gap: 32px;
+  }
+}
+@media (min-width: 767.98px) and (max-width: 1099.98px) {
+  .works-slide {
+    grid-template-columns: 50% 1fr;
+    gap: 22px;
+  }
+}
+.works-slide__left {
+  position: relative;
+}
+.works-slide__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  .works-slide__image {
+    padding-bottom: 58%;
+  }
+  .works-slide__image:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
+.works-slide__show-all {
+  position: absolute;
+  bottom: 24px;
+  left: 32px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 4px;
+  background: rgba(107, 187, 65, 0.6);
+  box-shadow: 2px 4px 25px 0px rgba(132, 192, 178, 0.2);
+}
+.works-slide__show-all img {
+  flex: 0 0 12px;
+  width: 12px;
+  height: 12px;
+}
+@media (min-width: 767.98px) {
+  .works-slide__right {
+    margin-bottom: 110px;
+  }
+}
+.works-slide__name {
+  color: var(--color-white_grey);
+}
+.works-slide__name:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media (max-width: 1439.98px) {
+  .works-slide__name:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .works-slide__name:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .works-slide__name:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.works-slide__info-wrapper:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media (max-width: 1439.98px) {
+  .works-slide__info-wrapper:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .works-slide__info-wrapper:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .works-slide__info-wrapper:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.works-slide__info-line span {
+  color: var(--color-green);
+}
+.works-slide__info-line:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media (max-width: 767.98px) {
+  .works-slide__info-line:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}

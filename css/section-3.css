@@ -150,3 +150,217 @@
     --text-body-mini-size: 10px;
   }
 }
+
+.section-3__text-wrapper {
+  margin-bottom: 80px;
+}
+@media (max-width: 1439.98px) {
+  .section-3__text-wrapper {
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .section-3__text-wrapper {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-3__text-wrapper {
+    margin-bottom: 32px;
+  }
+}
+.section-3__content {
+  position: relative;
+  padding: 160px 0 120px;
+}
+@media (max-width: 1439.98px) {
+  .section-3__content {
+    padding: 120px 0 80px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .section-3__content {
+    padding: 80px 0 64px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-3__content {
+    padding: 48px 0 40px;
+  }
+}
+.section-3__background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-3__slider .splide__arrows {
+  display: none;
+}
+.section-3__slider:not(:last-child) {
+  margin-bottom: 80px;
+}
+@media (max-width: 1439.98px) {
+  .section-3__slider:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 1099.98px) {
+  .section-3__slider:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-3__slider:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-3__slider {
+    padding-bottom: 40px;
+  }
+}
+.section-3__slider .splide__pagination {
+  bottom: 0;
+  gap: 16px;
+}
+.section-3__slide {
+  border-radius: 8px;
+  background: var(--color-dark_cards);
+  box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+}
+@media (max-width: 1099.98px) {
+  .section-3__slide {
+    padding: 32px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-3__slide {
+    padding: 24px;
+  }
+}
+.section-3__slide-title {
+  color: var(--color-white_grey);
+}
+.section-3__slide-title:not(:last-child) {
+  margin-bottom: 32px;
+}
+@media (max-width: 1099.98px) {
+  .section-3__slide-title:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-3__slide-title:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.section-3__slide-img {
+  width: 100%;
+  padding-bottom: 60%;
+  margin-bottom: 32px;
+  border-radius: 4px;
+}
+@media (max-width: 1099.98px) {
+  .section-3__slide-img {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-3__slide-img {
+    margin-bottom: 16px;
+  }
+}
+.section-3__slide-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.section-3__slide-img::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: rgba(167, 197, 255, 0.5);
+  filter: blur(100px);
+}
+.section-3__slide-img--right img {
+  -o-object-position: left;
+     object-position: left;
+}
+.section-3__slide-img--left img {
+  -o-object-position: right;
+     object-position: right;
+}
+.section-3__slide-img--cover img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-3__slide-img--mb-reset {
+  margin-bottom: 0;
+}
+.section-3__slide-bottom {
+  display: grid;
+  align-items: center;
+  gap: 48px;
+}
+@media (max-width: 767.98px) {
+  .section-3__slide-bottom {
+    gap: 36px;
+  }
+}
+.section-3__slide-bottom--flex {
+  display: flex;
+}
+.section-3__slide-link {
+  justify-self: flex-end;
+  white-space: nowrap;
+}
+.section-3__slide-center {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+.section-3__slide-center--mb {
+  margin-bottom: 32px;
+}
+@media (max-width: 1099.98px) {
+  .section-3__slide-center--mb {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-3__slide-center--mb {
+    margin-bottom: 16px;
+  }
+}
+.section-3__action {
+  display: flex;
+  justify-content: center;
+}
+.sep {
+  background: linear-gradient(270deg, rgba(239, 184, 118, 0.3) 0%, rgba(187, 144, 106, 0.3) 100%);
+}
+.sep--horizontal {
+  width: 100%;
+  height: 1px;
+}
+.sep--vertical {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+}
+.sep--left {
+  left: 0;
+}
+.sep--right {
+  right: 0;
+}

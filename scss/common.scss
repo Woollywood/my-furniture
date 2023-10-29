@@ -48,6 +48,13 @@
 @import 'libs/reset';
 @import 'variables';
 
+$desktop: 1439.98px;
+$desktopLow: 1099.98px;
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileLow: 559.98px;
+$mobileSmall: 479.98px;
+
 // Buttons
 .button {
 	display: inline-block;
@@ -123,7 +130,7 @@
 		color: var(--tab-hover-text-color);
 	}
 
-	&.active {
+	&._tab-active {
 		color: var(--tab-hover-text-color);
 
 		&::after {
@@ -467,5 +474,125 @@ body {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+}
+
+.light-title {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translate(-20%, -20%);
+		border-radius: 50%;
+		width: 344px;
+		height: 344px;
+		background: rgba(81, 99, 143, 0.4);
+		filter: blur(167.5px);
+	}
+}
+
+.section-title {
+	background: linear-gradient(180deg, rgba(201, 221, 224, 0.23) 0%, rgba(201, 221, 224, 0.06) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.section-gutter {
+	padding-bottom: 160px;
+	@media (max-width: $desktop) {
+		padding-bottom: 120px;
+	}
+	@media (max-width: $desktopLow) {
+		padding-bottom: 80px;
+	}
+	@media (max-width: $mobile) {
+		padding-bottom: 64px;
+	}
+}
+
+.section-text-wrapper {
+	h3 {
+		color: cl('white_grey');
+	}
+
+	p {
+		color: cl('white_grey');
+	}
+
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+
+	@media (max-width: $desktop) {
+		gap: 24px;
+	}
+
+	@media (max-width: $desktopLow) {
+		gap: 12px;
+	}
+}
+
+.splide__pagination {
+	li {
+		button.is-active {
+			position: relative;
+			background-color: cl('white_grey');
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: calc((16px - 8px) / 2 * -1);
+				left: calc((16px - 8px) / 2 * -1);
+				width: 16px;
+				height: 16px;
+				border-radius: 50%;
+				background-color: transparent;
+				border: 1px solid cl('white_grey');
+			}
+		}
+
+		button {
+			width: 8px;
+			height: 8px;
+			background-color: cl('green');
+			transform: scale(1);
+		}
+	}
+}
+
+.slider {
+
+	&__controlls {
+	}
+
+	&__arrow-prev {
+	}
+
+	&__arrow {
+	}
+
+	&__arrow-next {
+	}
+}
+
+.splide {
+	&__arrows {
+	}
+
+	&__arrows--ltr {
+	}
+
+	&__arrow {
+		background-color: transparent;
+	}
+
+	&__arrow--prev {
+	}
+
+	&__arrow--next {
 	}
 }
