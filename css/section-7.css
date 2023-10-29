@@ -255,6 +255,7 @@
 .section-7__item-icon {
   width: 48px;
   aspect-ratio: 1;
+  transform-origin: 50% 50%;
   display: flex;
   justify-content: center;
   align-items: center;

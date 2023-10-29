@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				document.body.classList.remove('loading');
 				intro.remove();
 				bodyLockToggle();
+
+				gsapAnimationInit();
 			}
 		});
 	}
