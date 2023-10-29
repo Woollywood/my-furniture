@@ -6,6 +6,7 @@ $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
 @import '../variables';
+@import '../mixins';
 
 .section-7 {
 	&__container {
@@ -13,16 +14,16 @@ $mobileSmall: 479.98px;
 
 	&__body {
 		position: relative;
-		padding-right: 84px;
+		padding-right: em(84);
 
 		@media (max-width: $desktop) {
-			padding-right: 64px;
+			padding-right: em(64);
 		}
 
 		@media (min-width: $desktopLow) {
 			display: grid;
 			grid-template-columns: 50% 1fr;
-			gap: 32px;
+			gap: em(32);
 		}
 
 		@media (max-width: $desktopLow) {
@@ -36,13 +37,13 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: 64px;
+			margin-bottom: em(64);
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: 48px;
+				margin-bottom: em(48);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}
@@ -59,25 +60,25 @@ $mobileSmall: 479.98px;
 
 	&__row {
 		display: grid;
-		gap: 32px;
+		gap: em(32);
 		grid-template-columns: repeat(3, 1fr);
 
 		@media (max-width: $mobile) {
 			grid-template-columns: 1fr;
-			gap: 16px;
+			gap: em(16);
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 64px;
+				margin-bottom: em(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: 48px;
+				margin-bottom: em(48);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}
@@ -128,10 +129,10 @@ $mobileSmall: 479.98px;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 24px;
+			margin-bottom: em(24);
 
 			@media (max-width: $mobile) {
-				margin-bottom: 16px;
+				margin-bottom: em(16);
 			}
 		}
 	}

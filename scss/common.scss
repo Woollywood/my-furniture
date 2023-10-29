@@ -47,6 +47,7 @@
 @import 'libs/normalize';
 @import 'libs/reset';
 @import 'variables';
+@import 'mixins';
 
 $desktop: 1439.98px;
 $desktopLow: 1099.98px;
@@ -55,18 +56,18 @@ $mobile: 767.98px;
 $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
-body {
-	.wrapper {
-		animation: appearance 1.5s ease;
-	}
+// body {
+// 	.wrapper {
+// 		animation: appearance 1.5s ease;
+// 	}
 
-	&.loading {
-		.wrapper {
-			animation: none;
-			opacity: 0;
-		}
-	}
-}
+// 	&.loading {
+// 		.wrapper {
+// 			animation: none;
+// 			opacity: 0;
+// 		}
+// 	}
+// }
 
 @keyframes appearance {
 	from {
@@ -533,15 +534,15 @@ body {
 }
 
 .section-gutter {
-	padding-bottom: 160px;
+	padding-bottom: em(160);
 	@media (max-width: $desktop) {
-		padding-bottom: 120px;
+		padding-bottom: em(120);
 	}
 	@media (max-width: $desktopLow) {
-		padding-bottom: 80px;
+		padding-bottom: em(80);
 	}
 	@media (max-width: $mobile) {
-		padding-bottom: 64px;
+		padding-bottom: em(64);
 	}
 }
 
@@ -556,14 +557,14 @@ body {
 
 	display: flex;
 	flex-direction: column;
-	gap: 32px;
+	gap: em(32);
 
 	@media (max-width: $desktop) {
-		gap: 24px;
+		gap: em(24);
 	}
 
 	@media (max-width: $desktopLow) {
-		gap: 12px;
+		gap: em(12);
 	}
 }
 
@@ -576,8 +577,8 @@ body {
 			&::after {
 				content: '';
 				position: absolute;
-				top: calc((16px - 8px) / 2 * -1);
-				left: calc((16px - 8px) / 2 * -1);
+				top: calc((em(16) - em(8)) / 2 * -1);
+				left: calc((em(16) - em(8)) / 2 * -1);
 				width: 16px;
 				height: 16px;
 				border-radius: 50%;
@@ -630,17 +631,17 @@ body {
 .input-label {
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: em(8);
 	overflow: hidden;
 }
 
 .input-placeholder {
 	color: cl('white_grey');
-	font-size: 14px;
+	font-size: rem(14);
 }
 
 .input {
-	padding: 14px 16px;
+	padding: em(14) em(16);
 	border-radius: 4px;
 	border: 1px solid rgba(189, 225, 231, 0.1);
 	background-color: transparent;

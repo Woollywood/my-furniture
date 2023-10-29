@@ -6,6 +6,7 @@ $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
 @import '../variables';
+@import '../mixins';
 
 .section-4 {
 	&__container {
@@ -16,18 +17,18 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 64pxx;
+				margin-bottom: em(64);
 			}
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: 50px;
+				margin-bottom: em(50);
 			}
 
 			@media (max-width: $mobile) {
-				margin-bottom: 64px;
+				margin-bottom: em(64);
 			}
 		}
 	}
@@ -43,12 +44,12 @@ $mobileSmall: 479.98px;
 
 	&__row {
 		display: grid;
-		column-gap: 32px;
-		row-gap: 32px;
+		column-gap: em(32);
+		row-gap: em(32);
 		grid-template-columns: repeat(4, 1fr);
 
 		@media (max-width: $desktopLow) {
-			column-gap: 16px;
+			column-gap: em(16);
 		}
 
 		@media (max-width: $mobile) {
@@ -56,18 +57,18 @@ $mobileSmall: 479.98px;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 64px;
+				margin-bottom: em(64);
 			}
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: 50px;
+				margin-bottom: em(50);
 			}
 
 			@media (max-width: $mobile) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}
@@ -99,10 +100,10 @@ $mobileSmall: 479.98px;
 		aspect-ratio: 1;
 
 		&:not(:last-child) {
-			margin-bottom: 32px;
+			margin-bottom: em(32);
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: 16px;
+				margin-bottom: em(16);
 			}
 		}
 
@@ -127,10 +128,10 @@ $mobileSmall: 479.98px;
 		color: cl('white_grey');
 
 		&:not(:last-child) {
-			margin-bottom: 16px;
+			margin-bottom: em(16);
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: 8px;
+				margin-bottom: em(8);
 			}
 		}
 	}

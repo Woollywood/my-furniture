@@ -6,6 +6,7 @@ $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
 @import '../variables';
+@import '../mixins';
 
 .section-5 {
 	&__container {
@@ -15,15 +16,15 @@ $mobileSmall: 479.98px;
 		@media (min-width: $mobile) {
 			display: grid;
 			grid-template-columns: 40% 1fr;
-			gap: 164px;
+			gap: em(164);
 
 			@media (max-width: $desktop) {
-				gap: 36px;
+				gap: em(36);
 				grid-template-columns: 48% 1fr;
 			}
 
 			@media (max-width: $desktopLow) {
-				gap: 16px;
+				gap: em(16);
 			}
 		}
 	}
@@ -33,16 +34,16 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 72px;
+				margin-bottom: em(72);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: 50px;
+				margin-bottom: em(50);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}
@@ -56,14 +57,14 @@ $mobileSmall: 479.98px;
 	&__text {
 		span {
 			font-weight: 700;
-			font-size: 18px;
+			font-size: rem(18);
 
 			@media (max-width: $desktopLow) {
-				font-size: 16px;
+				font-size: rem(16);
 			}
 
 			@media (max-width: $mobile) {
-				font-size: 14px;
+				font-size: rem(14);
 			}
 		}
 	}
@@ -71,21 +72,21 @@ $mobileSmall: 479.98px;
 	&__row {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 32px;
+		gap: em(32);
 		@media (max-width: $mobile) {
-			gap: 16px;
+			gap: em(16);
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 			@media (max-width: $desktop) {
-				margin-bottom: 64px;
+				margin-bottom: em(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: 48px;
+				margin-bottom: em(48);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}
@@ -126,10 +127,10 @@ $mobileSmall: 479.98px;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 24px;
+			margin-bottom: em(24);
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: 16px;
+				margin-bottom: em(16);
 			}
 		}
 	}

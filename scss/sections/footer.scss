@@ -7,6 +7,7 @@ $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
 @import '../variables';
+@import '../mixins';
 
 .footer {
 	background-color: cl('dark_cards');
@@ -20,16 +21,16 @@ $mobileSmall: 479.98px;
 	&__top {
 		display: flex;
 		flex-wrap: wrap;
-		row-gap: 32px;
-		padding: 80px 0;
+		row-gap: em(32);
+		padding: em(80) 0;
 		@media (max-width: $desktop) {
-			padding: 64px 0;
+			padding: em(64) 0;
 		}
 		@media (max-width: $desktopMiddle) {
-			padding: 56px 0 38px;
+			padding: em(56) 0 em(38);
 		}
 		@media (max-width: $mobile) {
-			padding: 40px 0;
+			padding: em(40) 0;
 		}
 		border-bottom: 1px solid rgba(189, 225, 231, 0.1);
 	}
@@ -37,16 +38,16 @@ $mobileSmall: 479.98px;
 	&__logo {
 		flex: 0 0 100px;
 		height: 100px;
-		margin-right: 164px;
+		margin-right: em(164);
 
 		@media (max-width: $desktop) {
 			flex: 0 0 88px;
 			height: 88px;
-			margin-right: 244px;
+			margin-right: em(244);
 		}
 
 		@media (max-width: $desktopMiddle) {
-			margin-right: 172px;
+			margin-right: em(172);
 		}
 
 		@media (max-width: $desktopLow) {
@@ -63,18 +64,18 @@ $mobileSmall: 479.98px;
 	&__menu {
 		display: flex;
 		@media (min-width: $desktop) {
-			gap: 134px;
+			gap: em(134);
 		}
-		margin-right: 186px;
+		margin-right: em(186);
 
 		@media (max-width: $desktop) {
 			flex-direction: column;
-			gap: 16px;
-			margin-right: 123px;
+			gap: em(16);
+			margin-right: em(123);
 		}
 
 		@media (max-width: $desktopMiddle) {
-			margin-right: 62px;
+			margin-right: em(62);
 		}
 
 		@media (max-width: $mobileSmall) {
@@ -88,22 +89,22 @@ $mobileSmall: 479.98px;
 	&__info {
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
+		gap: em(24);
 		margin-right: auto;
 	}
 
 	&__info-item {
 		display: flex;
-		gap: 16px;
+		gap: em(16);
 		align-items: center;
 
 		span {
 			@media (max-width: $desktopLow) {
-				font-size: 14px;
+				font-size: rem(14);
 			}
 
 			@media (max-width: $mobileSmall) {
-				font-size: 12px;
+				font-size: rem(12);
 			}
 		}
 
@@ -115,7 +116,7 @@ $mobileSmall: 479.98px;
 	}
 
 	&__action {
-		padding-right: 32px;
+		padding-right: em(32);
 	}
 
 	&__button {
@@ -123,27 +124,27 @@ $mobileSmall: 479.98px;
 	}
 
 	&__bottom {
-		padding: 56px 0;
+		padding: em(56) 0;
 		@media (max-width: $desktop) {
-			padding: 48px 0 52px;
+			padding: em(48) 0 em(52);
 		}
 		@media (max-width: $desktopMiddle) {
-			padding: 64px 0 46px;
+			padding: em(64) 0 em(46);
 		}
 		@media (max-width: $mobile) {
-			padding: 32px 0;
+			padding: em(32) 0;
 		}
 
 		display: flex;
 		align-items: center;
-		gap: 24px;
+		gap: em(24);
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
 
 	&__bottom-copy {
 		@media (max-width: $desktopLow) {
-			font-size: 14px;
+			font-size: rem(14);
 		}
 
 		@media (min-width: $mobile) {
@@ -155,7 +156,7 @@ $mobileSmall: 479.98px;
 		text-decoration: underline;
 	
 		@media (max-width: $desktopLow) {
-			font-size: 14px;
+			font-size: rem(14);
 		}
 
 		@media (min-width: $mobile) {
@@ -186,17 +187,17 @@ $mobileSmall: 479.98px;
 
 	&__item {
 		&:not(:last-child) {
-			margin-bottom: 16px;
+			margin-bottom: em(16);
 		}
 	}
 
 	&__link {
 		@media (max-width: $desktopLow) {
-			font-size: 14px;
+			font-size: rem(14);
 		}
 
 		@media (max-width: $mobileSmall) {
-			font-size: 12px;
+			font-size: rem(12);
 		}
 
 		transition: color 0.3s ease;

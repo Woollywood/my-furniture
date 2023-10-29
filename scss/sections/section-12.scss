@@ -6,6 +6,7 @@ $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
 @import '../variables';
+@import '../mixins';
 
 .section-12 {
 	&__container {
@@ -16,16 +17,16 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 64px;
+				margin-bottom: em(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: 50px;
+				margin-bottom: em(50);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}
@@ -41,16 +42,16 @@ $mobileSmall: 479.98px;
 
 	&__slider {
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 76px;
+				margin-bottom: em(76);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: 48px;
+				margin-bottom: em(48);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: 24px;
+				margin-bottom: em(24);
 			}
 		}
 
@@ -59,12 +60,12 @@ $mobileSmall: 479.98px;
 		}
 
 		@media (max-width: $tablet) {
-			padding-bottom: calc(24px + 16px);
+			padding-bottom: calc(em(24) + em(16));
 		}
 
 		.splide__pagination {
 			bottom: 0;
-			gap: 16px;
+			gap: em(16);
 		}
 	}
 
@@ -92,10 +93,10 @@ $mobileSmall: 479.98px;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 24px;
+			margin-bottom: em(24);
 
 			@media (max-width: $mobile) {
-				margin-bottom: 16px;
+				margin-bottom: em(16);
 			}
 		}
 	}

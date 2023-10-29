@@ -6,6 +6,7 @@ $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
 @import '../variables';
+@import '../mixins';
 
 .section-13 {
 	&__container {
@@ -14,7 +15,7 @@ $mobileSmall: 479.98px;
 	&__body {
 		@media (min-width: $mobile) {
 			display: grid;
-			gap: 164px;
+			gap: em(164);
 			grid-template-columns: 1fr 60%;
 
 			@media (max-width: $desktop) {
@@ -22,7 +23,7 @@ $mobileSmall: 479.98px;
 			}
 
 			@media (max-width: $desktopLow) {
-				gap: 72px;
+				gap: em(72);
 			}
 		}
 	}
@@ -30,7 +31,7 @@ $mobileSmall: 479.98px;
 	&__left {
 		@media (max-width: $mobile) {
 			&:not(:last-child) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}
@@ -38,21 +39,21 @@ $mobileSmall: 479.98px;
 	&__text-wrapper {
 		@media (min-width: $mobile) {
 			.section-13__title {
-				margin-right: -272px;
+				margin-right: em(-272);
 			}
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 64px;
+				margin-bottom: em(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: 50px;
+				margin-bottom: em(50);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}
@@ -68,14 +69,14 @@ $mobileSmall: 479.98px;
 
 	&__right {
 		@media (min-width: $mobile) {
-			padding-top: 96px;
+			padding-top: em(96);
 
 			@media (max-width: $desktop) {
-				padding-top: 88px;
+				padding-top: em(88);
 			}
 
 			@media (max-width: $desktopLow) {
-				padding-top: 72px;
+				padding-top: em(72);
 			}
 		}
 	}
@@ -84,18 +85,18 @@ $mobileSmall: 479.98px;
 .info-section {
 	&__title {
 		display: flex;
-		gap: 64px;
+		gap: em(64);
 		align-items: center;
 
 		color: cl('white_grey');
 		white-space: nowrap;
 
 		@media (max-width: $desktopLow) {
-			gap: 56px;
+			gap: em(56);
 		}
 
 		@media (max-width: $mobile) {
-			gap: 40px;
+			gap: em(40);
 		}
 
 		&::after {
@@ -106,20 +107,20 @@ $mobileSmall: 479.98px;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 32px;
+			margin-bottom: em(32);
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: 24px;
+				margin-bottom: em(24);
 			}
 		}
 	}
 
 	&__items {
 		&:not(:last-child) {
-			margin-bottom: 40px;
+			margin-bottom: em(40);
 
 			@media (max-width: $mobile) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}
@@ -127,13 +128,13 @@ $mobileSmall: 479.98px;
 	&__item {
 		display: flex;
 		align-items: center;
-		gap: 16px;
+		gap: em(16);
 
 		&:not(:last-child) {
-			margin-bottom: 32px;
+			margin-bottom: em(32);
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: 24px;
+				margin-bottom: em(24);
 			}
 		}
 
@@ -157,14 +158,14 @@ $mobileSmall: 479.98px;
 	&__schedule {
 		display: flex;
 		justify-content: space-between;
-		column-gap: 32px;
-		row-gap: 16px;
+		column-gap: em(32);
+		row-gap: em(16);
 		align-items: center;
 		flex-wrap: wrap;
 
 		@media (max-width: $mobile) {
 			flex-direction: column;
-			gap: 12px;
+			gap: em(12);
 			align-items: flex-start;
 		}
 	}
@@ -179,43 +180,43 @@ $mobileSmall: 479.98px;
 		border-radius: 8px;
 		background-color: cl('dark_cards');
 		box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
-		padding: 40px;
+		padding: em(40);
 
 		@media (max-width: $desktopLow) {
-			padding: 32px;
+			padding: em(32);
 		}
 
 		@media (max-width: $mobile) {
-			padding: 24px;
+			padding: em(24);
 		}
 	}
 
 	&__fields {
 		@media (min-width: $desktop) {
 			display: grid;
-			gap: 32px;
+			gap: em(32);
 			grid-template-columns: 1fr 1fr;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 24px;
+			margin-bottom: em(24);
 		}
 	}
 
 	&__col {
 		@media (max-width: $desktop) {
 			&:not(:last-child) {
-				margin-bottom: 16px;
+				margin-bottom: em(16);
 
 				@media (max-width: $desktopLow) {
-					margin-bottom: 12px;
+					margin-bottom: em(12);
 				}
 			}
 
 			&--left {
 				@media (min-width: $tablet) {
 					display: grid;
-					column-gap: 16px;
+					column-gap: em(16);
 					row-gap: 0;
 					grid-template-columns: 1fr 1fr;
 				}
@@ -225,10 +226,10 @@ $mobileSmall: 479.98px;
 
 	&__input {
 		&:not(:last-child) {
-			margin-bottom: 16px;
+			margin-bottom: em(16);
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: 12px;
+				margin-bottom: em(12);
 			}
 		}
 
@@ -259,12 +260,12 @@ $mobileSmall: 479.98px;
 
 	&__policy {
 		display: flex;
-		gap: 16px;
+		gap: em(16);
 		align-items: center;
-		font-size: 14px;
+		font-size: rem(14);
 
 		@media (max-width: $desktopLow) {
-			font-size: 12px;
+			font-size: rem(12);
 		}
 
 		a {
@@ -276,7 +277,7 @@ $mobileSmall: 479.98px;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 24px;
+			margin-bottom: em(24);
 		}
 	}
 

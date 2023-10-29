@@ -6,17 +6,18 @@ $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
 @import '../variables';
+@import '../mixins';
 
 .main-block {
-	padding-bottom: 82px;
+	padding-bottom: em(72);
 	@media (max-width: $desktop) {
-		padding-bottom: 56px;
+		padding-bottom: em(56);
 	}
 	@media (max-width: $desktopLow) {
-		padding-bottom: 40px;
+		padding-bottom: em(40);
 	}
 	@media (max-width: $mobile) {
-		padding-bottom: 24px;
+		padding-bottom: em(24);
 	}
 
 	&__slider {
@@ -26,19 +27,19 @@ $mobileSmall: 479.98px;
 	}
 
 	&__body {
-		padding: 80px 0;
+		padding: em(80) 0;
 		@media (max-width: $desktop) {
-			padding: 64px 0;
+			padding: em(64) 0;
 		}
 		@media (max-width: $desktopLow) {
-			padding: 40px 0;
+			padding: em(40) 0;
 		}
 	}
 
 	&__benefits {
 		display: grid;
-		gap: 16px;
-		row-gap: 32px;
+		gap: em(16);
+		row-gap: em(32);
 		grid-template-columns: repeat(4, 1fr);
 		@media (max-width: $mobile) {
 			grid-template-columns: repeat(2, 1fr);
@@ -50,16 +51,16 @@ $mobileSmall: 479.98px;
 
 		@media (min-width: $mobile) {
 			&:not(:last-child) {
-				padding-right: 16px;
+				padding-right: em(16);
 				border-right: 1px solid rgba(189, 225, 231, 0.1);
 			}
 		}
 
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
+		gap: em(24);
 		@media (max-width: $desktopLow) {
-			gap: 16px;
+			gap: em(16);
 		}
 		align-items: center;
 		justify-content: center;
@@ -104,8 +105,8 @@ $mobileSmall: 479.98px;
 
 .main-slider {
 	.splide__pagination {
-		bottom: 52px;
-		gap: 24px;
+		bottom: em(52);
+		gap: em(24);
 
 		li {
 			button.is-active {
@@ -115,8 +116,8 @@ $mobileSmall: 479.98px;
 				&::after {
 					content: '';
 					position: absolute;
-					top: calc((16px - 8px) / 2 * -1);
-					left: calc((16px - 8px) / 2 * -1);
+					top: calc((em(16) - em(8)) / 2 * -1);
+					left: calc((em(16) - em(8)) / 2 * -1);
 					width: 16px;
 					height: 16px;
 					border-radius: 50%;
@@ -159,7 +160,7 @@ $mobileSmall: 479.98px;
 	&__content-wrapper {
 		position: relative;
 		z-index: 5;
-		padding: 0 14px;
+		padding: 0 em(14);
 		min-height: 100vh;
 		position: relative;
 		display: flex;
@@ -177,14 +178,14 @@ $mobileSmall: 479.98px;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: 40px;
+			margin-bottom: em(40);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 16px;
+				margin-bottom: em(16);
 			}
 
 			@media (max-width: $mobile) {
-				margin-bottom: 24px;
+				margin-bottom: em(24);
 			}
 		}
 	}
@@ -194,10 +195,10 @@ $mobileSmall: 479.98px;
 		color: cl('white_grey');
 
 		&:not(:last-child) {
-			margin-bottom: 56px;
+			margin-bottom: em(56);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}

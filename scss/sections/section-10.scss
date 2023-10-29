@@ -6,6 +6,7 @@ $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
 @import '../variables';
+@import '../mixins';
 
 .section-10 {
 	&__container {
@@ -16,16 +17,16 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 64px;
+				margin-bottom: em(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: 50px;
+				margin-bottom: em(50);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}
@@ -44,16 +45,16 @@ $mobileSmall: 479.98px;
 		z-index: 1;
 
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 64px;
+				margin-bottom: em(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: 48px;
+				margin-bottom: em(48);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: 24px;
+				margin-bottom: em(24);
 			}
 		}
 
@@ -66,7 +67,7 @@ $mobileSmall: 479.98px;
 		}
 
 		@media (max-width: $mobile) {
-			padding-bottom: calc(24px + 16px);
+			padding-bottom: calc(em(24) + em(16));
 		}
 	}
 
@@ -79,25 +80,25 @@ $mobileSmall: 479.98px;
 
 	&__slide {
 		position: relative;
-		padding: 40px;
+		padding: em(40);
 		border-radius: 8px;
 		background-color: cl('dark_cards');
 		box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
 
 		@media (max-width: $desktopLow) {
-			padding: 32px;
+			padding: em(32);
 		}
 
 		@media (max-width: $mobile) {
-			padding: 24px;
+			padding: em(24);
 		}
 
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
+		gap: em(24);
 
 		@media (max-width: $desktopLow) {
-			gap: 16px;
+			gap: em(16);
 		}
 	}
 
@@ -108,11 +109,11 @@ $mobileSmall: 479.98px;
 
 		display: flex;
 		align-items: center;
-		gap: 40px;
+		gap: em(40);
 
 		position: absolute;
 		z-index: 1;
-		top: calc(100% + 76px);
+		top: calc(100% + em(76));
 		right: 0;
 
 		button {
@@ -122,11 +123,11 @@ $mobileSmall: 479.98px;
 
 	&__action {
 		display: flex;
-		gap: 40px;
+		gap: em(40);
 		align-items: center;
 
 		@media (max-width: $mobile) {
-			gap: 16px;
+			gap: em(16);
 			flex-direction: column;
 		}
 	}
@@ -146,17 +147,17 @@ $mobileSmall: 479.98px;
 		color: cl('white_grey');
 
 		@media (max-width: $desktop) {
-			font-size: 20px;
+			font-size: rem(20);
 		}
 
 		@media (max-width: $desktopLow) {
-			font-size: 16px;
+			font-size: rem(16);
 		}
 	}
 
 	&__value-wrapper {
 		display: flex;
-		gap: 4px;
+		gap: em(4);
 		align-items: center;
 
 		img {
@@ -193,13 +194,13 @@ $mobileSmall: 479.98px;
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
-		gap: 8px;
+		gap: em(8);
 	}
 
 	&__photos-imgs {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 8px;
+		gap: em(8);
 
 		img {
 			flex: 0 0 72px;
@@ -236,7 +237,7 @@ $mobileSmall: 479.98px;
 
 	&__bottom {
 		display: flex;
-		gap: 16px;
+		gap: em(16);
 		justify-content: space-between;
 		align-items: flex-end;
 
@@ -251,7 +252,7 @@ $mobileSmall: 479.98px;
 
 	&__author-wrapper {
 		display: flex;
-		gap: 8px;
+		gap: em(8);
 		flex-direction: column;
 		align-items: flex-end;
 

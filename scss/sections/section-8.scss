@@ -6,6 +6,7 @@ $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
 @import '../variables';
+@import '../mixins';
 
 .section-8 {
 	&__container {
@@ -16,16 +17,16 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 64px;
+				margin-bottom: em(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: 50px;
+				margin-bottom: em(50);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 	}
@@ -44,21 +45,21 @@ $mobileSmall: 479.98px;
 		z-index: 1;
 
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: em(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: 64px;
+				margin-bottom: em(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: 48px;
+				margin-bottom: em(48);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: 32px;
+				margin-bottom: em(32);
 			}
 		}
 
 		.splide__pagination {
-			gap: 16px;
+			gap: em(16);
 
 			@media (min-width: $mobile) {
 				display: none;
@@ -66,7 +67,7 @@ $mobileSmall: 479.98px;
 		}
 
 		@media (max-width: $mobile) {
-			padding-bottom: calc(24px + 16px);
+			padding-bottom: calc(em(24) + em(16));
 		}
 	}
 
@@ -79,17 +80,17 @@ $mobileSmall: 479.98px;
 
 	&__slide {
 		position: relative;
-		padding: 40px;
+		padding: em(40);
 		border-radius: 8px;
 		background-color: cl('dark_cards');
 		box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
 
 		@media (max-width: $desktopLow) {
-			padding: 32px;
+			padding: em(32);
 		}
 
 		@media (max-width: $mobile) {
-			padding: 24px;
+			padding: em(24);
 		}
 
 		@media (min-width: $mobileLow) {
@@ -118,7 +119,7 @@ $mobileSmall: 479.98px;
 
 	&__item-top {
 		display: grid;
-		gap: 16px;
+		gap: em(16);
 		grid-template-columns: auto 1fr;
 	}
 
@@ -128,7 +129,7 @@ $mobileSmall: 479.98px;
 	&__item-number {
 		font-family: Raleway, sans-serif;
 		color: rgba(189, 225, 231, 0.1);
-		font-size: 96px;
+		font-size: rem(96);
 		line-height: 84%;
 		text-transform: uppercase;
 
@@ -151,17 +152,17 @@ $mobileSmall: 479.98px;
 		background: linear-gradient(270deg, rgba(239, 184, 118, 0.3) 0%, rgba(187, 144, 106, 0.3) 100%);
 		width: 80%;
 		height: 1px;
-		margin-bottom: 16px;
+		margin-bottom: em(16);
 	}
 
 	&__item-center {
 		position: relative;
 
 		&--pr {
-			padding-right: 42px;
+			padding-right: em(42);
 
 			@media (max-width: $mobile) {
-				padding-right: 32px;
+				padding-right: em(32);
 			}
 		}
 	}
@@ -183,7 +184,7 @@ $mobileSmall: 479.98px;
 
 		color: cl('dark_grey');
 		font-family: EBGaramond, sans-serif;
-		font-size: 24px;
+		font-size: rem(24);
 		text-transform: uppercase;
 		white-space: nowrap;
 	}
@@ -199,11 +200,11 @@ $mobileSmall: 479.98px;
 
 		display: flex;
 		align-items: center;
-		gap: 40px;
+		gap: em(40);
 
 		position: absolute;
 		z-index: 1;
-		top: calc(100% + 76px);
+		top: calc(100% + em(76));
 		right: 0;
 
 		button {
