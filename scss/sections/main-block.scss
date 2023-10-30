@@ -215,6 +215,7 @@ $mobileSmall: 479.98px;
 		transform: translateX(-50%);
 		height: 90%;
 		aspect-ratio: 676 / 834;
+		transition: left 0.3s linear;
 	}
 
 	&__slide-button {

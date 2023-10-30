@@ -348,6 +348,7 @@
   transform: translateX(-50%);
   height: 90%;
   aspect-ratio: 676/834;
+  transition: left 0.3s linear;
 }
 @media (max-width: 767.98px) {
   .main-slider__people-bg {
