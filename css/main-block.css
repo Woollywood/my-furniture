@@ -171,40 +171,40 @@
 }
 
 .main-block {
-  padding-bottom: 4.5em;
+  padding-bottom: 4.5rem;
 }
 @media (max-width: 1439.98px) {
   .main-block {
-    padding-bottom: 3.5em;
+    padding-bottom: 3.5rem;
   }
 }
 @media (max-width: 1099.98px) {
   .main-block {
-    padding-bottom: 2.5em;
+    padding-bottom: 2.5rem;
   }
 }
 @media (max-width: 767.98px) {
   .main-block {
-    padding-bottom: 1.5em;
+    padding-bottom: 1.5rem;
   }
 }
 .main-block__body {
-  padding: 5em 0;
+  padding: 5rem 0;
 }
 @media (max-width: 1439.98px) {
   .main-block__body {
-    padding: 4em 0;
+    padding: 4rem 0;
   }
 }
 @media (max-width: 1099.98px) {
   .main-block__body {
-    padding: 2.5em 0;
+    padding: 2.5rem 0;
   }
 }
 .main-block__benefits {
   display: grid;
-  gap: 1em;
-  row-gap: 2em;
+  gap: 1rem;
+  row-gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
 }
 @media (max-width: 767.98px) {
@@ -216,19 +216,19 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
 }
 @media (min-width: 767.98px) {
   .main-block__benefit:not(:last-child) {
-    padding-right: 1em;
+    padding-right: 1rem;
     border-right: 1px solid rgba(189, 225, 231, 0.1);
   }
 }
 @media (max-width: 1099.98px) {
   .main-block__benefit {
-    gap: 1em;
+    gap: 1rem;
   }
 }
 .main-block__benefit:hover .static {
@@ -262,8 +262,8 @@
 }
 
 .main-slider .splide__pagination {
-  bottom: 3.25em;
-  gap: 1.5em;
+  bottom: 3.25rem;
+  gap: 1.5rem;
 }
 .main-slider .splide__pagination li button.is-active {
   position: relative;
@@ -300,7 +300,7 @@
 .main-slider__content-wrapper {
   position: relative;
   z-index: 5;
-  padding: 0 0.875em;
+  padding: 0 0.875rem;
   min-height: 100vh;
   position: relative;
   display: flex;
@@ -316,16 +316,16 @@
   color: var(--color-green);
 }
 .main-slider__slide-title:not(:last-child) {
-  margin-bottom: 2.5em;
+  margin-bottom: 2.5rem;
 }
 @media (max-width: 1439.98px) {
   .main-slider__slide-title:not(:last-child) {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 767.98px) {
   .main-slider__slide-title:not(:last-child) {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
   }
 }
 .main-slider__slide-subtitle {
@@ -333,11 +333,11 @@
   color: var(--color-white_grey);
 }
 .main-slider__slide-subtitle:not(:last-child) {
-  margin-bottom: 3.5em;
+  margin-bottom: 3.5rem;
 }
 @media (max-width: 1439.98px) {
   .main-slider__slide-subtitle:not(:last-child) {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
 }
 .main-slider__people-bg {

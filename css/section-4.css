@@ -171,34 +171,34 @@
 }
 
 .section-4__text-wrapper:not(:last-child) {
-  margin-bottom: 5em;
+  margin-bottom: 5rem;
 }
 @media (max-width: 1439.98px) {
   .section-4__text-wrapper:not(:last-child) {
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
   }
 }
 @media (max-width: 1099.98px) {
   .section-4__text-wrapper:not(:last-child) {
-    margin-bottom: 3.125em;
+    margin-bottom: 3.125rem;
   }
 }
 @media (max-width: 767.98px) {
   .section-4__text-wrapper:not(:last-child) {
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
   }
 }
 .section-4__row {
   display: grid;
-  -moz-column-gap: 2em;
-       column-gap: 2em;
-  row-gap: 2em;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  row-gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
 }
 @media (max-width: 1099.98px) {
   .section-4__row {
-    -moz-column-gap: 1em;
-         column-gap: 1em;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -207,21 +207,21 @@
   }
 }
 .section-4__row:not(:last-child) {
-  margin-bottom: 5em;
+  margin-bottom: 5rem;
 }
 @media (max-width: 1439.98px) {
   .section-4__row:not(:last-child) {
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
   }
 }
 @media (max-width: 1099.98px) {
   .section-4__row:not(:last-child) {
-    margin-bottom: 3.125em;
+    margin-bottom: 3.125rem;
   }
 }
 @media (max-width: 767.98px) {
   .section-4__row:not(:last-child) {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
 }
 .section-4__item {
@@ -244,11 +244,11 @@
   aspect-ratio: 1;
 }
 .section-4__item-icon:not(:last-child) {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 @media (max-width: 1099.98px) {
   .section-4__item-icon:not(:last-child) {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 }
 .section-4__item-icon img {
@@ -272,10 +272,10 @@
   color: var(--color-white_grey);
 }
 .section-4__item-title:not(:last-child) {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 @media (max-width: 1099.98px) {
   .section-4__item-title:not(:last-child) {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
   }
 }

@@ -171,70 +171,70 @@
 }
 
 .section-1__text-wrapper:not(:last-child) {
-  margin-bottom: 5em;
+  margin-bottom: 5rem;
 }
 @media (max-width: 1439.98px) {
   .section-1__text-wrapper:not(:last-child) {
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
   }
 }
 @media (max-width: 1099.98px) {
   .section-1__text-wrapper:not(:last-child) {
-    margin-bottom: 3.125em;
+    margin-bottom: 3.125rem;
   }
 }
 @media (max-width: 767.98px) {
   .section-1__text-wrapper:not(:last-child) {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
 }
 .section-1__content-wrapper {
   display: grid;
-  row-gap: 2em;
-  -moz-column-gap: 5em;
-       column-gap: 5em;
+  row-gap: 2rem;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
   grid-template-columns: repeat(2, 1fr);
 }
 @media (max-width: 1439.98px) {
   .section-1__content-wrapper {
-    -moz-column-gap: 4em;
-         column-gap: 4em;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
   }
 }
 @media (max-width: 1099.98px) {
   .section-1__content-wrapper {
-    row-gap: 1em;
-    -moz-column-gap: 3em;
-         column-gap: 3em;
+    row-gap: 1rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 }
 @media (max-width: 767.98px) {
   .section-1__content-wrapper {
     grid-template-columns: 1fr;
-    -moz-column-gap: 1.5em;
-         column-gap: 1.5em;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 }
 .section-1__content-wrapper:not(:last-child) {
-  margin-bottom: 5em;
+  margin-bottom: 5rem;
 }
 @media (max-width: 1439.98px) {
   .section-1__content-wrapper:not(:last-child) {
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
   }
 }
 @media (max-width: 1099.98px) {
   .section-1__content-wrapper:not(:last-child) {
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
   }
 }
 @media (max-width: 767.98px) {
   .section-1__content-wrapper:not(:last-child) {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
 }
 .section-1__card-img {
-  margin-left: 4em;
+  margin-left: 4rem;
   padding-bottom: 46%;
   border-radius: 8px;
   box-shadow: 3px 11px 50px 0px rgba(13, 22, 27, 0.9);
@@ -250,45 +250,45 @@
 .section-1__card-text-wrapper {
   position: relative;
   z-index: 1;
-  margin-right: 8.25em;
+  margin-right: 8.25rem;
   border-radius: 8px;
   background: var(--color-dark_cards);
   box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
-  padding: 2em 2.5em;
-  margin-top: -2em;
+  padding: 2rem 2.5rem;
+  margin-top: -2rem;
 }
 @media (max-width: 1439.98px) {
   .section-1__card-text-wrapper {
-    padding: 1.75em 2.5em;
-    margin-right: 7.5em;
+    padding: 1.75rem 2.5rem;
+    margin-right: 7.5rem;
   }
 }
 @media (max-width: 1099.98px) {
   .section-1__card-text-wrapper {
-    padding: 1.5em 2em;
+    padding: 1.5rem 2rem;
     margin-right: 0;
     transform: scale(1.01);
   }
 }
 @media (max-width: 767.98px) {
   .section-1__card-text-wrapper {
-    padding: 1.5em;
+    padding: 1.5rem;
   }
 }
 .section-1__card-title {
   color: var(--color-green);
 }
 .section-1__card-title:not(:last-child) {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 1439.98px) {
   .section-1__card-title:not(:last-child) {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 767.98px) {
   .section-1__card-title:not(:last-child) {
-    margin-bottom: 0.75em;
+    margin-bottom: 0.75rem;
   }
 }
 .section-1__card-text {
@@ -298,31 +298,31 @@
   overflow: hidden;
 }
 .section-1__card-text:not(:last-child) {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 @media (max-width: 1439.98px) {
   .section-1__card-text:not(:last-child) {
-    margin-bottom: 1.75em;
+    margin-bottom: 1.75rem;
   }
 }
 @media (max-width: 1099.98px) {
   .section-1__card-text:not(:last-child) {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
   }
 }
 @media (max-width: 767.98px) {
   .section-1__card-text:not(:last-child) {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 }
 .section-1__card-bottom {
   display: flex;
   align-items: center;
-  gap: 5em;
+  gap: 5rem;
 }
 @media (max-width: 767.98px) {
   .section-1__card-bottom {
-    gap: 2.5em;
+    gap: 2.5rem;
   }
 }
 .section-1__card-sep {

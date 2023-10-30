@@ -171,50 +171,50 @@
 }
 
 .section-11__text-wrapper:not(:last-child) {
-  margin-bottom: 5em;
+  margin-bottom: 5rem;
 }
 @media (max-width: 1439.98px) {
   .section-11__text-wrapper:not(:last-child) {
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
   }
 }
 @media (max-width: 1099.98px) {
   .section-11__text-wrapper:not(:last-child) {
-    margin-bottom: 3.125em;
+    margin-bottom: 3.125rem;
   }
 }
 @media (max-width: 767.98px) {
   .section-11__text-wrapper:not(:last-child) {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 767.98px) {
   .section-11__row {
     display: grid;
-    gap: 2em;
+    gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 767.98px) and (max-width: 1099.98px) {
   .section-11__row {
-    gap: 1em;
+    gap: 1rem;
   }
 }
 @media (max-width: 767.98px) {
   .section-11__col:not(:last-child) {
-    margin-bottom: 0.75em;
+    margin-bottom: 0.75rem;
   }
 }
 .section-11__accordion:not(:last-child) {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 @media (max-width: 1439.98px) {
   .section-11__accordion:not(:last-child) {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
   }
 }
 @media (max-width: 1099.98px) {
   .section-11__accordion:not(:last-child) {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 }
