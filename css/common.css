@@ -1008,6 +1008,14 @@ h6 {
   }
 }
 
+body .wrapper {
+  animation: appearance 1.5s ease;
+}
+body.loading .wrapper {
+  animation: none;
+  opacity: 0;
+}
+
 @keyframes appearance {
   from {
     opacity: 0;
