@@ -17,16 +17,16 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: em(80);
+			margin-bottom: rem(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(64);
+				margin-bottom: rem(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(50);
+				margin-bottom: rem(50);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: em(32);
+				margin-bottom: rem(32);
 			}
 		}
 	}
@@ -45,16 +45,16 @@ $mobileSmall: 479.98px;
 		z-index: 1;
 
 		&:not(:last-child) {
-			margin-bottom: em(80);
+			margin-bottom: rem(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(64);
+				margin-bottom: rem(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(48);
+				margin-bottom: rem(48);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: em(24);
+				margin-bottom: rem(24);
 			}
 		}
 
@@ -67,7 +67,7 @@ $mobileSmall: 479.98px;
 		}
 
 		@media (max-width: $mobile) {
-			padding-bottom: calc(em(24) + em(16));
+			padding-bottom: calc(rem(24) + rem(16));
 		}
 	}
 
@@ -80,25 +80,25 @@ $mobileSmall: 479.98px;
 
 	&__slide {
 		position: relative;
-		padding: em(40);
+		padding: rem(40);
 		border-radius: 8px;
 		background-color: cl('dark_cards');
 		box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
 
 		@media (max-width: $desktopLow) {
-			padding: em(32);
+			padding: rem(32);
 		}
 
 		@media (max-width: $mobile) {
-			padding: em(24);
+			padding: rem(24);
 		}
 
 		display: flex;
 		flex-direction: column;
-		gap: em(24);
+		gap: rem(24);
 
 		@media (max-width: $desktopLow) {
-			gap: em(16);
+			gap: rem(16);
 		}
 	}
 
@@ -109,11 +109,11 @@ $mobileSmall: 479.98px;
 
 		display: flex;
 		align-items: center;
-		gap: em(40);
+		gap: rem(40);
 
 		position: absolute;
 		z-index: 1;
-		top: calc(100% + em(76));
+		top: calc(100% + rem(76));
 		right: 0;
 
 		button {
@@ -123,11 +123,11 @@ $mobileSmall: 479.98px;
 
 	&__action {
 		display: flex;
-		gap: em(40);
+		gap: rem(40);
 		align-items: center;
 
 		@media (max-width: $mobile) {
-			gap: em(16);
+			gap: rem(16);
 			flex-direction: column;
 		}
 	}
@@ -157,7 +157,7 @@ $mobileSmall: 479.98px;
 
 	&__value-wrapper {
 		display: flex;
-		gap: em(4);
+		gap: rem(4);
 		align-items: center;
 
 		img {
@@ -194,13 +194,13 @@ $mobileSmall: 479.98px;
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
-		gap: em(8);
+		gap: rem(8);
 	}
 
 	&__photos-imgs {
 		display: flex;
 		flex-wrap: wrap;
-		gap: em(8);
+		gap: rem(8);
 
 		img {
 			flex: 0 0 72px;
@@ -237,7 +237,7 @@ $mobileSmall: 479.98px;
 
 	&__bottom {
 		display: flex;
-		gap: em(16);
+		gap: rem(16);
 		justify-content: space-between;
 		align-items: flex-end;
 
@@ -252,7 +252,7 @@ $mobileSmall: 479.98px;
 
 	&__author-wrapper {
 		display: flex;
-		gap: em(8);
+		gap: rem(8);
 		flex-direction: column;
 		align-items: flex-end;
 

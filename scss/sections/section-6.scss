@@ -16,16 +16,16 @@ $mobileSmall: 479.98px;
 	}
 
 	&__text-wrapper {
-		margin-bottom: em(80);
+		margin-bottom: rem(80);
 
 		@media (max-width: $desktop) {
-			margin-bottom: em(64);
+			margin-bottom: rem(64);
 		}
 		@media (max-width: $desktopLow) {
-			margin-bottom: em(50);
+			margin-bottom: rem(50);
 		}
 		@media (max-width: $mobile) {
-			margin-bottom: em(32);
+			margin-bottom: rem(32);
 		}
 	}
 
@@ -40,16 +40,16 @@ $mobileSmall: 479.98px;
 
 	&__content {
 		position: relative;
-		padding: em(155) 0 em(120);
+		padding: rem(155) 0 rem(120);
 
 		@media (max-width: $desktop) {
-			padding: em(120) 0 em(80);
+			padding: rem(120) 0 rem(80);
 		}
 		@media (max-width: $desktopLow) {
-			padding: em(56) 0 em(64);
+			padding: rem(56) 0 rem(64);
 		}
 		@media (max-width: $mobile) {
-			padding: em(48) 0 em(40);
+			padding: rem(48) 0 rem(40);
 		}
 
 		display: flex;
@@ -59,16 +59,16 @@ $mobileSmall: 479.98px;
 
 	&__inner-form {
 		&:not(:last-child) {
-			margin-bottom: em(86);
+			margin-bottom: rem(86);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(64);
+				margin-bottom: rem(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(40);
+				margin-bottom: rem(40);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: em(24);
+				margin-bottom: rem(24);
 			}
 		}
 	}
@@ -89,7 +89,7 @@ $mobileSmall: 479.98px;
 }
 
 .inner-form {
-	padding: em(32) em(40);
+	padding: rem(32) rem(40);
 	border-radius: 8px;
 	background-color: cl('dark_cards');
 	box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
@@ -100,11 +100,11 @@ $mobileSmall: 479.98px;
 	}
 
 	@media (max-width: $desktopLow) {
-		padding: em(32) em(32) em(49);
+		padding: rem(32) rem(32) rem(49);
 	}
 
 	@media (max-width: $mobile) {
-		padding: em(24) em(24) em(54);
+		padding: rem(24) rem(24) rem(54);
 	}
 
 	@media (max-width: $mobileLow) {
@@ -123,18 +123,18 @@ $mobileSmall: 479.98px;
 		overflow: auto;
 
 		@media (max-width: $mobileLow) {
-			padding-bottom: em(8);
+			padding-bottom: rem(8);
 		}
 
 		&:not(:last-child) {
-			margin-bottom: em(32);
+			margin-bottom: rem(32);
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(24);
+				margin-bottom: rem(24);
 			}
 
 			@media (max-width: $mobile) {
-				margin-bottom: em(16);
+				margin-bottom: rem(16);
 			}
 		}
 	}
@@ -149,19 +149,19 @@ $mobileSmall: 479.98px;
 
 		@media (max-width: $mobile) {
 			font-size: rem(12);
-			gap: em(24);
+			gap: rem(24);
 		}
 	}
 
 	&__text {
 		&:not(:last-child) {
-			margin-bottom: em(24);
+			margin-bottom: rem(24);
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(16);
+				margin-bottom: rem(16);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: em(12);
+				margin-bottom: rem(12);
 			}
 		}
 	}
@@ -173,13 +173,13 @@ $mobileSmall: 479.98px;
 		color: cl('wwhite_grey');
 
 		&:not(:last-child) {
-			margin-bottom: em(24);
+			margin-bottom: rem(24);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(16);
+				margin-bottom: rem(16);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: em(12);
+				margin-bottom: rem(12);
 			}
 		}
 	}
@@ -189,7 +189,7 @@ $mobileSmall: 479.98px;
 
 	&__list-item {
 		display: flex;
-		gap: em(24);
+		gap: rem(24);
 		align-items: center;
 
 		&::before {

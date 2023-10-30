@@ -17,16 +17,16 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: em(80);
+			margin-bottom: rem(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(64);
+				margin-bottom: rem(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(50);
+				margin-bottom: rem(50);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: em(32);
+				margin-bottom: rem(32);
 			}
 		}
 	}
@@ -40,11 +40,11 @@ $mobileSmall: 479.98px;
 	&__row {
 		@media (min-width: $mobile) {
 			display: grid;
-			gap: em(32);
+			gap: rem(32);
 			grid-template-columns: repeat(2, 1fr);
 
 			@media (max-width: $desktopLow) {
-				gap: em(16);
+				gap: rem(16);
 			}
 		}
 	}
@@ -52,21 +52,21 @@ $mobileSmall: 479.98px;
 	&__col {
 		@media (max-width: $mobile) {
 			&:not(:last-child) {
-				margin-bottom: em(12);
+				margin-bottom: rem(12);
 			}
 		}
 	}
 
 	&__accordion {
 		&:not(:last-child) {
-			margin-bottom: em(32);
+			margin-bottom: rem(32);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(24);
+				margin-bottom: rem(24);
 			}
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(16);
+				margin-bottom: rem(16);
 			}
 		}
 	}

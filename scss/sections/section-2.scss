@@ -16,11 +16,11 @@ $mobileSmall: 479.98px;
 		@media (min-width: $desktopLow) {
 			display: grid;
 			grid-template-columns: 50% 1fr;
-			gap: em(164);
+			gap: rem(164);
 
 			@media (max-width: $desktop) {
 				grid-template-columns: 36% 1fr;
-				gap: em(32);
+				gap: rem(32);
 			}
 		}
 	}
@@ -29,10 +29,10 @@ $mobileSmall: 479.98px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: em(108);
+		gap: rem(108);
 
 		@media (max-width: $desktop) {
-			gap: em(92);
+			gap: rem(92);
 		}
 
 		@media (max-width: $desktopLow) {
@@ -43,12 +43,12 @@ $mobileSmall: 479.98px;
 	&__left-sep {
 		width: calc(100% - 97px * 2);
 		height: 1px;
-		margin: 0 em(97) em(28);
+		margin: 0 rem(97) rem(28);
 		background: linear-gradient(270deg, rgba(239, 184, 118, 0.3) 0%, rgba(187, 144, 106, 0.3) 100%);
 
 		@media (max-width: $desktop) {
-			width: calc(100% - em(72) * 2);
-			margin: 0 em(72) em(28);
+			width: calc(100% - rem(72) * 2);
+			margin: 0 rem(72) rem(28);
 		}
 	}
 
@@ -70,18 +70,18 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: em(80);
+			margin-bottom: rem(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(64);
+				margin-bottom: rem(64);
 			}
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(48);
+				margin-bottom: rem(48);
 			}
 
 			@media (max-width: $mobile) {
-				margin-bottom: em(32);
+				margin-bottom: rem(32);
 			}
 		}
 	}
@@ -97,18 +97,18 @@ $mobileSmall: 479.98px;
 
 	&__content-inner {
 		&:not(:last-child) {
-			margin-bottom: em(80);
+			margin-bottom: rem(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(64);
+				margin-bottom: rem(64);
 			}
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(48);
+				margin-bottom: rem(48);
 			}
 
 			@media (max-width: $mobile) {
-				margin-bottom: em(32);
+				margin-bottom: rem(32);
 			}
 		}
 	}
@@ -116,30 +116,30 @@ $mobileSmall: 479.98px;
 	&__content-item {
 		display: flex;
 		align-items: center;
-		gap: em(40);
+		gap: rem(40);
 
 		&:not(:last-child) {
-			padding-bottom: em(24);
-			margin-bottom: em(24);
+			padding-bottom: rem(24);
+			margin-bottom: rem(24);
 			border-bottom: 1px solid rgba(164, 206, 255, 0.1);
 
 			@media (max-width: $desktop) {
-				padding-bottom: em(20);
-				margin-bottom: em(20);
+				padding-bottom: rem(20);
+				margin-bottom: rem(20);
 			}
 
 			@media (max-width: $mobile) {
-				padding-bottom: em(12);
-				margin-bottom: em(12);
+				padding-bottom: rem(12);
+				margin-bottom: rem(12);
 			}
 		}
 
 		@media (max-width: $desktopLow) {
-			gap: em(32);
+			gap: rem(32);
 		}
 
 		@media (max-width: $mobile) {
-			gap: em(24);
+			gap: rem(24);
 		}
 	}
 

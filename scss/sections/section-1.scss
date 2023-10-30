@@ -17,18 +17,18 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: em(80);
+			margin-bottom: rem(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(64);
+				margin-bottom: rem(64);
 			}
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(50);
+				margin-bottom: rem(50);
 			}
 
 			@media (max-width: $mobile) {
-				margin-bottom: em(32);
+				margin-bottom: rem(32);
 			}
 		}
 	}
@@ -44,37 +44,37 @@ $mobileSmall: 479.98px;
 
 	&__content-wrapper {
 		display: grid;
-		row-gap: em(32);
-		column-gap: em(80);
+		row-gap: rem(32);
+		column-gap: rem(80);
 		grid-template-columns: repeat(2, 1fr);
 
 		@media (max-width: $desktop) {
-			column-gap: em(64);
+			column-gap: rem(64);
 		}
 
 		@media (max-width: $desktopLow) {
-			row-gap: em(16);
-			column-gap: em(48);
+			row-gap: rem(16);
+			column-gap: rem(48);
 		}
 
 		@media (max-width: $mobile) {
 			grid-template-columns: 1fr;
-			column-gap: em(24);
+			column-gap: rem(24);
 		}
 
 		&:not(:last-child) {
-			margin-bottom: em(80);
+			margin-bottom: rem(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(64);
+				margin-bottom: rem(64);
 			}
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(48);
+				margin-bottom: rem(48);
 			}
 
 			@media (max-width: $mobile) {
-				margin-bottom: em(32);
+				margin-bottom: rem(32);
 			}
 		}
 	}
@@ -83,7 +83,7 @@ $mobileSmall: 479.98px;
 	}
 
 	&__card-img {
-		margin-left: em(64);
+		margin-left: rem(64);
 		padding-bottom: 46%;
 		border-radius: 8px;
 		box-shadow: 3px 11px 50px 0px rgba(13, 22, 27, 0.9);
@@ -98,26 +98,26 @@ $mobileSmall: 479.98px;
 	&__card-text-wrapper {
 		position: relative;
 		z-index: 1;
-		margin-right: em(132);
+		margin-right: rem(132);
 		border-radius: 8px;
 		background: cl('dark_cards');
 		box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
-		padding: em(32) em(40);
-		margin-top: em(-32);
+		padding: rem(32) rem(40);
+		margin-top: rem(-32);
 
 		@media (max-width: $desktop) {
-			padding: em(28) em(40);
-			margin-right: em(120);
+			padding: rem(28) rem(40);
+			margin-right: rem(120);
 		}
 
 		@media (max-width: $desktopLow) {
-			padding: em(24) em(32);
+			padding: rem(24) rem(32);
 			margin-right: 0;
 			transform: scale(1.01);
 		}
 
 		@media (max-width: $mobile) {
-			padding: em(24);
+			padding: rem(24);
 		}
 	}
 
@@ -125,14 +125,14 @@ $mobileSmall: 479.98px;
 		color: cl('green');
 
 		&:not(:last-child) {
-			margin-bottom: em(24);
+			margin-bottom: rem(24);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(16);
+				margin-bottom: rem(16);
 			}
 
 			@media (max-width: $mobile) {
-				margin-bottom: em(12);
+				margin-bottom: rem(12);
 			}
 		}
 	}
@@ -144,18 +144,18 @@ $mobileSmall: 479.98px;
 		overflow: hidden;
 
 		&:not(:last-child) {
-			margin-bottom: em(32);
+			margin-bottom: rem(32);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(28);
+				margin-bottom: rem(28);
 			}
 
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(24);
+				margin-bottom: rem(24);
 			}
 
 			@media (max-width: $mobile) {
-				margin-bottom: em(16);
+				margin-bottom: rem(16);
 			}
 		}
 	}
@@ -163,10 +163,10 @@ $mobileSmall: 479.98px;
 	&__card-bottom {
 		display: flex;
 		align-items: center;
-		gap: em(80);
+		gap: rem(80);
 
 		@media (max-width: $mobile) {
-			gap: em(40);
+			gap: rem(40);
 		}
 	}
 

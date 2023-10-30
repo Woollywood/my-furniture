@@ -17,16 +17,16 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: em(80);
+			margin-bottom: rem(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(64);
+				margin-bottom: rem(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(50);
+				margin-bottom: rem(50);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: em(32);
+				margin-bottom: rem(32);
 			}
 		}
 	}
@@ -45,21 +45,21 @@ $mobileSmall: 479.98px;
 		z-index: 1;
 
 		&:not(:last-child) {
-			margin-bottom: em(80);
+			margin-bottom: rem(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(64);
+				margin-bottom: rem(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(48);
+				margin-bottom: rem(48);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: em(32);
+				margin-bottom: rem(32);
 			}
 		}
 
 		.splide__pagination {
-			gap: em(16);
+			gap: rem(16);
 
 			@media (min-width: $mobile) {
 				display: none;
@@ -67,7 +67,7 @@ $mobileSmall: 479.98px;
 		}
 
 		@media (max-width: $mobile) {
-			padding-bottom: calc(em(24) + em(16));
+			padding-bottom: calc(rem(24) + rem(16));
 		}
 	}
 
@@ -80,17 +80,17 @@ $mobileSmall: 479.98px;
 
 	&__slide {
 		position: relative;
-		padding: em(40);
+		padding: rem(40);
 		border-radius: 8px;
 		background-color: cl('dark_cards');
 		box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
 
 		@media (max-width: $desktopLow) {
-			padding: em(32);
+			padding: rem(32);
 		}
 
 		@media (max-width: $mobile) {
-			padding: em(24);
+			padding: rem(24);
 		}
 
 		@media (min-width: $mobileLow) {
@@ -119,7 +119,7 @@ $mobileSmall: 479.98px;
 
 	&__item-top {
 		display: grid;
-		gap: em(16);
+		gap: rem(16);
 		grid-template-columns: auto 1fr;
 	}
 
@@ -152,17 +152,17 @@ $mobileSmall: 479.98px;
 		background: linear-gradient(270deg, rgba(239, 184, 118, 0.3) 0%, rgba(187, 144, 106, 0.3) 100%);
 		width: 80%;
 		height: 1px;
-		margin-bottom: em(16);
+		margin-bottom: rem(16);
 	}
 
 	&__item-center {
 		position: relative;
 
 		&--pr {
-			padding-right: em(42);
+			padding-right: rem(42);
 
 			@media (max-width: $mobile) {
-				padding-right: em(32);
+				padding-right: rem(32);
 			}
 		}
 	}
@@ -200,11 +200,11 @@ $mobileSmall: 479.98px;
 
 		display: flex;
 		align-items: center;
-		gap: em(40);
+		gap: rem(40);
 
 		position: absolute;
 		z-index: 1;
-		top: calc(100% + em(76));
+		top: calc(100% + rem(76));
 		right: 0;
 
 		button {

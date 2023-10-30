@@ -17,16 +17,16 @@ $mobileSmall: 479.98px;
 
 	&__text-wrapper {
 		&:not(:last-child) {
-			margin-bottom: em(80);
+			margin-bottom: rem(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(64);
+				margin-bottom: rem(64);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(50);
+				margin-bottom: rem(50);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: em(32);
+				margin-bottom: rem(32);
 			}
 		}
 	}
@@ -42,16 +42,16 @@ $mobileSmall: 479.98px;
 
 	&__slider {
 		&:not(:last-child) {
-			margin-bottom: em(80);
+			margin-bottom: rem(80);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(76);
+				margin-bottom: rem(76);
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: em(48);
+				margin-bottom: rem(48);
 			}
 			@media (max-width: $mobile) {
-				margin-bottom: em(24);
+				margin-bottom: rem(24);
 			}
 		}
 
@@ -60,12 +60,12 @@ $mobileSmall: 479.98px;
 		}
 
 		@media (max-width: $tablet) {
-			padding-bottom: calc(em(24) + em(16));
+			padding-bottom: calc(rem(24) + rem(16));
 		}
 
 		.splide__pagination {
 			bottom: 0;
-			gap: em(16);
+			gap: rem(16);
 		}
 	}
 
@@ -93,10 +93,10 @@ $mobileSmall: 479.98px;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: em(24);
+			margin-bottom: rem(24);
 
 			@media (max-width: $mobile) {
-				margin-bottom: em(16);
+				margin-bottom: rem(16);
 			}
 		}
 	}

@@ -9,15 +9,15 @@ $mobileSmall: 479.98px;
 @import '../mixins';
 
 .main-block {
-	padding-bottom: em(72);
+	padding-bottom: rem(72);
 	@media (max-width: $desktop) {
-		padding-bottom: em(56);
+		padding-bottom: rem(56);
 	}
 	@media (max-width: $desktopLow) {
-		padding-bottom: em(40);
+		padding-bottom: rem(40);
 	}
 	@media (max-width: $mobile) {
-		padding-bottom: em(24);
+		padding-bottom: rem(24);
 	}
 
 	&__slider {
@@ -27,19 +27,19 @@ $mobileSmall: 479.98px;
 	}
 
 	&__body {
-		padding: em(80) 0;
+		padding: rem(80) 0;
 		@media (max-width: $desktop) {
-			padding: em(64) 0;
+			padding: rem(64) 0;
 		}
 		@media (max-width: $desktopLow) {
-			padding: em(40) 0;
+			padding: rem(40) 0;
 		}
 	}
 
 	&__benefits {
 		display: grid;
-		gap: em(16);
-		row-gap: em(32);
+		gap: rem(16);
+		row-gap: rem(32);
 		grid-template-columns: repeat(4, 1fr);
 		@media (max-width: $mobile) {
 			grid-template-columns: repeat(2, 1fr);
@@ -51,16 +51,16 @@ $mobileSmall: 479.98px;
 
 		@media (min-width: $mobile) {
 			&:not(:last-child) {
-				padding-right: em(16);
+				padding-right: rem(16);
 				border-right: 1px solid rgba(189, 225, 231, 0.1);
 			}
 		}
 
 		display: flex;
 		flex-direction: column;
-		gap: em(24);
+		gap: rem(24);
 		@media (max-width: $desktopLow) {
-			gap: em(16);
+			gap: rem(16);
 		}
 		align-items: center;
 		justify-content: center;
@@ -105,8 +105,8 @@ $mobileSmall: 479.98px;
 
 .main-slider {
 	.splide__pagination {
-		bottom: em(52);
-		gap: em(24);
+		bottom: rem(52);
+		gap: rem(24);
 
 		li {
 			button.is-active {
@@ -160,7 +160,7 @@ $mobileSmall: 479.98px;
 	&__content-wrapper {
 		position: relative;
 		z-index: 5;
-		padding: 0 em(14);
+		padding: 0 rem(14);
 		min-height: 100vh;
 		position: relative;
 		display: flex;
@@ -178,14 +178,14 @@ $mobileSmall: 479.98px;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: em(40);
+			margin-bottom: rem(40);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(16);
+				margin-bottom: rem(16);
 			}
 
 			@media (max-width: $mobile) {
-				margin-bottom: em(24);
+				margin-bottom: rem(24);
 			}
 		}
 	}
@@ -195,10 +195,10 @@ $mobileSmall: 479.98px;
 		color: cl('white_grey');
 
 		&:not(:last-child) {
-			margin-bottom: em(56);
+			margin-bottom: rem(56);
 
 			@media (max-width: $desktop) {
-				margin-bottom: em(32);
+				margin-bottom: rem(32);
 			}
 		}
 	}

@@ -21,16 +21,16 @@ $mobileSmall: 479.98px;
 	&__top {
 		display: flex;
 		flex-wrap: wrap;
-		row-gap: em(32);
-		padding: em(80) 0;
+		row-gap: rem(32);
+		padding: rem(80) 0;
 		@media (max-width: $desktop) {
-			padding: em(64) 0;
+			padding: rem(64) 0;
 		}
 		@media (max-width: $desktopMiddle) {
-			padding: em(56) 0 em(38);
+			padding: rem(56) 0 rem(38);
 		}
 		@media (max-width: $mobile) {
-			padding: em(40) 0;
+			padding: rem(40) 0;
 		}
 		border-bottom: 1px solid rgba(189, 225, 231, 0.1);
 	}
@@ -38,16 +38,16 @@ $mobileSmall: 479.98px;
 	&__logo {
 		flex: 0 0 100px;
 		height: 100px;
-		margin-right: em(164);
+		margin-right: rem(164);
 
 		@media (max-width: $desktop) {
 			flex: 0 0 88px;
 			height: 88px;
-			margin-right: em(244);
+			margin-right: rem(244);
 		}
 
 		@media (max-width: $desktopMiddle) {
-			margin-right: em(172);
+			margin-right: rem(172);
 		}
 
 		@media (max-width: $desktopLow) {
@@ -64,18 +64,18 @@ $mobileSmall: 479.98px;
 	&__menu {
 		display: flex;
 		@media (min-width: $desktop) {
-			gap: em(134);
+			gap: rem(134);
 		}
-		margin-right: em(186);
+		margin-right: rem(186);
 
 		@media (max-width: $desktop) {
 			flex-direction: column;
-			gap: em(16);
-			margin-right: em(123);
+			gap: rem(16);
+			margin-right: rem(123);
 		}
 
 		@media (max-width: $desktopMiddle) {
-			margin-right: em(62);
+			margin-right: rem(62);
 		}
 
 		@media (max-width: $mobileSmall) {
@@ -89,13 +89,13 @@ $mobileSmall: 479.98px;
 	&__info {
 		display: flex;
 		flex-direction: column;
-		gap: em(24);
+		gap: rem(24);
 		margin-right: auto;
 	}
 
 	&__info-item {
 		display: flex;
-		gap: em(16);
+		gap: rem(16);
 		align-items: center;
 
 		span {
@@ -116,7 +116,7 @@ $mobileSmall: 479.98px;
 	}
 
 	&__action {
-		padding-right: em(32);
+		padding-right: rem(32);
 	}
 
 	&__button {
@@ -124,20 +124,20 @@ $mobileSmall: 479.98px;
 	}
 
 	&__bottom {
-		padding: em(56) 0;
+		padding: rem(56) 0;
 		@media (max-width: $desktop) {
-			padding: em(48) 0 em(52);
+			padding: rem(48) 0 rem(52);
 		}
 		@media (max-width: $desktopMiddle) {
-			padding: em(64) 0 em(46);
+			padding: rem(64) 0 rem(46);
 		}
 		@media (max-width: $mobile) {
-			padding: em(32) 0;
+			padding: rem(32) 0;
 		}
 
 		display: flex;
 		align-items: center;
-		gap: em(24);
+		gap: rem(24);
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
@@ -187,7 +187,7 @@ $mobileSmall: 479.98px;
 
 	&__item {
 		&:not(:last-child) {
-			margin-bottom: em(16);
+			margin-bottom: rem(16);
 		}
 	}
 
