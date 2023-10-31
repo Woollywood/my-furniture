@@ -1,5 +1,5 @@
 const mainSlider = new Splide('#main-slider', {
-	type: 'loop',
+	type: 'slide',
 	speed: 800,
 	perPage: 1,
 	autoplay: true,

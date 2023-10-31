@@ -92,7 +92,9 @@ $mobileSmall: 479.98px;
 
 	color: var(--button-text-color);
 
-	&:hover {
+	&:hover,
+	&:active,
+	&:focus {
 		background-color: var(--button-hover-background-color);
 		box-shadow: var(--button-hover-box-shadow);
 	}
