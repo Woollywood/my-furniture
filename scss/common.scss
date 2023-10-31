@@ -1,52 +1,48 @@
 @font-face {
 	font-family: EBGaramond;
 	font-display: swap;
-	src: url('../fonts/EBGaramond-Regular.woff2') format('woff2'),
-		url('../fonts/EBGaramond-Regular.woff') format('woff');
+	src: url('../fonts/EBGaramond-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: Montserrat;
 	font-display: swap;
-	src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
-		url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+	src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2');
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
 	font-family: Montserrat;
 	font-display: swap;
-	src: url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff');
+	src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: Montserrat;
 	font-display: swap;
-	src: url('../fonts/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff');
+	src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: Raleway;
 	font-display: swap;
-	src: url('../fonts/Raleway-Regular.woff2') format('woff2'), url('../fonts/Raleway-Regular.woff') format('woff');
+	src: url('../fonts/Raleway-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: Montserrat;
 	font-display: swap;
-	src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-		url('../fonts/Montserrat-Regular.woff') format('woff');
+	src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @import 'libs/normalize';
 @import 'libs/reset';
-@import 'variables';
 @import 'mixins';
 
 $desktop: 1439.98px;
@@ -56,18 +52,18 @@ $mobile: 767.98px;
 $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
-body {
-	.wrapper {
-		animation: appearance 1.5s ease;
-	}
+// body {
+// 	.wrapper {
+// 		animation: appearance 1.5s ease;
+// 	}
 
-	&.loading {
-		.wrapper {
-			animation: none;
-			opacity: 0;
-		}
-	}
-}
+// 	&.loading {
+// 		.wrapper {
+// 			animation: none;
+// 			opacity: 0;
+// 		}
+// 	}
+// }
 
 @keyframes appearance {
 	from {
@@ -85,6 +81,7 @@ body {
 	font-family: Montserrat, sans-serif;
 	line-height: normal;
 	transition: all 0.3s ease;
+	white-space: nowrap;
 }
 
 .button-primary {
@@ -385,6 +382,7 @@ body {
 	}
 
 	&__header-icon {
+		flex: 0 0 32px;
 		stroke: var(--accordion-title-text-color);
 		transform: rotate(0);
 		transition: all 0.6s ease;
@@ -645,6 +643,14 @@ body {
 	border-radius: 4px;
 	border: 1px solid rgba(189, 225, 231, 0.1);
 	background-color: transparent;
+	transition: all 0.3s ease;
+	color: cl('white_grey');
 
-	color: cl('white');
+	&:hover {
+		border: 1px solid cl('green');
+	}
+
+	&:focus {
+		border: 1px solid cl('green');
+	}
 }

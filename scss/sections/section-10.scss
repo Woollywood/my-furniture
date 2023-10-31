@@ -5,7 +5,6 @@ $mobile: 767.98px;
 $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
-@import '../variables';
 @import '../mixins';
 
 .section-10 {
@@ -238,6 +237,7 @@ $mobileSmall: 479.98px;
 	&__bottom {
 		display: flex;
 		gap: rem(16);
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: flex-end;
 

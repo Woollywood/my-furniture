@@ -5,7 +5,6 @@ $mobile: 767.98px;
 $mobileLow: 559.98px;
 $mobileSmall: 479.98px;
 
-@import '../variables';
 @import '../mixins';
 
 .section-6 {
@@ -89,7 +88,7 @@ $mobileSmall: 479.98px;
 }
 
 .inner-form {
-	padding: rem(32) rem(40);
+	padding: rem(32) rem(40) rem(60);
 	border-radius: 8px;
 	background-color: cl('dark_cards');
 	box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
@@ -198,6 +197,14 @@ $mobileSmall: 479.98px;
 			height: 8px;
 			background-color: cl('white_grey');
 			transform: rotate(45deg);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: rem(8);
+
+			@media (max-width: $mobile) {
+				margin-bottom: rem(6);
+			}
 		}
 	}
 }

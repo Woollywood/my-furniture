@@ -34,7 +34,7 @@
           clip-path: circle(42%);
 }
 .intro__logo-mask {
-  animation: spin 3s linear 2;
+  animation: spin 1.4s linear 2;
 }
 
 @keyframes spin {

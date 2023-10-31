@@ -4,6 +4,8 @@ $tablet: 991.98px;
 $mobile: 767.98px;
 $mobileSmall: 479.98px;
 
+@import 'mixins';
+
 $colors: (
 	'dark_cards': #1d2030,
 	'green': #6bbb41,
@@ -13,18 +15,6 @@ $colors: (
 	'black-title': #222,
 	'black-text': #111,
 );
-
-@function HexToRGB($hex) {
-	@return red($hex), green($hex), blue($hex);
-}
-
-@function cl($name, $opacity: false) {
-	@if $opacity {
-		@return rgba(var(--color-#{unquote($name)}--rgb), $opacity);
-	} @else {
-		@return var(--color-#{unquote($name)});
-	}
-}
 
 :root {
 	@if $colors {

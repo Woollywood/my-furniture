@@ -1,42 +1,42 @@
 @font-face {
   font-family: EBGaramond;
   font-display: swap;
-  src: url("../fonts/EBGaramond-Regular.woff2") format("woff2"), url("../fonts/EBGaramond-Regular.woff") format("woff");
+  src: url("../fonts/EBGaramond-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: Raleway;
   font-display: swap;
-  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff");
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -445,9 +445,14 @@ video {
   vertical-align: baseline;
 }
 
-/* make sure to set some focus styles for accessibility */
-:focus {
-  outline: 0;
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -551,13 +556,6 @@ html {
   font-size: 100%; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
-}
-
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-a:focus {
-  outline: thin dotted;
 }
 
 /**
@@ -836,186 +834,6 @@ h6 {
   font-size: inherit;
 }
 
-:root {
-  --color-dark_cards: #1d2030;
-  --color-dark_cards--rgb: 29, 32, 48;
-  --color-green: #6bbb41;
-  --color-green--rgb: 107, 187, 65;
-  --color-dark_grey: #474a5a;
-  --color-dark_grey--rgb: 71, 74, 90;
-  --color-white_grey: #e0e3e7;
-  --color-white_grey--rgb: 224, 227, 231;
-  --color-white: #fff;
-  --color-white--rgb: 255, 255, 255;
-  --color-black-title: #222;
-  --color-black-title--rgb: 34, 34, 34;
-  --color-black-text: #111;
-  --color-black-text--rgb: 17, 17, 17;
-}
-
-:root {
-  --page-background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-  	linear-gradient(131deg, #141824 10.39%, #252838 65.55%);
-  --content-width: 1552px;
-  --content-padding: 0 2.75em 0 1.625em;
-}
-@media (max-width: 1439.98px) {
-  :root {
-    --content-padding: 0 2.625em 0 1.625em;
-  }
-}
-@media (max-width: 479.98px) {
-  :root {
-    --content-padding: 0 0.875em;
-  }
-}
-
-:root {
-  --button-padding-x: 1.5em;
-  --button-padding-y: 1.125em;
-  --button-border-radius: 4px;
-  --button-box-shadow: 2px 4px 25px 0px rgba(132, 192, 178, 0.2);
-  --button-font-size: 1rem;
-  --button-text-color: var(--color-white);
-  --button-gap: 0.5em;
-  --button-hover-background-color: #81dd51;
-  --button-hover-box-shadow: 2px 4px 52px 0px rgba(77, 244, 124, 0.24);
-}
-@media (max-width: 1099.98px) {
-  :root {
-    --button-padding-x: 1em;
-  }
-}
-
-:root {
-  --tab-padding-x: 1.5em;
-  --tab-padding-bottom: 0.75em;
-  --tab-text-size: 1.25rem;
-  --tab-text-weight: 500;
-  --tab-text-color: var(--color-white_grey);
-  --tab-hover-text-color: var(--color-green);
-}
-
-:root {
-  --checkbox-width: 24px;
-  --checkbox-height: 24px;
-  --checkbox-border-radius: 2px;
-  --checkbox-border: 1px;
-  --checkbox-border-color: var(--color-dark_grey);
-  --checkbox-hover-border-color: var(--color-green);
-  --checkbox-hover-filter: drop-shadow(0px 0px 5px rgba(144, 255, 169, 0.25));
-}
-
-:root {
-  --select-border: 1px;
-  --select-border-color: var(--color-dark_grey);
-  --select-hover-border-color: var(--color-green);
-  --select-border-radius: 4px;
-  --select-body-padding-x: 16px;
-  --select-body-padding-y: 14px;
-  --select-body-gap: 40px;
-  --select-cell-padding-x: 16px;
-  --select-cell-padding-y: 10px;
-  --select-cell-background: var(--color-dark_cards);
-  --select-cell-border-color: var(--color-green);
-  --select-text-color: var(--color-white_grey);
-  --select-text-size: 16px;
-  --select-icon-color: var(--color-white_grey);
-  --select-hover-icon-color: var(--color-green);
-  --select-hover-color: var(--color-green);
-  --select-hover-box-shadow: 0px 0px 5px 0px rgba(144, 255, 169, 0.25);
-  --select-hover-cell-background: var(--color-dark_grey);
-}
-
-:root {
-  --accordion-title-text-color: var(--color-white_grey);
-  --accordion-title-text-size: 1rem;
-  --accordion-title-gap: 2em;
-  --accordion-padding-x: 1em;
-  --accordion-padding-bottom: 2em;
-  --accordion-panel-padding-top: 1.5em;
-  --accordion-border-color: rgba(189, 225, 231, 0.1);
-  --accordion-open-title-text-color: var(--color-green);
-  --accordion-open-title-text-size: 1.25rem;
-}
-@media (max-width: 1439.98px) {
-  :root {
-    --accordion-padding-bottom: 1.5em;
-  }
-}
-@media (max-width: 1099.98px) {
-  :root {
-    --accordion-padding-bottom: 16px;
-    --accordion-title-text-size: 14px !important;
-  }
-}
-@media (max-width: 767.98px) {
-  :root {
-    --accordion-padding-x: 0 !important;
-    --accordion-padding-bottom: 0.75em;
-    --accordion-panel-padding-top: 0.75em !important;
-    --accordion-title-text-size: 0.75rem !important;
-  }
-}
-
-:root {
-  --title-color: var(--color-black-title);
-  --h1-size: 4.5rem;
-  --h1-weight: 800;
-  --h1-line-height: 89%;
-  --h2-size: 4rem;
-  --h2-weight: 800;
-  --h2-line-height: 100%;
-  --h3-size: 1.5rem;
-  --h3-weight: 500;
-  --h3-line-height: normal;
-  --h4-size: 1.25rem;
-  --h4-weight: 500;
-  --h4-line-height: normal;
-  --text-accent-color: var(--color-black-title);
-  --text-accent-size: 1.125rem;
-  --text-accent-weight: 700;
-  --text-body-color: var(--color-black-text);
-  --text-body-size: 1rem;
-  --text-body-mini-size: 0.875rem;
-  --text-body-weight: 400;
-  --text-body-line-height: normal;
-}
-@media (max-width: 1439.98px) {
-  :root {
-    --h1-size: 4rem;
-    --h2-size: 3.5rem;
-  }
-}
-@media (max-width: 1099.98px) {
-  :root {
-    --h1-size: 3.5rem;
-    --h2-size: 2.8125rem;
-    --h3-size: 1.125rem;
-    --h4-size: 1rem;
-    --text-accent-size: 1rem;
-    --text-body-size: 0.875rem;
-    --text-body-mini-size: 0.75rem;
-  }
-}
-@media (max-width: 767.98px) {
-  :root {
-    --h1-size: 1.75rem;
-    --h2-size: 1.5rem;
-    --text-accent-size: 0.875;
-    --text-body-size: 0.75rem;
-    --text-body-mini-size: 0.625rem;
-  }
-}
-
-body .wrapper {
-  animation: appearance 1.5s ease;
-}
-body.loading .wrapper {
-  animation: none;
-  opacity: 0;
-}
-
 @keyframes appearance {
   from {
     opacity: 0;
@@ -1029,6 +847,7 @@ body.loading .wrapper {
   font-family: Montserrat, sans-serif;
   line-height: normal;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .button-primary {
@@ -1260,6 +1079,7 @@ body.loading .wrapper {
   font-weight: 500;
 }
 .accordion__header-icon {
+  flex: 0 0 32px;
   stroke: var(--accordion-title-text-color);
   transform: rotate(0);
   transition: all 0.6s ease;
@@ -1485,5 +1305,12 @@ p {
   border-radius: 4px;
   border: 1px solid rgba(189, 225, 231, 0.1);
   background-color: transparent;
-  color: var(--color-white);
+  transition: all 0.3s ease;
+  color: var(--color-white_grey);
+}
+.input:hover {
+  border: 1px solid var(--color-green);
+}
+.input:focus {
+  border: 1px solid var(--color-green);
 }
