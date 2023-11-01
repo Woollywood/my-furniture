@@ -1368,8 +1368,6 @@ function getHeaderHeight() {
 	document.documentElement.style.cssText += `--header-height: ${header.offsetHeight}px`;
 }
 
-gsapAnimationInit();
-
 function gsapAnimationInit() {
 	mainBlock();
 	section2();

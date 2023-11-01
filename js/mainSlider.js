@@ -1,8 +1,6 @@
-const DURATION = 800;
-
-const mainSlider = new Splide('#main-slider', {
-	type: 'slide',
-	speed: DURATION,
+const mainSliderBackground = new Splide('#main-slider-background', {
+	type: 'loop',
+	speed: 800,
 	perPage: 1,
 	autoplay: true,
 	interval: 3000,
@@ -14,27 +12,11 @@ const mainSlider = new Splide('#main-slider', {
 	},
 });
 
-const mainSliderList = document.querySelector('.main-slider__list');
-const mainSliderPeople = document.querySelector('.main-slider__people-bg');
-
-const sliderMovingObserver = new MutationObserver((e) => {
-	const style = mainSliderList.style.transform;
-	const styleValue = Number.parseFloat(style.slice(style.indexOf('(') + 1, -1));
-	mainSliderPeople.style.left = `calc(50% + ${-styleValue}px)`;
+const mainSliderForeground = new Splide('#main-slider-foreground', {
+	type: 'fade',
+	speed: 800,
+	perPage: 1,
 });
 
-mainSlider.on('move', () => {
-	mainSliderPeople.style.cssText = 'transition: left 0.3s linear;';
-});
-
-mainSlider.on('moved', () => {
-	mainSliderPeople.style.cssText = '';
-});
-
-sliderMovingObserver.observe(mainSliderList, {
-	childList: true,
-	attributes: true,
-	attributeFilter: ['style'],
-});
-
-mainSlider.mount();
+mainSliderForeground.mount();
+mainSliderBackground.mount().sync(mainSliderForeground);
