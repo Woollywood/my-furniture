@@ -27,7 +27,7 @@ $mobileSmall: 479.98px;
 			--width: 64px;
 		}
 
-		position: absolute;
+		position: fixed;
 		top: calc(50% - (var(--width) / 2));
 		left: calc(50% - (var(--width) / 2));
 		transform: scale(2.2);

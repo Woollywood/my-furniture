@@ -4,7 +4,7 @@
 }
 .intro__logo, .intro__logo-mask {
   --width: 100px;
-  position: absolute;
+  position: fixed;
   top: calc(50% - var(--width) / 2);
   left: calc(50% - var(--width) / 2);
   transform: scale(2.2);
