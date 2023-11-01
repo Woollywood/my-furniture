@@ -112,6 +112,9 @@ $mobileSmall: 479.98px;
 	}
 
 	&__button {
+		position: relative;
+		z-index: 1;
+
 		.span--desktop {
 			@media (max-width: $tablet) {
 				display: none;
@@ -175,7 +178,7 @@ $mobileSmall: 479.98px;
 
 			position: absolute;
 			right: 0;
-			top: calc(100% + rem(4));
+			top: calc(100% + rem(20));
 			box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
 		}
 		background: cl('dark_cards');

@@ -84,6 +84,10 @@
   gap: 3.5rem;
   align-items: center;
 }
+.header__button {
+  position: relative;
+  z-index: 1;
+}
 @media (max-width: 991.98px) {
   .header__button .span--desktop {
     display: none;
@@ -129,7 +133,7 @@
   .menu__body {
     position: absolute;
     right: 0;
-    top: calc(100% + 0.25rem);
+    top: calc(100% + 1.25rem);
     box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
   }
   .menu__body:not(.menu-open .menu__body) {

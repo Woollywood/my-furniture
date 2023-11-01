@@ -88,22 +88,41 @@ $mobileSmall: 479.98px;
 }
 
 .inner-form {
-	padding: rem(32) rem(40) rem(60);
+	--height: 394px;
+	--padding-top: 2rem;
+	--padding-x: 2.5rem;
+	--padding-bottom: 3.75rem;
+	--navigation-margin-bottom: 2rem;
+	--navigation-padding-bottom: 0.5rem;
+	--scroll-width: 0.25rem;
+
+	padding: var(--padding-top) calc(var(--padding-x) - var(--scroll-width)) var(--padding-bottom) var(--padding-x);
 	border-radius: 8px;
 	background-color: cl('dark_cards');
 	box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
 	max-width: 760px;
+	height: var(--height);
+	overflow: hidden;
 
 	@media (max-width: $desktop) {
+		--height: 386px;
 		max-width: 632px;
 	}
 
 	@media (max-width: $desktopLow) {
-		padding: rem(32) rem(32) rem(49);
+		--height: 336px;
+		--padding-top: 2rem;
+		--padding-x: 2rem;
+		--padding-bottom: 3.0625rem;
+		--navigation-margin-bottom: 1.5rem;
 	}
 
 	@media (max-width: $mobile) {
-		padding: rem(24) rem(24) rem(54);
+		--height: 312px;
+		--padding-top: 1.5rem;
+		--padding-x: 1.5rem;
+		--padding-bottom: 3.375rem;
+		--navigation-margin-bottom: 1rem;
 	}
 
 	@media (max-width: $mobileLow) {
@@ -122,20 +141,44 @@ $mobileSmall: 479.98px;
 		overflow: auto;
 
 		@media (max-width: $mobileLow) {
-			padding-bottom: rem(8);
+			padding-bottom: var(--navigation-padding-bottom);
 		}
 
 		&:not(:last-child) {
-			margin-bottom: rem(32);
-
-			@media (max-width: $desktopLow) {
-				margin-bottom: rem(24);
-			}
-
-			@media (max-width: $mobile) {
-				margin-bottom: rem(16);
-			}
+			margin-bottom: var(--navigation-margin-bottom);
 		}
+	}
+
+	&__tab-body {
+		position: relative;
+		z-index: 1;
+		padding-right: var(--scroll-width);
+
+		max-height: calc(
+			var(--height) -
+				(
+					var(--padding-top) + var(--padding-bottom) + var(--navigation-margin-bottom) +
+						var(--navigation-height)
+				)
+		);
+
+		&::-webkit-scrollbar {
+			width: var(--scroll-width); /* ширина всей полосы прокрутки */
+		}
+
+		&::-webkit-scrollbar-track {
+			background: transparent; /* цвет зоны отслеживания */
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: cl('white_grey');
+			border-radius: 20px;
+		}
+
+		overflow: auto;
+	}
+
+	&__tab-content {
 	}
 
 	&__tab {
@@ -192,7 +235,7 @@ $mobileSmall: 479.98px;
 		align-items: center;
 
 		&::before {
-			content: "";
+			content: '';
 			width: 8px;
 			height: 8px;
 			background-color: cl('white_grey');
