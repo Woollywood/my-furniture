@@ -1386,14 +1386,14 @@ function gsapAnimationInit() {
 	function mainBlock() {
 		const mm = gsap.matchMedia();
 		mm.add('(min-width: 767.98px)', () => {
-			const peopleList = document.querySelectorAll('.main-slider__people-bg');
+			const people = document.querySelector('.main-slider__people-bg');
 			const subTitleList = document.querySelectorAll('.main-slider__slide-subtitle');
 			const titleList = document.querySelectorAll('.main-slider__slide-title');
 
 			const timeline = gsap.timeline();
 
 			timeline
-				.from(peopleList, {
+				.from(people, {
 					yPercent: 20,
 					duration: 0.6,
 					ease: 'power4.out',

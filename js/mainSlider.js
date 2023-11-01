@@ -1,6 +1,8 @@
+const DURATION = 800;
+
 const mainSlider = new Splide('#main-slider', {
 	type: 'slide',
-	speed: 800,
+	speed: DURATION,
 	perPage: 1,
 	autoplay: true,
 	interval: 3000,
@@ -19,6 +21,14 @@ const sliderMovingObserver = new MutationObserver((e) => {
 	const style = mainSliderList.style.transform;
 	const styleValue = Number.parseFloat(style.slice(style.indexOf('(') + 1, -1));
 	mainSliderPeople.style.left = `calc(50% + ${-styleValue}px)`;
+});
+
+mainSlider.on('move', () => {
+	mainSliderPeople.style.cssText = 'transition: left 0.3s linear;';
+});
+
+mainSlider.on('moved', () => {
+	mainSliderPeople.style.cssText = '';
 });
 
 sliderMovingObserver.observe(mainSliderList, {
