@@ -33,8 +33,11 @@
   -webkit-clip-path: circle(42%);
           clip-path: circle(42%);
 }
-.intro__logo-mask.animation {
-  animation: spin 1.4s linear 2;
+.intro__logo-mask {
+  animation: spin 1.4s linear infinite;
+}
+.intro__logo-mask.loaded {
+  animation: spin 1.4s linear 1;
 }
 
 @keyframes spin {

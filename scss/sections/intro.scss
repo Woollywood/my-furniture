@@ -45,8 +45,10 @@ $mobileSmall: 479.98px;
 	}
 
 	&__logo-mask {
-		&.animation {
-			animation: spin 1.4s linear 2;
+		animation: spin 1.4s linear infinite;
+
+		&.loaded {
+			animation: spin 1.4s linear 1;
 		}
 	}
 }
