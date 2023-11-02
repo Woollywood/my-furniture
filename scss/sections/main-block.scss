@@ -143,6 +143,7 @@ $mobileSmall: 479.98px;
 		pointer-events: none;
 		position: absolute;
 		z-index: 1;
+		width: 100%;
 		top: 0;
 		left: 0;
 
@@ -168,6 +169,7 @@ $mobileSmall: 479.98px;
 	}
 
 	&__slide {
+		width: 100vw;
 	}
 
 	&__slide-body {

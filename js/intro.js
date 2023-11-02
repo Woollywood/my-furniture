@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			scale: 1,
 
 			onComplete: () => {
+				console.log('complete');
+
 				document.body.classList.remove('loading');
 				intro.remove();
 				bodyLockToggle();

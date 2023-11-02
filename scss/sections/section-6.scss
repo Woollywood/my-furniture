@@ -93,7 +93,6 @@ $mobileSmall: 479.98px;
 	--padding-x: 2.5rem;
 	--padding-bottom: 3.75rem;
 	--navigation-margin-bottom: 2rem;
-	--navigation-padding-bottom: 0.5rem;
 	--scroll-width: 0.25rem;
 
 	padding: var(--padding-top) calc(var(--padding-x) - var(--scroll-width)) var(--padding-bottom) var(--padding-x);
@@ -140,12 +139,24 @@ $mobileSmall: 479.98px;
 		justify-content: space-between;
 		overflow: auto;
 
-		@media (max-width: $mobileLow) {
-			padding-bottom: var(--navigation-padding-bottom);
+		@media (min-width: $mobileLow) {
+			&:not(:last-child) {
+				margin-bottom: var(--navigation-margin-bottom);
+			}
 		}
 
-		&:not(:last-child) {
-			margin-bottom: var(--navigation-margin-bottom);
+		&::-webkit-scrollbar {
+			width: 0;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: transparent;
+			border-radius: 20px;
+			border: 0;
 		}
 	}
 
@@ -161,6 +172,10 @@ $mobileSmall: 479.98px;
 						var(--navigation-height)
 				)
 		);
+
+		@media (max-width: $mobileLow) {
+			max-height: calc(var(--height) - (var(--padding-top) + var(--padding-bottom) + var(--navigation-height)));
+		}
 
 		&::-webkit-scrollbar {
 			width: var(--scroll-width); /* ширина всей полосы прокрутки */
