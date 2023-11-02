@@ -24,7 +24,16 @@
     align-items: center;
     justify-content: space-between;
     overflow: auto;
-    padding-bottom: 0.75rem;
+  }
+  .section-9__tabs-navigation::-webkit-scrollbar {
+    width: 0;
+  }
+  .section-9__tabs-navigation::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .section-9__tabs-navigation::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: 0;
   }
 }
 .section-9__tabs-navigation:not(:last-child) {
@@ -38,6 +47,11 @@
 @media (max-width: 1099.98px) {
   .section-9__tabs-navigation:not(:last-child) {
     margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 559.98px) {
+  .section-9__tabs-navigation:not(:last-child) {
+    margin-bottom: 0.5rem;
   }
 }
 .section-9__tabs-title {

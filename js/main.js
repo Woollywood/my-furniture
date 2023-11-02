@@ -1468,39 +1468,48 @@ function gsapAnimationInit() {
 	}
 
 	function section7() {
+		const mm = gsap.matchMedia();
 		const section = document.querySelector('.section-7');
 		const textWrapper = section.querySelector('.section-7__text-wrapper');
 		const icons = section.querySelectorAll('.section-7__item-icon');
+		mm.add('(min-width: 767.98px)', () => {
+			gsap.set(icons, {
+				opacity: 0,
+			});
 
-		gsap.set(icons, {
-			opacity: 0,
+			gsap.from(textWrapper, {
+				x: -160,
+				opacity: 0,
+				scrollTrigger: {
+					trigger: section,
+					start: 'top 60%',
+				},
+
+				onComplete: () => {
+					gsap.fromTo(
+						icons,
+						{
+							stagger: 0.1,
+							opacity: 0,
+							scale: 2.2,
+							webkitFilter: 'blur(2px)',
+						},
+						{
+							stagger: 0.1,
+							opacity: 1,
+							scale: 1,
+							webkitFilter: 'blur(0px)',
+						}
+					);
+				},
+			});
 		});
-
-		gsap.from(textWrapper, {
-			x: -160,
-			opacity: 0,
-			scrollTrigger: {
-				trigger: section,
-				start: 'top 60%',
-			},
-
-			onComplete: () => {
-				gsap.fromTo(
-					icons,
-					{
-						stagger: 0.1,
-						opacity: 0,
-						scale: 2.2,
-						webkitFilter: 'blur(2px)',
-					},
-					{
-						stagger: 0.1,
-						opacity: 1,
-						scale: 1,
-						webkitFilter: 'blur(0px)',
-					}
-				);
-			},
+		mm.add('(max-width: 767.98px)', () => {
+			gsap.set(icons, {
+				opacity: 1,
+				scale: 1,
+				webkitFilter: 'blur(0px)',
+			});
 		});
 	}
 
