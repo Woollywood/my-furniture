@@ -79,14 +79,15 @@ $mobileSmall: 479.98px;
 			@media (max-width: $desktopLow) {
 				margin-bottom: rem(24);
 			}
-			@media (max-width: $mobileLow) {
-				margin-bottom: rem(8);
-			}
 		}
 	}
 
 	&__tabs-title {
 		white-space: nowrap;
+
+		@media (max-width: $desktopLow) {
+			font-size: 16px;
+		}
 	}
 
 	&__tabs-content {

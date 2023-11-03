@@ -122,10 +122,8 @@
   justify-content: space-between;
   overflow: auto;
 }
-@media (min-width: 559.98px) {
-  .inner-form__tabs:not(:last-child) {
-    margin-bottom: var(--navigation-margin-bottom);
-  }
+.inner-form__tabs:not(:last-child) {
+  margin-bottom: var(--navigation-margin-bottom);
 }
 .inner-form__tabs::-webkit-scrollbar {
   width: 0;
@@ -144,11 +142,6 @@
   padding-right: var(--scroll-width);
   max-height: calc(var(--height) - (var(--padding-top) + var(--padding-bottom) + var(--navigation-margin-bottom) + var(--navigation-height)));
   overflow: auto;
-}
-@media (max-width: 559.98px) {
-  .inner-form__tab-body {
-    max-height: calc(var(--height) - (var(--padding-top) + var(--padding-bottom) + var(--navigation-height)));
-  }
 }
 .inner-form__tab-body::-webkit-scrollbar {
   width: var(--scroll-width); /* ширина всей полосы прокрутки */

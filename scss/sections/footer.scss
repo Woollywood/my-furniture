@@ -121,6 +121,10 @@ $mobileSmall: 479.98px;
 			font-size: rem(14);
 		}
 
+		@media (max-width: $mobile) {
+			font-size: rem(12);
+		}
+
 		@media (min-width: $mobile) {
 			white-space: nowrap;
 		}
@@ -131,6 +135,10 @@ $mobileSmall: 479.98px;
 	
 		@media (max-width: $desktopLow) {
 			font-size: rem(14);
+		}
+
+		@media (max-width: $mobile) {
+			font-size: rem(12);
 		}
 
 		@media (min-width: $mobile) {

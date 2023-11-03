@@ -139,10 +139,8 @@ $mobileSmall: 479.98px;
 		justify-content: space-between;
 		overflow: auto;
 
-		@media (min-width: $mobileLow) {
-			&:not(:last-child) {
-				margin-bottom: var(--navigation-margin-bottom);
-			}
+		&:not(:last-child) {
+			margin-bottom: var(--navigation-margin-bottom);
 		}
 
 		&::-webkit-scrollbar {
@@ -172,10 +170,6 @@ $mobileSmall: 479.98px;
 						var(--navigation-height)
 				)
 		);
-
-		@media (max-width: $mobileLow) {
-			max-height: calc(var(--height) - (var(--padding-top) + var(--padding-bottom) + var(--navigation-height)));
-		}
 
 		&::-webkit-scrollbar {
 			width: var(--scroll-width); /* ширина всей полосы прокрутки */

@@ -49,13 +49,13 @@
     margin-bottom: 1.5rem;
   }
 }
-@media (max-width: 559.98px) {
-  .section-9__tabs-navigation:not(:last-child) {
-    margin-bottom: 0.5rem;
-  }
-}
 .section-9__tabs-title {
   white-space: nowrap;
+}
+@media (max-width: 1099.98px) {
+  .section-9__tabs-title {
+    font-size: 16px;
+  }
 }
 .section-9__slider .splide__pagination {
   display: none;
