@@ -1167,7 +1167,7 @@ p {
   font-size: var(--text-body-mini-size);
 }
 
-.lock body {
+.lock, body.loading {
   overflow: hidden;
   touch-action: none;
   overscroll-behavior: none;

@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 	const intro = document.querySelector('.intro');
-	bodyLockToggle();
 	scrollTo(0, 0);
 
 	const logo = document.querySelector('.intro__logo');
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			onComplete: () => {
 				document.body.classList.remove('loading');
 				intro.remove();
-				bodyLockToggle();
 
 				gsapAnimationInit();
 			},

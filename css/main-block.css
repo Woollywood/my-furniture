@@ -145,6 +145,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 559.98px) {
+  .main-slider__slide-body {
+    background-position: 54%;
+  }
+}
 .main-slider__content-wrapper {
   position: relative;
   z-index: 5;

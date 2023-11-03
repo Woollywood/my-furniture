@@ -7,8 +7,11 @@ $mobileSmall: 479.98px;
 
 .intro {
 	&__body {
+		position: fixed;
+		top: 0;
+		left: 0;
 		height: 100vh;
-		width: 100%;
+		width: 100vw;
 	}
 
 	&__logo,
@@ -27,7 +30,7 @@ $mobileSmall: 479.98px;
 			--width: 64px;
 		}
 
-		position: fixed;
+		position: absolute;
 		top: calc(50% - (var(--width) / 2));
 		left: calc(50% - (var(--width) / 2));
 		transform: scale(2.2);
