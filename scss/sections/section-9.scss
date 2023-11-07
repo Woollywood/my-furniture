@@ -86,7 +86,7 @@ $mobileSmall: 479.98px;
 		white-space: nowrap;
 
 		@media (max-width: $desktopLow) {
-			font-size: 16px;
+			font-size: 16px !important;
 		}
 	}
 
@@ -188,13 +188,22 @@ $mobileSmall: 479.98px;
 		bottom: rem(24);
 		left: rem(32);
 
+		@media (max-width: $desktopLow) {
+			left: rem(24);
+		}
+
+		@media (max-width: $mobile) {
+			bottom: rem(16);
+			left: rem(16);
+		}
+
 		display: flex;
 		gap: rem(10);
 		align-items: center;
 
-		border-radius: 4px;
-		background: rgba(107, 187, 65, 0.6);
-		box-shadow: 2px 4px 25px 0px rgba(132, 192, 178, 0.2);
+		border-radius: 4px !important;
+		background: rgba(107, 187, 65, 0.6) !important;
+		box-shadow: 2px 4px 25px 0px rgba(132, 192, 178, 0.2) !important;
 
 		img {
 			flex: 0 0 12px;

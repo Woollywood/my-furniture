@@ -127,8 +127,9 @@ $colors: (
 	}
 
 	@media (max-width: $desktopLow) {
-		--accordion-padding-bottom: 16px;
-		--accordion-title-text-size: 14px !important;
+		--accordion-padding-bottom: 1em;
+		--accordion-title-text-size: 0.875rem;
+		--accordion-open-title-text-size: 1rem;
 	}
 
 	@media (max-width: $mobile) {

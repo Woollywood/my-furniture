@@ -62,7 +62,7 @@
   justify-content: center;
 }
 .section-6__background {
-  position: absolute;
+  position: absolute !important;
   z-index: -1;
   top: 0;
   left: 0;
@@ -154,17 +154,17 @@
   border-radius: 20px;
 }
 .inner-form__tab {
-  font-size: 1rem;
+  font-size: 1rem !important;
   font-weight: 400;
 }
 @media (max-width: 1099.98px) {
   .inner-form__tab {
-    font-size: 0.875rem;
+    font-size: 0.875rem !important;
   }
 }
 @media (max-width: 767.98px) {
   .inner-form__tab {
-    font-size: 0.75rem;
+    font-size: 0.75rem !important;
     gap: 1.5rem;
   }
 }
@@ -182,7 +182,7 @@
   }
 }
 .inner-form__list-title {
-  color: var(--color-wwhite_grey);
+  color: var(--color-wwhite_grey) !important;
 }
 .inner-form__list-title:not(:last-child) {
   margin-bottom: 1.5rem;

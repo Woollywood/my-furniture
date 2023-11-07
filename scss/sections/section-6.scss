@@ -78,7 +78,7 @@ $mobileSmall: 479.98px;
 	}
 
 	&__background {
-		position: absolute;
+		position: absolute !important;
 		z-index: -1;
 		top: 0;
 		left: 0;
@@ -191,15 +191,15 @@ $mobileSmall: 479.98px;
 	}
 
 	&__tab {
-		font-size: rem(16);
+		font-size: rem(16) !important;
 		font-weight: 400;
 
 		@media (max-width: $desktopLow) {
-			font-size: rem(14);
+			font-size: rem(14) !important;
 		}
 
 		@media (max-width: $mobile) {
-			font-size: rem(12);
+			font-size: rem(12) !important;
 			gap: rem(24);
 		}
 	}
@@ -221,7 +221,7 @@ $mobileSmall: 479.98px;
 	}
 
 	&__list-title {
-		color: cl('wwhite_grey');
+		color: cl('wwhite_grey') !important;
 
 		&:not(:last-child) {
 			margin-bottom: rem(24);

@@ -193,7 +193,7 @@
   }
 }
 .main-slider__people-bg {
-  position: absolute;
+  position: absolute !important;
   z-index: 2;
   bottom: 0;
   left: 50%;
