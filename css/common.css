@@ -1194,6 +1194,9 @@ p {
   margin: 0 auto;
   padding: var(--content-padding);
 }
+._container > * {
+  box-sizing: border-box;
+}
 
 ._ibg {
   position: relative;

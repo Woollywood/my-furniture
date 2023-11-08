@@ -494,6 +494,10 @@ p {
 	max-width: var(--content-width);
 	margin: 0 auto;
 	padding: var(--content-padding);
+
+	> * {
+		box-sizing: border-box;
+	}
 }
 
 ._ibg {
