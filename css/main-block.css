@@ -138,7 +138,7 @@
   pointer-events: auto;
 }
 .main-slider__slide {
-  width: 100vw;
+  width: 100dvw !important;
 }
 .main-slider__slide-body {
   min-height: 100vh;
