@@ -207,6 +207,7 @@
   width: 8px;
   height: 8px;
   background-color: var(--color-white_grey);
+  transform-origin: bottom right;
   transform: rotate(45deg);
 }
 .inner-form__list-item:not(:last-child) {

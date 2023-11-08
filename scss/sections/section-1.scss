@@ -44,7 +44,7 @@ $mobileSmall: 479.98px;
 	&__content-wrapper {
 		display: grid;
 		row-gap: rem(32);
-		column-gap: rem(80);
+		column-gap: rem(56);
 		grid-template-columns: repeat(2, 1fr);
 
 		@media (max-width: $desktop) {
@@ -97,7 +97,7 @@ $mobileSmall: 479.98px;
 	&__card-text-wrapper {
 		position: relative;
 		z-index: 1;
-		margin-right: rem(132);
+		margin-right: rem(108);
 		border-radius: 8px;
 		background: cl('dark_cards');
 		box-shadow: 3px 11px 50px 0px rgba(0, 0, 0, 0.25);
@@ -106,7 +106,7 @@ $mobileSmall: 479.98px;
 
 		@media (max-width: $desktop) {
 			padding: rem(28) rem(40);
-			margin-right: rem(120);
+			margin-right: rem(96);
 		}
 
 		@media (max-width: $desktopLow) {

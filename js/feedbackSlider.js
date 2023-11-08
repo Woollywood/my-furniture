@@ -18,4 +18,15 @@ const feedbackSlider = new Splide('#feedback-slider', {
 	},
 });
 
+feedbackSlider.on('mounted', () => {
+	const slider = document.querySelector('#feedback-slider')
+	const arrowPrev = slider.querySelector('.slider__arrow-prev');
+	const arrowNext = slider.querySelector('.slider__arrow-next');
+
+	const arrowPrevReal = document.querySelector('.section-10__slider-controlls--real .slider__arrow-prev');
+	const arrowNextReal = document.querySelector('.section-10__slider-controlls--real .slider__arrow-next');
+	arrowPrevReal.addEventListener('click', e => arrowPrev.click())
+	arrowNextReal.addEventListener('click', e => arrowNext.click())
+})
+
 feedbackSlider.mount();

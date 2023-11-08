@@ -37,6 +37,10 @@ $mobileSmall: 479.98px;
 	}
 
 	&__text {
+		max-width: 1156px;
+		@media (max-width: $desktop) {
+			max-width: 1010px;
+		}
 	}
 
 	&__content {
@@ -142,6 +146,7 @@ $mobileSmall: 479.98px;
 
 		button {
 			position: static;
+			transform: translate(0) !important;
 		}
 	}
 }

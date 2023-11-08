@@ -1189,6 +1189,7 @@ p {
 }
 
 ._container {
+  box-sizing: content-box;
   max-width: var(--content-width);
   margin: 0 auto;
   padding: var(--content-padding);
@@ -1278,8 +1279,8 @@ p {
 .splide__pagination li button.is-active::after {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -4px;
+  top: -5px;
+  left: -5px;
   width: 16px;
   height: 16px;
   border-radius: 50%;

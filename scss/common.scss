@@ -490,6 +490,7 @@ p {
 }
 
 ._container {
+	box-sizing: content-box;
 	max-width: var(--content-width);
 	margin: 0 auto;
 	padding: var(--content-padding);
@@ -576,8 +577,8 @@ p {
 			&::after {
 				content: '';
 				position: absolute;
-				top: calc((16px - 8px) / 2 * -1);
-				left: calc((16px - 8px) / 2 * -1);
+				top: calc(((16px - 8px) / 2 * -1) - 1px);
+				left: calc(((16px - 8px) / 2 * -1) - 1px);
 				width: 16px;
 				height: 16px;
 				border-radius: 50%;

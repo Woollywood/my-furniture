@@ -54,7 +54,7 @@ $mobileSmall: 479.98px;
 	}
 
 	&__background {
-		position: absolute;
+		position: absolute !important;
 		z-index: -1;
 		top: 0;
 		left: 0;
@@ -68,13 +68,16 @@ $mobileSmall: 479.98px;
 		}
 
 		&:not(:last-child) {
-			margin-bottom: rem(80);
+			padding-bottom: rem(54);
+			margin-bottom: rem(26);
 
 			@media (max-width: $desktop) {
-				margin-bottom: rem(64);
+				padding-bottom: calc(rem(32) + rem(8));
+				margin-bottom: calc(rem(32) - rem(8));
 			}
 			@media (max-width: $desktopLow) {
-				margin-bottom: rem(48);
+				padding-bottom: calc(rem(24) + rem(8));
+				margin-bottom: calc(rem(24) - rem(8));
 			}
 			@media (max-width: $mobile) {
 				margin-bottom: rem(24);
@@ -82,7 +85,7 @@ $mobileSmall: 479.98px;
 		}
 
 		@media (max-width: $mobile) {
-			padding-bottom: calc(rem(24) + rem(16));
+			padding-bottom: calc(rem(24) + rem(16)) !important;
 		}
 
 		.splide__pagination {

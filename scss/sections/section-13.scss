@@ -15,7 +15,7 @@ $mobileSmall: 479.98px;
 		@media (min-width: $mobile) {
 			display: grid;
 			gap: rem(164);
-			grid-template-columns: 1fr 60%;
+			grid-template-columns: 1fr 58%;
 
 			@media (max-width: $desktop) {
 				grid-template-columns: 1fr 50%;

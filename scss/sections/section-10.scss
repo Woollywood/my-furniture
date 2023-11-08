@@ -71,10 +71,17 @@ $mobileSmall: 479.98px;
 	}
 
 	&__slider-track {
+		position: relative;
 		overflow: visible;
+
+		.section-10__slider-controlls {
+			opacity: 0;
+			visibility: hidden;
+		}
 	}
 
 	&__slider-list {
+		
 	}
 
 	&__slide {
@@ -110,17 +117,25 @@ $mobileSmall: 479.98px;
 		align-items: center;
 		gap: rem(40);
 
-		position: absolute;
-		z-index: 1;
-		top: calc(100% + rem(76));
-		right: 0;
-
 		button {
 			position: static;
+			transform: translate(0);
 		}
 	}
 
-	&__action {
+	&__action-wrapper {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: rem(36);
+		justify-content: space-between;
+
+		@media (max-width: $mobile) {
+			justify-content: center;
+		}
+	}
+
+	&__actions {
 		display: flex;
 		gap: rem(40);
 		align-items: center;

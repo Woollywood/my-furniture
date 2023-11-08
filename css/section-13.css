@@ -2,7 +2,7 @@
   .section-13__body {
     display: grid;
     gap: 10.25rem;
-    grid-template-columns: 1fr 60%;
+    grid-template-columns: 1fr 58%;
   }
 }
 @media (min-width: 767.98px) and (max-width: 1439.98px) {
