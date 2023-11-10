@@ -244,5 +244,5 @@
   }
 }
 .feedback-slide__author-name {
-  color: var(--color-white_grey);
+  color: var(--color-white_grey) !important;
 }

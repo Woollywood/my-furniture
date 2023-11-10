@@ -578,16 +578,18 @@ p {
 			position: relative;
 			background-color: cl('white_grey');
 
-			&::after {
-				content: '';
-				position: absolute;
-				top: calc(((16px - 8px) / 2 * -1) - 1px);
-				left: calc(((16px - 8px) / 2 * -1) - 1px);
-				width: 16px;
-				height: 16px;
-				border-radius: 50%;
-				background-color: transparent;
-				border: 1px solid cl('white_grey');
+			@media (max-width: $mobileLow) {
+				&::after {
+					content: '';
+					position: absolute;
+					top: calc(((16px - 8px) / 2 * -1) - 1px);
+					left: calc(((16px - 8px) / 2 * -1) - 1px);
+					width: 16px;
+					height: 16px;
+					border-radius: 50%;
+					background-color: transparent;
+					border: 1px solid cl('white_grey');
+				}
 			}
 		}
 
@@ -597,6 +599,12 @@ p {
 			background-color: cl('green');
 			transform: scale(1);
 		}
+	}
+}
+
+@media (max-width: $mobileLow) {
+	.section-1__text br {
+		display: none;
 	}
 }
 
