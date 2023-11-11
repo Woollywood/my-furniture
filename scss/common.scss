@@ -582,8 +582,8 @@ p {
 				&::after {
 					content: '';
 					position: absolute;
-					top: calc(((16px - 8px) / 2 * -1) - 1px);
-					left: calc(((16px - 8px) / 2 * -1) - 1px);
+					top: -4px;
+					left: -4px;
 					width: 16px;
 					height: 16px;
 					border-radius: 50%;
