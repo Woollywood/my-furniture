@@ -2,8 +2,8 @@ const mainSliderBackground = new Splide('#main-slider-background', {
 	type: 'loop',
 	speed: 800,
 	perPage: 1,
-	// autoplay: true,
-	// interval: 3000,
+	autoplay: true,
+	interval: 3000,
 	classes: {
 		arrows: 'splide__arrows main-slider__controlls',
 		arrow: 'splide__arrow main-slider__arrow',
