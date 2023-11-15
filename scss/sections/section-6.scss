@@ -162,6 +162,7 @@ $mobileSmall: 479.98px;
 		position: relative;
 		z-index: 1;
 		padding-right: var(--scroll-width);
+		overflow: auto;
 
 		max-height: calc(
 			var(--height) -
@@ -184,7 +185,8 @@ $mobileSmall: 479.98px;
 			border-radius: 20px;
 		}
 
-		overflow: auto;
+		scrollbar-width: thin;
+		scrollbar-color: cl('white_grey') cl('white_grey');
 	}
 
 	&__tab-content {

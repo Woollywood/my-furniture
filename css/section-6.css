@@ -140,8 +140,10 @@
   position: relative;
   z-index: 1;
   padding-right: var(--scroll-width);
-  max-height: calc(var(--height) - (var(--padding-top) + var(--padding-bottom) + var(--navigation-margin-bottom) + var(--navigation-height)));
   overflow: auto;
+  max-height: calc(var(--height) - (var(--padding-top) + var(--padding-bottom) + var(--navigation-margin-bottom) + var(--navigation-height)));
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-white_grey) var(--color-white_grey);
 }
 .inner-form__tab-body::-webkit-scrollbar {
   width: var(--scroll-width); /* ширина всей полосы прокрутки */
