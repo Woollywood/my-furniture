@@ -97,7 +97,7 @@ body {
 	&:active,
 	&:focus {
 		background-color: var(--button-hover-background-color);
-		box-shadow: var(--button-hover-box-shadow);
+		// box-shadow: var(--button-hover-box-shadow);
 	}
 }
 
@@ -528,6 +528,7 @@ p {
 		height: 344px;
 		background: rgba(81, 99, 143, 0.4);
 		filter: blur(167.5px);
+		pointer-events: none;
 	}
 }
 
