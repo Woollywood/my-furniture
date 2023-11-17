@@ -1360,7 +1360,39 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		image.setAttribute('width', '');
 		image.setAttribute('height', '');
 	});
+
+	correctImagesRatio();
+	window.addEventListener('resize', correctImagesRatio);
 });
+
+function correctImageRatio(image) {
+	image.setAttribute('width', '');
+	image.setAttribute('height', '');
+
+	const display = window.getComputedStyle(image).display;
+	if (display === 'none') {
+		image.style.display = 'block';
+	}
+
+	setTimeout(() => {
+		const width = image.offsetWidth;
+		const height = image.offsetHeight;
+
+		image.setAttribute('width', width);
+		image.setAttribute('height', height);
+
+		if (display === 'none') {
+			image.style.display = '';
+		}
+	}, 10);
+}
+
+function correctImagesRatio() {
+	const images = document.querySelectorAll('img');
+	images.forEach((image) => {
+		correctImageRatio(image);
+	});
+}
 
 pageNavigation();
 
