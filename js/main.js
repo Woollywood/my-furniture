@@ -1354,12 +1354,6 @@ document.addEventListener('DOMContentLoaded', event => {
 			rightCol.append(accordion);
 		}
 	})
-
-	const images = document.querySelectorAll('img');
-	images.forEach(image => {
-		image.setAttribute('width', '');
-		image.setAttribute('height', '');
-	})
 })
 
 pageNavigation();

@@ -55,7 +55,6 @@ $mobileSmall: 479.98px;
 
 		span {
 			color: cl('white_grey');
-			white-space: nowrap;
 		}
 
 		@media (min-width: $mobile) {
@@ -156,7 +155,7 @@ $mobileSmall: 479.98px;
 
 		@media (max-width: $desktopLow) {
 			width: 32px;
-			height: 16px;
+			height: 18px;
 		}
 
 		display: flex;
@@ -164,6 +163,13 @@ $mobileSmall: 479.98px;
 		align-items: center;
 
 		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: fill;
+
 			&:last-child {
 				display: none;
 			}
@@ -235,22 +241,39 @@ $mobileSmall: 479.98px;
 	}
 
 	&__close {
+		position: relative;
+		width: rem(16);
+		height: rem(16);
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
 		@media (min-width: $mobileLow) {
 			display: none;
 		}
 	}
 
 	&__logo {
-		@media (min-width: $mobile) {
-			display: none;
-		}
-
+		position: relative;
 		width: 56px;
 		aspect-ratio: 1;
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		@media (min-width: $mobile) {
+			display: none;
+		}
 	}
 
 	&__list {

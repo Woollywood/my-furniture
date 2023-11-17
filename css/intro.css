@@ -32,12 +32,26 @@
     --width: 64px;
   }
 }
-.intro__logo {
+.intro__logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   -webkit-clip-path: circle(42%);
           clip-path: circle(42%);
 }
 .intro__logo-mask {
   animation: spin 1.4s linear infinite;
+}
+.intro__logo-mask img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: circle(54%);
+          clip-path: circle(54%);
 }
 .intro__logo-mask.loaded {
   animation: spin 1.4s linear 1;

@@ -124,6 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 @media (max-width: 1099.98px) {
   .section-2__content-icon {
@@ -138,4 +139,11 @@
     width: 24px;
     height: 24px;
   }
+}
+.section-2__content-icon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
