@@ -1346,15 +1346,21 @@ function pageNavigation() {
 	}
 }
 
-document.addEventListener('DOMContentLoaded', event => {
+document.addEventListener('DOMContentLoaded', (event) => {
 	const accordions = document.querySelectorAll('.section-11__accordion');
 	const rightCol = document.querySelector('.section-11__col--right');
 	accordions.forEach((accordion, index) => {
 		if (index % 2 !== 0) {
 			rightCol.append(accordion);
 		}
-	})
-})
+	});
+
+	const images = document.querySelectorAll('img');
+	images.forEach((image) => {
+		image.setAttribute('width', '');
+		image.setAttribute('height', '');
+	});
+});
 
 pageNavigation();
 

@@ -52,7 +52,7 @@
   }
 }
 @media (min-width: 767.98px) and (max-width: 1099.98px) {
-  .header__info-item:nth-child(2) span {
+  .header__info-item--whatsapp span {
     display: none;
   }
 }

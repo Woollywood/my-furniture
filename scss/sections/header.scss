@@ -69,7 +69,7 @@ $mobileSmall: 479.98px;
 				}
 			}
 
-			&:nth-child(2) {
+			&--whatsapp {
 				span {
 					@media (max-width: $desktopLow) {
 						display: none;
