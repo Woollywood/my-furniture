@@ -57,13 +57,13 @@ body {
 		animation: appearance 1.5s ease;
 	}
 
-	&.loading {
-		@extend .lock;
-		.wrapper {
-			animation: none;
-			opacity: 0;
-		}
-	}
+	// &.loading {
+	// 	@extend .lock;
+	// 	.wrapper {
+	// 		animation: none;
+	// 		opacity: 0;
+	// 	}
+	// }
 }
 
 @keyframes appearance {
@@ -199,6 +199,7 @@ body {
 .select {
 	min-width: 0;
 	position: relative;
+	z-index: 10;
 
 	font-family: Montserrat, sans-serif;
 	font-size: var(--select-text-size);
@@ -281,6 +282,7 @@ body {
 		border-top: 0;
 		border-radius: 0 0 var(--select-border-radius) var(--select-border-radius);
 		overflow: hidden;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), #292D44;;
 	}
 
 	&__scroll {

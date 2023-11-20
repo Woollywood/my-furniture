@@ -837,10 +837,6 @@ h6 {
 body .wrapper {
   animation: appearance 1.5s ease;
 }
-body.loading .wrapper {
-  animation: none;
-  opacity: 0;
-}
 
 @keyframes appearance {
   from {
@@ -949,6 +945,7 @@ body.loading .wrapper {
 .select {
   min-width: 0;
   position: relative;
+  z-index: 10;
   font-family: Montserrat, sans-serif;
   font-size: var(--select-text-size);
 }
@@ -1018,6 +1015,7 @@ body.loading .wrapper {
   border-top: 0;
   border-radius: 0 0 var(--select-border-radius) var(--select-border-radius);
   overflow: hidden;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), #292D44;
 }
 .select__scroll {
   overflow-y: auto;
@@ -1166,7 +1164,7 @@ p {
   font-size: var(--text-body-mini-size);
 }
 
-.lock, body.loading {
+.lock {
   overflow: hidden;
   touch-action: none;
   overscroll-behavior: none;

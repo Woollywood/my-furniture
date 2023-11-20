@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/intro.css" />
 		<script src="js/gsap.min.js"></script>
 		<script src="js/ScrollTrigger.min.js"></script>
-		<script src="js/intro.js"></script>
+		<!-- <script src="js/intro.js"></script> -->
 
 		<link rel="stylesheet" href="css/header.css" />
 		<link rel="stylesheet" href="css/footer.css" />
@@ -28,12 +28,13 @@
 		<link rel="stylesheet" href="css/section-11.css" />
 		<link rel="stylesheet" href="css/section-12.css" />
 		<link rel="stylesheet" href="css/section-13.css" />
+		<link rel="stylesheet" href="css/popup.css" />
 
 		<link rel="stylesheet" href="css/variables.css" />
 		<link rel="stylesheet" href="css/common.css" />
 	</head>
 	<body class="loading">
-		<div class="intro">
+		<!-- <div class="intro">
 			<div class="intro__body">
 				<div class="intro__logo">
 					<img width="100" height="100" src="img/logo.svg" alt="logo" />
@@ -42,7 +43,7 @@
 					<img width="100" height="100" src="img/logo-text.svg" alt="logo" />
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="wrapper">
 			<header class="header">
@@ -63,9 +64,17 @@
 								</div>
 								<span>+7 (926) 29-29-211</span>
 							</a>
-							<a class="header__info-item header__info-item--whatsapp" href="#" data-da=".menu__bottom-mobile, 767.98, 1">
+							<a
+								class="header__info-item header__info-item--whatsapp"
+								href="#"
+								data-da=".menu__bottom-mobile, 767.98, 1">
 								<div class="header__info-item-icon">
-									<img width="100" height="100" loading="lazy" src="img/icons/whatsapp.svg" alt="icon" />
+									<img
+										width="100"
+										height="100"
+										loading="lazy"
+										src="img/icons/whatsapp.svg"
+										alt="icon" />
 								</div>
 								<span>WhatsApp</span>
 							</a>
@@ -84,54 +93,94 @@
 						</a>
 						<div class="header__actions">
 							<a class="header__button button button-primary" href="#" data-da=".menu__body-center, 991">
-								<span class="span--desktop">Бесплатный замер</span>
-								<span class="span--mobile">Заказать звонок</span>
+								<span class="span--desktop" data-popup="#froze-popup">Бесплатный замер</span>
+								<span class="span--mobile" data-popup="#call-popup">Заказать звонок</span>
 							</a>
 							<div class="header__menu menu">
 								<button class="menu__button" data-menu-button>
-									<img width="100" height="100" loading="lazy" src="img/header/burger--open.svg" alt="burger" />
-									<img width="100" height="100" loading="lazy" src="img/header/burger--close.svg" alt="burger" />
+									<img
+										width="100"
+										height="100"
+										loading="lazy"
+										src="img/header/burger--open.svg"
+										alt="burger" />
+									<img
+										width="100"
+										height="100"
+										loading="lazy"
+										src="img/header/burger--close.svg"
+										alt="burger" />
 								</button>
 								<nav class="menu__body">
 									<div class="menu__body-top">
 										<a class="menu__logo" href="#">
-											<img width="100" height="100" loading="lazy" src="img/header/menu-logo.svg" alt="logo" />
+											<img
+												width="100"
+												height="100"
+												loading="lazy"
+												src="img/header/menu-logo.svg"
+												alt="logo" />
 										</a>
 										<button class="menu__close" data-menu-button>
-											<img width="100" height="100" loading="lazy" src="img/header/burger--close.svg" alt="burger" />
+											<img
+												width="100"
+												height="100"
+												loading="lazy"
+												src="img/header/burger--close.svg"
+												alt="burger" />
 										</button>
 									</div>
 									<div class="menu__body-center">
 										<ul class="menu__list">
 											<li class="menu__item">
-												<a class="menu__link" href="#" data-goto='[data-goto-block="1"]'>Кухни</a>
+												<a class="menu__link" href="#" data-goto='[data-goto-block="1"]'
+													>Кухни</a
+												>
 											</li>
 											<li class="menu__item">
-												<a class="menu__link" href="#" data-goto='[data-goto-block="2"]'>Преимущества</a>
+												<a class="menu__link" href="#" data-goto='[data-goto-block="2"]'
+													>Преимущества</a
+												>
 											</li>
 											<li class="menu__item">
-												<a class="menu__link" href="#" data-goto='[data-goto-block="3"]'>Акции</a>
+												<a class="menu__link" href="#" data-goto='[data-goto-block="3"]'
+													>Акции</a
+												>
 											</li>
 											<li class="menu__item">
-												<a class="menu__link" href="#" data-goto='[data-goto-block="4"]'>Материалы</a>
+												<a class="menu__link" href="#" data-goto='[data-goto-block="4"]'
+													>Материалы</a
+												>
 											</li>
 											<li class="menu__item">
-												<a class="menu__link" href="#" data-goto='[data-goto-block="5"]'>Произсводство</a>
+												<a class="menu__link" href="#" data-goto='[data-goto-block="5"]'
+													>Произсводство</a
+												>
 											</li>
 											<li class="menu__item">
-												<a class="menu__link" href="#" data-goto='[data-goto-block="6"]'>Подарочный сертификат</a>
+												<a class="menu__link" href="#" data-goto='[data-goto-block="6"]'
+													>Подарочный сертификат</a
+												>
 											</li>
 											<li class="menu__item">
-												<a class="menu__link" href="#" data-goto='[data-goto-block="7"]'>Схема работы</a>
+												<a class="menu__link" href="#" data-goto='[data-goto-block="7"]'
+													>Схема работы</a
+												>
 											</li>
 											<li class="menu__item">
-												<a class="menu__link" href="#" data-goto='[data-goto-block="8"]'>Проекты</a>
+												<a class="menu__link" href="#" data-goto='[data-goto-block="8"]'
+													>Проекты</a
+												>
 											</li>
 											<li class="menu__item">
-												<a class="menu__link" href="#" data-goto='[data-goto-block="9"]'>Отзывы</a>
+												<a class="menu__link" href="#" data-goto='[data-goto-block="9"]'
+													>Отзывы</a
+												>
 											</li>
 											<li class="menu__item">
-												<a class="menu__link" href="#" data-goto='[data-goto-block="10"]'>Контакты</a>
+												<a class="menu__link" href="#" data-goto='[data-goto-block="10"]'
+													>Контакты</a
+												>
 											</li>
 										</ul>
 									</div>
@@ -139,9 +188,15 @@
 										<div class="menu__info">
 											<a class="header__info-item" href="#">
 												<div class="header__info-item-icon">
-													<img width="100" height="100" loading="lazy" src="img/icons/location.svg" alt="icon" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/icons/location.svg"
+														alt="icon" />
 												</div>
-												<span>Россия, Московская область, г. Балашиха, мкр. Железнодорожный,
+												<span
+													>Россия, Московская область, г. Балашиха, мкр. Железнодорожный,
 													ул. Автозаводская, 50А, оф. 26
 												</span>
 											</a>
@@ -181,13 +236,23 @@
 										class="main-slider__arrow-prev main-slider__arrow splide__arrow splide__arrow--prev"
 										type="button"
 										aria-label="Previous slide">
-										<img width="100" height="100" loading="lazy" src="img/icons/arrow-left.svg" alt="slide-arrow" />
+										<img
+											width="100"
+											height="100"
+											loading="lazy"
+											src="img/icons/arrow-left.svg"
+											alt="slide-arrow" />
 									</button>
 									<button
 										class="main-slider__arrow-next main-slider__arrow splide__arrow splide__arrow--next"
 										type="button"
 										aria-label="Next slide">
-										<img width="100" height="100" loading="lazy" src="img/icons/arrow-right.svg" alt="slide-arrow" />
+										<img
+											width="100"
+											height="100"
+											loading="lazy"
+											src="img/icons/arrow-right.svg"
+											alt="slide-arrow" />
 									</button>
 								</div>
 							</div>
@@ -202,7 +267,12 @@
 												<p class="main-slider__slide-subtitle">
 													Индивидуальные кухни со скидкой 30%
 												</p>
-												<a class="main-slider__slide-button button button-primary" href="#">Рассчитать стоимость</a>
+												<a
+													class="main-slider__slide-button button button-primary"
+													href="#"
+													data-popup="#calculate-popup"
+													>Рассчитать стоимость</a
+												>
 											</div>
 										</div>
 									</li>
@@ -213,7 +283,12 @@
 												<p class="main-slider__slide-subtitle">
 													Любая сложность, любой размер, любые материалы
 												</p>
-												<a class="main-slider__slide-button button button-primary" href="#">Рассчитать стоимость</a>
+												<a
+													class="main-slider__slide-button button button-primary"
+													href="#"
+													data-popup="#calculate-popup"
+													>Рассчитать стоимость</a
+												>
 											</div>
 										</div>
 									</li>
@@ -224,13 +299,23 @@
 												<p class="main-slider__slide-subtitle">
 													Дешевле на 40% за счет собственного производства
 												</p>
-												<a class="main-slider__slide-button button button-primary" href="#">Рассчитать стоимость</a>
+												<a
+													class="main-slider__slide-button button button-primary"
+													href="#"
+													data-popup="#calculate-popup"
+													>Рассчитать стоимость</a
+												>
 											</div>
 										</div>
 									</li>
 								</ul>
 								<div class="main-slider__people-bg _ibg">
-									<img width="100" height="100" loading="lazy" src="img/main-block/people.webp" alt="people" />
+									<img
+										width="100"
+										height="100"
+										loading="lazy"
+										src="img/main-block/people.webp"
+										alt="people" />
 								</div>
 							</div>
 						</section>
@@ -240,45 +325,73 @@
 							<div class="main-block__benefits">
 								<div class="main-block__benefit">
 									<div class="main-block__benefit-icon _ibg">
-										<img width="100" height="100"
+										<img
+											width="100"
+											height="100"
 											class="static"
 											loading="lazy"
 											src="img/main-block/benefit-01.svg"
 											alt="benefit" />
-										<img width="100" height="100" class="hover" src="img/main-block/benefit-01--hover.svg" alt="benefit" />
+										<img
+											width="100"
+											height="100"
+											class="hover"
+											src="img/main-block/benefit-01--hover.svg"
+											alt="benefit" />
 									</div>
 									<p class="main-block__benefit-text">Беслатный 3D дизайн</p>
 								</div>
 								<div class="main-block__benefit">
 									<div class="main-block__benefit-icon _ibg">
-										<img width="100" height="100"
+										<img
+											width="100"
+											height="100"
 											class="static"
 											loading="lazy"
 											src="img/main-block/benefit-02.svg"
 											alt="benefit" />
-										<img width="100" height="100" class="hover" src="img/main-block/benefit-02--hover.svg" alt="benefit" />
+										<img
+											width="100"
+											height="100"
+											class="hover"
+											src="img/main-block/benefit-02--hover.svg"
+											alt="benefit" />
 									</div>
 									<p class="main-block__benefit-text">Рассрочка на 6 месяцев</p>
 								</div>
 								<div class="main-block__benefit">
 									<div class="main-block__benefit-icon _ibg">
-										<img width="100" height="100"
+										<img
+											width="100"
+											height="100"
 											class="static"
 											loading="lazy"
 											src="img/main-block/benefit-03.svg"
 											alt="benefit" />
-										<img width="100" height="100" class="hover" src="img/main-block/benefit-03--hover.svg" alt="benefit" />
+										<img
+											width="100"
+											height="100"
+											class="hover"
+											src="img/main-block/benefit-03--hover.svg"
+											alt="benefit" />
 									</div>
 									<p class="main-block__benefit-text">При заказе подарок</p>
 								</div>
 								<div class="main-block__benefit">
 									<div class="main-block__benefit-icon _ibg">
-										<img width="100" height="100"
+										<img
+											width="100"
+											height="100"
 											class="static"
 											loading="lazy"
 											src="img/main-block/benefit-04.svg"
 											alt="benefit" />
-										<img width="100" height="100" class="hover" src="img/main-block/benefit-04--hover.svg" alt="benefit" />
+										<img
+											width="100"
+											height="100"
+											class="hover"
+											src="img/main-block/benefit-04--hover.svg"
+											alt="benefit" />
 									</div>
 									<p class="main-block__benefit-text">Гарантии на возврат</p>
 								</div>
@@ -293,14 +406,19 @@
 								<h2 class="section-1__title light-title section-title">Подберем лучшую кухню</h2>
 								<h3 class="section-1__subtitle">Индивидуальные кухни любой сложности</h3>
 								<p class="section-1__text">
-									Наши дизайнеры спроектируют кухню с учётом ваших пожеланий и особенностей <br> помещения.
-									Поможем избежать ошибок при проектировании и выборе материалов.
+									Наши дизайнеры спроектируют кухню с учётом ваших пожеланий и особенностей <br />
+									помещения. Поможем избежать ошибок при проектировании и выборе материалов.
 								</p>
 							</div>
 							<div class="section-1__content-wrapper">
 								<div class="section-1__card">
 									<div class="section-1__card-img _ibg">
-										<img width="100" height="100" loading="lazy" src="img/section-1/01.webp" alt="card-image" />
+										<img
+											width="100"
+											height="100"
+											loading="lazy"
+											src="img/section-1/01.webp"
+											alt="card-image" />
 									</div>
 									<div class="section-1__card-text-wrapper">
 										<h4 class="section-1__card-title">Прямые кухни</h4>
@@ -313,13 +431,23 @@
 										</p>
 										<div class="section-1__card-bottom">
 											<div class="section-1__card-sep"></div>
-											<a class="section-1__card-link button button-secondary" href="#">Узнать больше</a>
+											<a
+												class="section-1__card-link button button-secondary"
+												href="#"
+												data-popup="#kitchen-popup--2"
+												>Узнать больше</a
+											>
 										</div>
 									</div>
 								</div>
 								<div class="section-1__card">
 									<div class="section-1__card-img _ibg">
-										<img width="100" height="100" loading="lazy" src="img/section-1/02.webp" alt="card-image" />
+										<img
+											width="100"
+											height="100"
+											loading="lazy"
+											src="img/section-1/02.webp"
+											alt="card-image" />
 									</div>
 									<div class="section-1__card-text-wrapper">
 										<h4 class="section-1__card-title">Кухни с островом</h4>
@@ -336,13 +464,23 @@
 										</p>
 										<div class="section-1__card-bottom">
 											<div class="section-1__card-sep"></div>
-											<a class="section-1__card-link button button-secondary" href="#">Узнать больше</a>
+											<a
+												class="section-1__card-link button button-secondary"
+												href="#"
+												data-popup="#kitchen-popup--3"
+												>Узнать больше</a
+											>
 										</div>
 									</div>
 								</div>
 								<div class="section-1__card">
 									<div class="section-1__card-img _ibg">
-										<img width="100" height="100" loading="lazy" src="img/section-1/03.webp" alt="card-image" />
+										<img
+											width="100"
+											height="100"
+											loading="lazy"
+											src="img/section-1/03.webp"
+											alt="card-image" />
 									</div>
 									<div class="section-1__card-text-wrapper">
 										<h4 class="section-1__card-title">П-образные кухни</h4>
@@ -359,13 +497,23 @@
 										</p>
 										<div class="section-1__card-bottom">
 											<div class="section-1__card-sep"></div>
-											<a class="section-1__card-link button button-secondary" href="#">Узнать больше</a>
+											<a
+												class="section-1__card-link button button-secondary"
+												href="#"
+												data-popup="#kitchen-popup--1"
+												>Узнать больше</a
+											>
 										</div>
 									</div>
 								</div>
 								<div class="section-1__card">
 									<div class="section-1__card-img _ibg">
-										<img width="100" height="100" loading="lazy" src="img/section-1/04.webp" alt="card-image" />
+										<img
+											width="100"
+											height="100"
+											loading="lazy"
+											src="img/section-1/04.webp"
+											alt="card-image" />
 									</div>
 									<div class="section-1__card-text-wrapper">
 										<h4 class="section-1__card-title">Угловые кухни</h4>
@@ -378,13 +526,23 @@
 										</p>
 										<div class="section-1__card-bottom">
 											<div class="section-1__card-sep"></div>
-											<a class="section-1__card-link button button-secondary" href="#">Узнать больше</a>
+											<a
+												class="section-1__card-link button button-secondary"
+												href="#"
+												data-popup="#kitchen-popup--4"
+												>Узнать больше</a
+											>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="section-1__action">
-								<a class="section-1__button button button-primary" href="#">Рассчитать стоимость</a>
+								<a
+									class="section-1__button button button-primary"
+									href="#"
+									data-popup="#calculate-popup"
+									>Рассчитать стоимость</a
+								>
 							</div>
 						</div>
 					</div>
@@ -394,7 +552,12 @@
 						<div class="section-2__body">
 							<div class="section-2__left">
 								<div class="section-2__image _ibg">
-									<img width="100" height="100" loading="lazy" src="img/section-2/image.webp" alt="image" />
+									<img
+										width="100"
+										height="100"
+										loading="lazy"
+										src="img/section-2/image.webp"
+										alt="image" />
 								</div>
 								<div class="section-2__left-sep"></div>
 							</div>
@@ -410,7 +573,12 @@
 								<div class="section-2__content-inner">
 									<div class="section-2__content-item">
 										<div class="section-2__content-icon">
-											<img width="100" height="100" loading="lazy" src="img/section-2/01.webp" alt="icon" />
+											<img
+												width="100"
+												height="100"
+												loading="lazy"
+												src="img/section-2/01.webp"
+												alt="icon" />
 										</div>
 										<div class="section-2__content-text">
 											Дизайнер приедет с образцами матриалов и каталогом кухонь, чтобы помочь
@@ -419,7 +587,12 @@
 									</div>
 									<div class="section-2__content-item">
 										<div class="section-2__content-icon">
-											<img width="100" height="100" loading="lazy" src="img/section-2/02.webp" alt="icon" />
+											<img
+												width="100"
+												height="100"
+												loading="lazy"
+												src="img/section-2/02.webp"
+												alt="icon" />
 										</div>
 										<div class="section-2__content-text">
 											Сделает замеры помещения под кухню, точно отобразив коммцникации, выступы,
@@ -428,7 +601,12 @@
 									</div>
 									<div class="section-2__content-item">
 										<div class="section-2__content-icon">
-											<img width="100" height="100" loading="lazy" src="img/section-2/03.webp" alt="icon" />
+											<img
+												width="100"
+												height="100"
+												loading="lazy"
+												src="img/section-2/03.webp"
+												alt="icon" />
 										</div>
 										<div class="section-2__content-text">
 											Нарисует 3D-проект кухни на месте и расчитает точную стоимость будущей кухни
@@ -437,7 +615,12 @@
 									</div>
 									<div class="section-2__content-item">
 										<div class="section-2__content-icon">
-											<img width="100" height="100" loading="lazy" src="img/section-2/04.webp" alt="icon" />
+											<img
+												width="100"
+												height="100"
+												loading="lazy"
+												src="img/section-2/04.webp"
+												alt="icon" />
 										</div>
 										<div class="section-2__content-text">
 											По желанию вы сможете заключить договор со скидкой. При необходимости
@@ -445,7 +628,9 @@
 										</div>
 									</div>
 								</div>
-								<a class="section-2__button button button-primary" href="#">Вызов дизайнера</a>
+								<a class="section-2__button button button-primary" href="#" data-popup="#designer-popup"
+									>Вызов дизайнера</a
+								>
 							</div>
 						</div>
 					</div>
@@ -469,11 +654,21 @@
 											<li class="section-3__slide splide__slide">
 												<h4 class="section-3__slide-title">Бесплатный монтаж</h4>
 												<div class="section-3__slide-img section-3__slide-img--cover _ibg">
-													<img width="100" height="100" loading="lazy" src="img/section-3/01.webp" alt="slide" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-3/01.webp"
+														alt="slide" />
 												</div>
 												<div class="section-3__slide-bottom section-3__slide-bottom--flex">
 													<div class="sep sep--horizontal"></div>
-													<a class="section-3__slide-link button button-secondary" href="#">Узнать больше</a>
+													<a
+														class="section-3__slide-link button button-secondary"
+														href="#"
+														data-popup="#stock-popup--1"
+														>Узнать больше</a
+													>
 												</div>
 											</li>
 											<li class="section-3__slide splide__slide">
@@ -481,11 +676,21 @@
 												<div class="section-3__slide-center section-3__slide-center--pl">
 													<div class="sep sep--vertical sep--left"></div>
 													<div class="section-3__slide-img section-3__slide-img--left _ibg">
-														<img width="100" height="100" loading="lazy" src="img/section-3/02.webp" alt="slide" />
+														<img
+															width="100"
+															height="100"
+															loading="lazy"
+															src="img/section-3/02.webp"
+															alt="slide" />
 													</div>
 												</div>
 												<div class="section-3__slide-bottom">
-													<a class="section-3__slide-link button button-secondary" href="#">Узнать больше</a>
+													<a
+														class="section-3__slide-link button button-secondary"
+														href="#"
+														data-popup="#stock-popup--2"
+														>Узнать больше</a
+													>
 												</div>
 											</li>
 											<li class="section-3__slide splide__slide">
@@ -494,12 +699,22 @@
 													class="section-3__slide-center section-3__slide-center--mb section-3__slide-center--pr">
 													<div
 														class="section-3__slide-img section-3__slide-img--right section-3__slide-img--mb-reset _ibg">
-														<img width="100" height="100" loading="lazy" src="img/section-3/03.webp" alt="slide" />
+														<img
+															width="100"
+															height="100"
+															loading="lazy"
+															src="img/section-3/03.webp"
+															alt="slide" />
 													</div>
 													<div class="sep sep--vertical sep--right"></div>
 												</div>
 												<div class="section-3__slide-bottom">
-													<a class="section-3__slide-link button button-secondary" href="#">Узнать больше</a>
+													<a
+														class="section-3__slide-link button button-secondary"
+														href="#"
+														data-popup="#stock-popup--3"
+														>Узнать больше</a
+													>
 												</div>
 											</li>
 										</ul>
@@ -510,7 +725,12 @@
 								</div>
 							</div>
 							<div class="section-3__background _ibg">
-								<img width="100" height="100" loading="lazy" src="img/section-3/background.webp" alt="background" />
+								<img
+									width="100"
+									height="100"
+									loading="lazy"
+									src="img/section-3/background.webp"
+									alt="background" />
 							</div>
 						</div>
 					</div>
@@ -529,8 +749,16 @@
 							<div class="section-4__row">
 								<div class="section-4__item">
 									<div class="section-4__item-icon _ibg">
-										<img width="100" height="100" class="static" loading="lazy" src="img/section-4/01.svg" alt="icon" />
-										<img width="100" height="100"
+										<img
+											width="100"
+											height="100"
+											class="static"
+											loading="lazy"
+											src="img/section-4/01.svg"
+											alt="icon" />
+										<img
+											width="100"
+											height="100"
 											class="hover"
 											loading="lazy"
 											src="img/section-4/01--hover.svg"
@@ -541,8 +769,16 @@
 								</div>
 								<div class="section-4__item">
 									<div class="section-4__item-icon _ibg">
-										<img width="100" height="100" class="static" loading="lazy" src="img/section-4/02.svg" alt="icon" />
-										<img width="100" height="100"
+										<img
+											width="100"
+											height="100"
+											class="static"
+											loading="lazy"
+											src="img/section-4/02.svg"
+											alt="icon" />
+										<img
+											width="100"
+											height="100"
 											class="hover"
 											loading="lazy"
 											src="img/section-4/02--hover.svg"
@@ -553,8 +789,16 @@
 								</div>
 								<div class="section-4__item">
 									<div class="section-4__item-icon _ibg">
-										<img width="100" height="100" class="static" loading="lazy" src="img/section-4/03.svg" alt="icon" />
-										<img width="100" height="100"
+										<img
+											width="100"
+											height="100"
+											class="static"
+											loading="lazy"
+											src="img/section-4/03.svg"
+											alt="icon" />
+										<img
+											width="100"
+											height="100"
 											class="hover"
 											loading="lazy"
 											src="img/section-4/03--hover.svg"
@@ -565,8 +809,16 @@
 								</div>
 								<div class="section-4__item">
 									<div class="section-4__item-icon _ibg">
-										<img width="100" height="100" class="static" loading="lazy" src="img/section-4/04.svg" alt="icon" />
-										<img width="100" height="100"
+										<img
+											width="100"
+											height="100"
+											class="static"
+											loading="lazy"
+											src="img/section-4/04.svg"
+											alt="icon" />
+										<img
+											width="100"
+											height="100"
 											class="hover"
 											loading="lazy"
 											src="img/section-4/04--hover.svg"
@@ -577,7 +829,9 @@
 								</div>
 							</div>
 							<div class="section-4__action">
-								<a class="section-4__button button button-primary" href="#">Вызов дизайнера</a>
+								<a class="section-4__button button button-primary" href="#" data-popup="#designer-popup"
+									>Вызов дизайнера</a
+								>
 							</div>
 						</div>
 					</div>
@@ -597,32 +851,72 @@
 								<div class="section-5__row">
 									<div class="section-5__item">
 										<div class="section-5__item-icon _ibg">
-											<img width="100" height="100" class="static" loading="lazy" src="img/section-5/01.svg" alt="icon" />
-											<img width="100" height="100" class="hover" src="img/section-5/01--hover.svg" alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="static"
+												loading="lazy"
+												src="img/section-5/01.svg"
+												alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="hover"
+												src="img/section-5/01--hover.svg"
+												alt="icon" />
 										</div>
 										<p class="section-5__item-text">Первый взнос от 0%</p>
 									</div>
 									<div class="section-5__item">
 										<div class="section-5__item-icon _ibg">
-											<img width="100" height="100" class="static" loading="lazy" src="img/section-5/02.svg" alt="icon" />
-											<img width="100" height="100" class="hover" src="img/section-5/02--hover.svg" alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="static"
+												loading="lazy"
+												src="img/section-5/02.svg"
+												alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="hover"
+												src="img/section-5/02--hover.svg"
+												alt="icon" />
 										</div>
 										<p class="section-5__item-text">Переплата 0%</p>
 									</div>
 									<div class="section-5__item">
 										<div class="section-5__item-icon _ibg">
-											<img width="100" height="100" class="static" loading="lazy" src="img/section-5/03.svg" alt="icon" />
-											<img width="100" height="100" class="hover" src="img/section-5/03--hover.svg" alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="static"
+												loading="lazy"
+												src="img/section-5/03.svg"
+												alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="hover"
+												src="img/section-5/03--hover.svg"
+												alt="icon" />
 										</div>
 										<p class="section-5__item-text">Срок до 6 месяцев</p>
 									</div>
 								</div>
 								<div class="section-5__action">
-									<a class="section-5__button button button-primary" href="#">Заказать звонок</a>
+									<a class="section-5__button button button-primary" href="#" data-popup="#call-popup"
+										>Заказать звонок</a
+									>
 								</div>
 							</div>
 							<div class="section-5__image _ibg">
-								<img width="100" height="100" loading="lazy" src="img/section-5/image.webp" alt="media" />
+								<img
+									width="100"
+									height="100"
+									loading="lazy"
+									src="img/section-5/image.webp"
+									alt="media" />
 							</div>
 						</div>
 					</div>
@@ -733,7 +1027,12 @@
 								</div>
 							</div>
 							<div class="section-6__background _ibg">
-								<img width="100" height="100" loading="lazy" src="img/section-6/background.webp" alt="background" />
+								<img
+									width="100"
+									height="100"
+									loading="lazy"
+									src="img/section-6/background.webp"
+									alt="background" />
 							</div>
 						</div>
 					</div>
@@ -759,15 +1058,37 @@
 								<div class="section-7__row">
 									<div class="section-7__item">
 										<div class="section-7__item-icon _ibg">
-											<img width="100" height="100" class="static" loading="lazy" src="img/section-7/01.svg" alt="icon" />
-											<img width="100" height="100" class="hover" src="img/section-7/01--hover.svg" alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="static"
+												loading="lazy"
+												src="img/section-7/01.svg"
+												alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="hover"
+												src="img/section-7/01--hover.svg"
+												alt="icon" />
 										</div>
 										<p class="section-7__item-text">Проекты любой сложности из любого материала</p>
 									</div>
 									<div class="section-7__item">
 										<div class="section-7__item-icon _ibg">
-											<img width="100" height="100" class="static" loading="lazy" src="img/section-7/02.svg" alt="icon" />
-											<img width="100" height="100" class="hover" src="img/section-7/02--hover.svg" alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="static"
+												loading="lazy"
+												src="img/section-7/02.svg"
+												alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="hover"
+												src="img/section-7/02--hover.svg"
+												alt="icon" />
 										</div>
 										<p class="section-7__item-text">
 											Качественный сервис, профессиональная команда
@@ -775,8 +1096,19 @@
 									</div>
 									<div class="section-7__item">
 										<div class="section-7__item-icon _ibg">
-											<img width="100" height="100" class="static" loading="lazy" src="img/section-7/03.svg" alt="icon" />
-											<img width="100" height="100" class="hover" src="img/section-7/03--hover.svg" alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="static"
+												loading="lazy"
+												src="img/section-7/03.svg"
+												alt="icon" />
+											<img
+												width="100"
+												height="100"
+												class="hover"
+												src="img/section-7/03--hover.svg"
+												alt="icon" />
 										</div>
 										<p class="section-7__item-text">Контроль качества на всех этапах</p>
 									</div>
@@ -786,10 +1118,20 @@
 								</div>
 							</div>
 							<div class="section-7__image _ibg">
-								<img width="100" height="100" loading="lazy" src="img/section-7/media.webp" alt="media" />
+								<img
+									width="100"
+									height="100"
+									loading="lazy"
+									src="img/section-7/media.webp"
+									alt="media" />
 							</div>
 							<div class="section-7__background-title">
-								<img width="100" height="100" loading="lazy" src="img/section-7/background-title.svg" alt="title " />
+								<img
+									width="100"
+									height="100"
+									loading="lazy"
+									src="img/section-7/background-title.svg"
+									alt="title " />
 							</div>
 						</div>
 					</div>
@@ -820,7 +1162,12 @@
 											</div>
 											<div class="section-8__item-center">
 												<div class="section-8__item-image _ibg">
-													<img width="100" height="100" loading="lazy" src="img/section-8/01.webp" alt="card" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-8/01.webp"
+														alt="card" />
 												</div>
 											</div>
 										</li>
@@ -838,7 +1185,12 @@
 											</div>
 											<div class="section-8__item-center section-8__item-center--pr">
 												<div class="section-8__item-image _ibg">
-													<img width="100" height="100" loading="lazy" src="img/section-8/02.webp" alt="card" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-8/02.webp"
+														alt="card" />
 												</div>
 												<div class="section-8__item-background-title">мой мебельный №1</div>
 											</div>
@@ -857,7 +1209,12 @@
 											</div>
 											<div class="section-8__item-center">
 												<div class="section-8__item-image _ibg">
-													<img width="100" height="100" loading="lazy" src="img/section-8/03.webp" alt="card" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-8/03.webp"
+														alt="card" />
 												</div>
 											</div>
 										</li>
@@ -873,7 +1230,12 @@
 											</div>
 											<div class="section-8__item-center section-8__item-center--pr">
 												<div class="section-8__item-image _ibg">
-													<img width="100" height="100" loading="lazy" src="img/section-8/04.webp" alt="card" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-8/04.webp"
+														alt="card" />
 												</div>
 												<div class="section-8__item-background-title">мой мебельный №1</div>
 											</div>
@@ -885,13 +1247,23 @@
 											class="slider__arrow-prev slider__arrow splide__arrow splide__arrow--prev"
 											type="button"
 											aria-label="Previous slide">
-											<img width="100" height="100" loading="lazy" src="img/icons/arrow-left.svg" alt="slide-arrow" />
+											<img
+												width="100"
+												height="100"
+												loading="lazy"
+												src="img/icons/arrow-left.svg"
+												alt="slide-arrow" />
 										</button>
 										<button
 											class="slider__arrow-next slider__arrow splide__arrow splide__arrow--next"
 											type="button"
 											aria-label="Next slide">
-											<img width="100" height="100" loading="lazy" src="img/icons/arrow-right.svg" alt="slide-arrow" />
+											<img
+												width="100"
+												height="100"
+												loading="lazy"
+												src="img/icons/arrow-right.svg"
+												alt="slide-arrow" />
 										</button>
 									</div>
 								</div>
@@ -932,16 +1304,21 @@
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
 																</div>
 																<a
 																	class="works-slide__show-all button button-primary"
-																	href="#">
+																	href="#"
+																	data-popup="#gallery-popup">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
 																		alt="icon" />
@@ -991,7 +1368,9 @@
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
@@ -1000,10 +1379,12 @@
 																	class="works-slide__show-all button button-primary"
 																	href="#">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
-																		alt="icon"/>
+																		alt="icon" />
 																</a>
 															</div>
 															<div class="works-slide__right">
@@ -1042,13 +1423,17 @@
 																</div>
 																<a
 																	class="works-slide__button button button-primary"
-																	href="#">Хочу так же</a>
+																	href="#"
+																	>Хочу так же</a
+																>
 															</div>
 														</li>
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
@@ -1057,10 +1442,12 @@
 																	class="works-slide__show-all button button-primary"
 																	href="#">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
-																		alt="icon"/>
+																		alt="icon" />
 																</a>
 															</div>
 															<div class="works-slide__right">
@@ -1099,7 +1486,9 @@
 																</div>
 																<a
 																	class="works-slide__button button button-primary"
-																	href="#">Хочу так же</a>
+																	href="#"
+																	>Хочу так же</a
+																>
 															</div>
 														</li>
 													</ul>
@@ -1109,7 +1498,9 @@
 															class="slider__arrow-prev slider__arrow splide__arrow splide__arrow--prev"
 															type="button"
 															aria-label="Previous slide">
-															<img width="100" height="100"
+															<img
+																width="100"
+																height="100"
 																loading="lazy"
 																src="img/icons/arrow-left.svg"
 																alt="slide-arrow" />
@@ -1118,7 +1509,9 @@
 															class="slider__arrow-next slider__arrow splide__arrow splide__arrow--next"
 															type="button"
 															aria-label="Next slide">
-															<img width="100" height="100"
+															<img
+																width="100"
+																height="100"
 																loading="lazy"
 																src="img/icons/arrow-right.svg"
 																alt="slide-arrow" />
@@ -1134,7 +1527,9 @@
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
@@ -1143,10 +1538,12 @@
 																	class="works-slide__show-all button button-primary"
 																	href="#">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
-																		alt="icon"/>
+																		alt="icon" />
 																</a>
 															</div>
 															<div class="works-slide__right">
@@ -1185,13 +1582,17 @@
 																</div>
 																<a
 																	class="works-slide__button button button-primary"
-																	href="#">Хочу так же</a>
+																	href="#"
+																	>Хочу так же</a
+																>
 															</div>
 														</li>
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
@@ -1200,10 +1601,12 @@
 																	class="works-slide__show-all button button-primary"
 																	href="#">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
-																		alt="icon"/>
+																		alt="icon" />
 																</a>
 															</div>
 															<div class="works-slide__right">
@@ -1242,13 +1645,17 @@
 																</div>
 																<a
 																	class="works-slide__button button button-primary"
-																	href="#">Хочу так же</a>
+																	href="#"
+																	>Хочу так же</a
+																>
 															</div>
 														</li>
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
@@ -1257,11 +1664,13 @@
 																	class="works-slide__show-all button button-primary"
 																	href="#">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
-																		alt="icon"/>
-																	</a>
+																		alt="icon" />
+																</a>
 															</div>
 															<div class="works-slide__right">
 																<h4 class="works-slide__name">
@@ -1299,7 +1708,9 @@
 																</div>
 																<a
 																	class="works-slide__button button button-primary"
-																	href="#">Хочу так же</a>
+																	href="#"
+																	>Хочу так же</a
+																>
 															</div>
 														</li>
 													</ul>
@@ -1309,7 +1720,9 @@
 															class="slider__arrow-prev slider__arrow splide__arrow splide__arrow--prev"
 															type="button"
 															aria-label="Previous slide">
-															<img width="100" height="100"
+															<img
+																width="100"
+																height="100"
 																loading="lazy"
 																src="img/icons/arrow-left.svg"
 																alt="slide-arrow" />
@@ -1318,7 +1731,9 @@
 															class="slider__arrow-next slider__arrow splide__arrow splide__arrow--next"
 															type="button"
 															aria-label="Next slide">
-															<img width="100" height="100"
+															<img
+																width="100"
+																height="100"
 																loading="lazy"
 																src="img/icons/arrow-right.svg"
 																alt="slide-arrow" />
@@ -1334,7 +1749,9 @@
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
@@ -1343,10 +1760,12 @@
 																	class="works-slide__show-all button button-primary"
 																	href="#">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
-																		alt="icon"/>
+																		alt="icon" />
 																</a>
 															</div>
 															<div class="works-slide__right">
@@ -1385,13 +1804,17 @@
 																</div>
 																<a
 																	class="works-slide__button button button-primary"
-																	href="#">Хочу так же</a>
+																	href="#"
+																	>Хочу так же</a
+																>
 															</div>
 														</li>
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
@@ -1400,10 +1823,12 @@
 																	class="works-slide__show-all button button-primary"
 																	href="#">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
-																		alt="icon"/>
+																		alt="icon" />
 																</a>
 															</div>
 															<div class="works-slide__right">
@@ -1442,13 +1867,17 @@
 																</div>
 																<a
 																	class="works-slide__button button button-primary"
-																	href="#">Хочу так же</a>
+																	href="#"
+																	>Хочу так же</a
+																>
 															</div>
 														</li>
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
@@ -1457,10 +1886,12 @@
 																	class="works-slide__show-all button button-primary"
 																	href="#">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
-																		alt="icon"/>
+																		alt="icon" />
 																</a>
 															</div>
 															<div class="works-slide__right">
@@ -1499,7 +1930,9 @@
 																</div>
 																<a
 																	class="works-slide__button button button-primary"
-																	href="#">Хочу так же</a>
+																	href="#"
+																	>Хочу так же</a
+																>
 															</div>
 														</li>
 													</ul>
@@ -1509,7 +1942,9 @@
 															class="slider__arrow-prev slider__arrow splide__arrow splide__arrow--prev"
 															type="button"
 															aria-label="Previous slide">
-															<img width="100" height="100"
+															<img
+																width="100"
+																height="100"
 																loading="lazy"
 																src="img/icons/arrow-left.svg"
 																alt="slide-arrow" />
@@ -1518,7 +1953,9 @@
 															class="slider__arrow-next slider__arrow splide__arrow splide__arrow--next"
 															type="button"
 															aria-label="Next slide">
-															<img width="100" height="100"
+															<img
+																width="100"
+																height="100"
 																loading="lazy"
 																src="img/icons/arrow-right.svg"
 																alt="slide-arrow" />
@@ -1534,7 +1971,9 @@
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
@@ -1543,10 +1982,12 @@
 																	class="works-slide__show-all button button-primary"
 																	href="#">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
-																		alt="icon"/>
+																		alt="icon" />
 																</a>
 															</div>
 															<div class="works-slide__right">
@@ -1585,13 +2026,17 @@
 																</div>
 																<a
 																	class="works-slide__button button button-primary"
-																	href="#">Хочу так же</a>
+																	href="#"
+																	>Хочу так же</a
+																>
 															</div>
 														</li>
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
@@ -1600,10 +2045,12 @@
 																	class="works-slide__show-all button button-primary"
 																	href="#">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
-																		alt="icon"/>
+																		alt="icon" />
 																</a>
 															</div>
 															<div class="works-slide__right">
@@ -1642,13 +2089,17 @@
 																</div>
 																<a
 																	class="works-slide__button button button-primary"
-																	href="#">Хочу так же</a>
+																	href="#"
+																	>Хочу так же</a
+																>
 															</div>
 														</li>
 														<li class="section-9__slide splide__slide works-slide">
 															<div class="works-slide__left">
 																<div class="works-slide__image _ibg">
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/section-9/image.webp"
 																		alt="slide" />
@@ -1657,10 +2108,12 @@
 																	class="works-slide__show-all button button-primary"
 																	href="#">
 																	<span>Смотреть все фото</span>
-																	<img width="100" height="100"
+																	<img
+																		width="100"
+																		height="100"
 																		loading="lazy"
 																		src="img/icons/link-arrow--white.svg"
-																		alt="icon"/>
+																		alt="icon" />
 																</a>
 															</div>
 															<div class="works-slide__right">
@@ -1699,7 +2152,9 @@
 																</div>
 																<a
 																	class="works-slide__button button button-primary"
-																	href="#">Хочу так же</a>
+																	href="#"
+																	>Хочу так же</a
+																>
 															</div>
 														</li>
 													</ul>
@@ -1709,7 +2164,9 @@
 															class="slider__arrow-prev slider__arrow splide__arrow splide__arrow--prev"
 															type="button"
 															aria-label="Previous slide">
-															<img width="100" height="100"
+															<img
+																width="100"
+																height="100"
 																loading="lazy"
 																src="img/icons/arrow-left.svg"
 																alt="slide-arrow" />
@@ -1718,7 +2175,9 @@
 															class="slider__arrow-next slider__arrow splide__arrow splide__arrow--next"
 															type="button"
 															aria-label="Next slide">
-															<img width="100" height="100"
+															<img
+																width="100"
+																height="100"
 																loading="lazy"
 																src="img/icons/arrow-right.svg"
 																alt="slide-arrow" />
@@ -1754,11 +2213,36 @@
 												Я просто в восторге от «Мой мебельный №1»!
 											</h3>
 											<div class="feedback-slide__value-wrapper">
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
 											</div>
 											<p class="feedback-slide__text">
 												Недавно заказали у них кухню для нашего нового дома, и результат
@@ -1769,15 +2253,40 @@
 											</p>
 											<div class="feedback-slide__photos">
 												<div class="feedback-slide__photos-imgs">
-													<img width="100" height="100" loading="lazy" src="img/section-10/01.webp" alt="photo" />
-													<img width="100" height="100" loading="lazy" src="img/section-10/04.webp" alt="photo" />
-													<img width="100" height="100" loading="lazy" src="img/section-10/03.webp" alt="photo" />
-													<img width="100" height="100" loading="lazy" src="img/section-10/04.webp" alt="photo" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-10/01.webp"
+														alt="photo" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-10/04.webp"
+														alt="photo" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-10/03.webp"
+														alt="photo" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-10/04.webp"
+														alt="photo" />
 												</div>
 												<div class="feedback-slide__photos-more">+ 4 фото</div>
 											</div>
 											<div class="feedback-slide__bottom">
-												<a class="feedback-slide__more button button-secondary" href="#">Читать подробнее</a>
+												<a
+													class="feedback-slide__more button button-secondary"
+													href="#"
+													data-popup="#feedbacks-popup"
+													>Читать подробнее</a
+												>
 												<div class="feedback-slide__author-wrapper">
 													<p class="feedback-slide__author-name text-accent">Мария</p>
 													<p class="feedback-slide__author-time">13 января 2023</p>
@@ -1789,11 +2298,36 @@
 												Я просто в восторге от «Мой мебельный №1»!
 											</h3>
 											<div class="feedback-slide__value-wrapper">
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
 											</div>
 											<p class="feedback-slide__text">
 												Недавно заказали у них кухню для нашего нового дома, и результат
@@ -1817,11 +2351,36 @@
 												Я просто в восторге от «Мой мебельный №1»!
 											</h3>
 											<div class="feedback-slide__value-wrapper">
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
 											</div>
 											<p class="feedback-slide__text">
 												Недавно заказали у них кухню для нашего нового дома, и результат
@@ -1832,12 +2391,19 @@
 											</p>
 											<div class="feedback-slide__photos">
 												<div class="feedback-slide__photos-imgs">
-													<img width="100" height="100" loading="lazy" src="img/section-10/01.webp" alt="photo" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-10/01.webp"
+														alt="photo" />
 												</div>
 												<div class="feedback-slide__photos-more">+ 4 фото</div>
 											</div>
 											<div class="feedback-slide__bottom">
-												<a class="feedback-slide__more button button-secondary" href="#">Читать подробнее</a>
+												<a class="feedback-slide__more button button-secondary" href="#"
+													>Читать подробнее</a
+												>
 												<div class="feedback-slide__author-wrapper">
 													<p class="feedback-slide__author-name text-accent">Мария</p>
 													<p class="feedback-slide__author-time">13 января 2023</p>
@@ -1849,11 +2415,36 @@
 												Я просто в восторге от «Мой мебельный №1»!
 											</h3>
 											<div class="feedback-slide__value-wrapper">
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
-												<img width="100" height="100" loading="lazy" src="img/section-10/star.svg" alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-10/star.svg"
+													alt="start" />
 											</div>
 											<p class="feedback-slide__text">
 												Недавно заказали у них кухню для нашего нового дома, и результат
@@ -1864,15 +2455,37 @@
 											</p>
 											<div class="feedback-slide__photos">
 												<div class="feedback-slide__photos-imgs">
-													<img width="100" height="100" loading="lazy" src="img/section-10/01.webp" alt="photo" />
-													<img width="100" height="100" loading="lazy" src="img/section-10/04.webp" alt="photo" />
-													<img width="100" height="100" loading="lazy" src="img/section-10/03.webp" alt="photo" />
-													<img width="100" height="100" loading="lazy" src="img/section-10/04.webp" alt="photo" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-10/01.webp"
+														alt="photo" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-10/04.webp"
+														alt="photo" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-10/03.webp"
+														alt="photo" />
+													<img
+														width="100"
+														height="100"
+														loading="lazy"
+														src="img/section-10/04.webp"
+														alt="photo" />
 												</div>
 												<div class="feedback-slide__photos-more">+ 4 фото</div>
 											</div>
 											<div class="feedback-slide__bottom">
-												<a class="feedback-slide__more button button-secondary" href="#">Читать подробнее</a>
+												<a class="feedback-slide__more button button-secondary" href="#"
+													>Читать подробнее</a
+												>
 												<div class="feedback-slide__author-wrapper">
 													<p class="feedback-slide__author-name text-accent">Мария</p>
 													<p class="feedback-slide__author-time">13 января 2023</p>
@@ -1886,13 +2499,23 @@
 											class="slider__arrow-prev feedback-arrow feedback-arrow-prev slider__arrow splide__arrow splide__arrow--prev"
 											type="button"
 											aria-label="Previous slide">
-											<img width="100" height="100" loading="lazy" src="img/icons/arrow-left.svg" alt="slide-arrow" />
+											<img
+												width="100"
+												height="100"
+												loading="lazy"
+												src="img/icons/arrow-left.svg"
+												alt="slide-arrow" />
 										</button>
 										<button
 											class="slider__arrow-next feedback-arrow feedback-arrow-next slider__arrow splide__arrow splide__arrow--next"
 											type="button"
 											aria-label="Next slide">
-											<img width="100" height="100" loading="lazy" src="img/icons/arrow-right.svg" alt="slide-arrow" />
+											<img
+												width="100"
+												height="100"
+												loading="lazy"
+												src="img/icons/arrow-right.svg"
+												alt="slide-arrow" />
 										</button>
 									</div>
 								</div>
@@ -1900,23 +2523,38 @@
 							<div class="section-10__action-wrapper">
 								<div class="section-10__actions">
 									<p class="section-10__action-text">Вы тоже можете оставить отзыв о нашей работе</p>
-									<a class="section-10__button button button-primary" href="#">Сказать спасибо</a>
+									<a
+										class="section-10__button button button-primary"
+										href="#"
+										data-popup="#feedback-popup"
+										>Сказать спасибо</a
+									>
 								</div>
 								<div
-										class="section-10__slider-controlls section-10__slider-controlls--real slider__controlls splide__arrows splide__arrows--ltr">
-										<button
-											class="slider__arrow-prev feedback-arrow feedback-arrow-prev slider__arrow splide__arrow splide__arrow--prev"
-											type="button"
-											aria-label="Previous slide">
-											<img width="100" height="100" loading="lazy" src="img/icons/arrow-left.svg" alt="slide-arrow" />
-										</button>
-										<button
-											class="slider__arrow-next feedback-arrow feedback-arrow-next slider__arrow splide__arrow splide__arrow--next"
-											type="button"
-											aria-label="Next slide">
-											<img width="100" height="100" loading="lazy" src="img/icons/arrow-right.svg" alt="slide-arrow" />
-										</button>
-									</div>
+									class="section-10__slider-controlls section-10__slider-controlls--real slider__controlls splide__arrows splide__arrows--ltr">
+									<button
+										class="slider__arrow-prev feedback-arrow feedback-arrow-prev slider__arrow splide__arrow splide__arrow--prev"
+										type="button"
+										aria-label="Previous slide">
+										<img
+											width="100"
+											height="100"
+											loading="lazy"
+											src="img/icons/arrow-left.svg"
+											alt="slide-arrow" />
+									</button>
+									<button
+										class="slider__arrow-next feedback-arrow feedback-arrow-next slider__arrow splide__arrow splide__arrow--next"
+										type="button"
+										aria-label="Next slide">
+										<img
+											width="100"
+											height="100"
+											loading="lazy"
+											src="img/icons/arrow-right.svg"
+											alt="slide-arrow" />
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1933,7 +2571,9 @@
 									<div class="section-11__accordion accordion">
 										<div class="accordion__header">
 											<button class="accordion__trigger">
-												<span class="accordion__header-text">Как вызвать дизайнера на замер?</span>
+												<span class="accordion__header-text"
+													>Как вызвать дизайнера на замер?</span
+												>
 												<svg
 													class="accordion__header-icon"
 													xmlns="http://www.w3.org/2000/svg"
@@ -2082,7 +2722,9 @@
 									<div class="section-11__accordion accordion">
 										<div class="accordion__header">
 											<button class="accordion__trigger">
-												<span class="accordion__header-text">Какой срок изготовления мебели?</span>
+												<span class="accordion__header-text"
+													>Какой срок изготовления мебели?</span
+												>
 												<svg
 													class="accordion__header-icon"
 													xmlns="http://www.w3.org/2000/svg"
@@ -2151,7 +2793,9 @@
 									<div class="section-11__accordion accordion">
 										<div class="accordion__header">
 											<button class="accordion__trigger">
-												<span class="accordion__header-text">Нужно ли платить за подъем мебели?</span>
+												<span class="accordion__header-text"
+													>Нужно ли платить за подъем мебели?</span
+												>
 												<svg
 													class="accordion__header-icon"
 													xmlns="http://www.w3.org/2000/svg"
@@ -2200,7 +2844,9 @@
 									<div class="section-11__accordion accordion">
 										<div class="accordion__header">
 											<button class="accordion__trigger">
-												<span class="accordion__header-text">Какие существуют способы оплаты?</span>
+												<span class="accordion__header-text"
+													>Какие существуют способы оплаты?</span
+												>
 												<svg
 													class="accordion__header-icon"
 													xmlns="http://www.w3.org/2000/svg"
@@ -2221,8 +2867,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="section-11__col section-11__col--right">
-								</div>
+								<div class="section-11__col section-11__col--right"></div>
 							</div>
 						</div>
 					</div>
@@ -2243,25 +2888,45 @@
 									<ul class="section-12__slider-list splide__list">
 										<li class="section-12__slide splide__slide">
 											<div class="section-12__slide-img _ibg">
-												<img width="100" height="100" loading="lazy" src="img/section-12/01.webp" alt="slide" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-12/01.webp"
+													alt="slide" />
 											</div>
 											<h4 class="section-12__slide-title">Шкафы</h4>
 										</li>
 										<li class="section-12__slide splide__slide">
 											<div class="section-12__slide-img _ibg">
-												<img width="100" height="100" loading="lazy" src="img/section-12/02.webp" alt="slide" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-12/02.webp"
+													alt="slide" />
 											</div>
 											<h4 class="section-12__slide-title">Прихожие</h4>
 										</li>
 										<li class="section-12__slide splide__slide">
 											<div class="section-12__slide-img _ibg">
-												<img width="100" height="100" loading="lazy" src="img/section-12/03.webp" alt="slide" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-12/03.webp"
+													alt="slide" />
 											</div>
 											<h4 class="section-12__slide-title">Гардеробные</h4>
 										</li>
 										<li class="section-12__slide splide__slide">
 											<div class="section-12__slide-img _ibg">
-												<img width="100" height="100" loading="lazy" src="img/section-12/04.webp" alt="slide" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/section-12/04.webp"
+													alt="slide" />
 											</div>
 											<h4 class="section-12__slide-title">Офисная мебель</h4>
 										</li>
@@ -2290,27 +2955,48 @@
 									<div class="info-section__items">
 										<a class="info-section__item" href="tel:+79262929211">
 											<div class="info-section__icon">
-												<img width="100" height="100" loading="lazy" src="img/icons/phone.svg" alt="icon" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/icons/phone.svg"
+													alt="icon" />
 											</div>
 											<span>+7 (926) 29-29-211</span>
 										</a>
 										<a class="info-section__item" href="#">
 											<div class="info-section__icon">
-												<img width="100" height="100" loading="lazy" src="img/icons/whatsapp.svg" alt="icon" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/icons/whatsapp.svg"
+													alt="icon" />
 											</div>
 											<span>WhatsApp</span>
 										</a>
 										<a class="info-section__item" href="mailto:mymeb1@yandex.ru">
 											<div class="info-section__icon">
-												<img width="100" height="100" loading="lazy" src="img/icons/mail.svg" alt="icon" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/icons/mail.svg"
+													alt="icon" />
 											</div>
 											<span>mymeb1@yandex.ru</span>
 										</a>
 										<a class="info-section__item" href="#">
 											<div class="info-section__icon">
-												<img width="100" height="100" loading="lazy" src="img/icons/location.svg" alt="icon" />
+												<img
+													width="100"
+													height="100"
+													loading="lazy"
+													src="img/icons/location.svg"
+													alt="icon" />
 											</div>
-											<span>Россия, Московская область, г. Балашиха, мкр. Железнодорожный,
+											<span
+												>Россия, Московская область, г. Балашиха, мкр. Железнодорожный,
 												ул. Автозаводская, 50А, оф. 26
 											</span>
 										</a>
@@ -2415,19 +3101,34 @@
 							<div class="footer__info">
 								<a class="footer__info-item" href="tel:+79262929211">
 									<div class="footer__info-item-icon">
-										<img width="100" height="100" loading="lazy" src="img/icons/phone.svg" alt="icon" />
+										<img
+											width="100"
+											height="100"
+											loading="lazy"
+											src="img/icons/phone.svg"
+											alt="icon" />
 									</div>
 									<span>+7 (926) 29-29-211</span>
 								</a>
 								<a class="footer__info-item" href="#">
 									<div class="footer__info-item-icon">
-										<img width="100" height="100" loading="lazy" src="img/icons/whatsapp.svg" alt="icon" />
+										<img
+											width="100"
+											height="100"
+											loading="lazy"
+											src="img/icons/whatsapp.svg"
+											alt="icon" />
 									</div>
 									<span>WhatsApp</span>
 								</a>
 								<a class="footer__info-item" href="mailto:mymeb1@yandex.ru">
 									<div class="footer__info-item-icon">
-										<img width="100" height="100" loading="lazy" src="img/icons/mail.svg" alt="icon" />
+										<img
+											width="100"
+											height="100"
+											loading="lazy"
+											src="img/icons/mail.svg"
+											alt="icon" />
 									</div>
 									<span>mymeb1@yandex.ru</span>
 								</a>
@@ -2438,14 +3139,926 @@
 						</div>
 						<div class="footer__bottom">
 							<p class="footer__bottom-copy">2023 © Все права защищены</p>
-							<a class="footer__bottom-policy" href="#">Политика в отношении обработки персональных данных</a>
+							<a class="footer__bottom-policy" href="#"
+								>Политика в отношении обработки персональных данных</a
+							>
 							<a class="footer__bottom-web" href="#" target="_blank">
-								<img width="100" height="100" loading="lazy" src="img/footer/digital-web.png" alt="digital-web" />
+								<img
+									width="100"
+									height="100"
+									loading="lazy"
+									src="img/footer/digital-web.png"
+									alt="digital-web" />
 							</a>
 						</div>
 					</div>
 				</div>
 			</footer>
+		</div>
+
+		<div class="popup popup--image-reset" id="feedbacks-popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<h2 class="popup__title section-title">Отзывы</h2>
+						<div class="popup__conditions">
+							<div class="popup__conditions-text popup__conditions-text--third">
+								Я просто в восторге от «Мой мебельный №1»!
+							</div>
+						</div>
+						<div class="popup__rates">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+								<path
+									d="M11.1038 2.81699C11.4706 2.07374 12.5305 2.07374 12.8973 2.81699L15.5273 8.1459L21.4081 9.00043C22.2283 9.11961 22.5558 10.1276 21.9623 10.7061L17.7069 14.8541L18.7115 20.7111C18.8516 21.528 17.9941 22.151 17.2605 21.7653L12.0006 19L6.74062 21.7653C6.00699 22.151 5.14956 21.528 5.28967 20.7111L6.29423 14.8541L2.03884 10.7061C1.44532 10.1276 1.77283 9.11961 2.59305 9.00043L8.47386 8.1459L11.1038 2.81699Z"
+									fill="#6BBB41" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+								<path
+									d="M11.1038 2.81699C11.4706 2.07374 12.5305 2.07374 12.8973 2.81699L15.5273 8.1459L21.4081 9.00043C22.2283 9.11961 22.5558 10.1276 21.9623 10.7061L17.7069 14.8541L18.7115 20.7111C18.8516 21.528 17.9941 22.151 17.2605 21.7653L12.0006 19L6.74062 21.7653C6.00699 22.151 5.14956 21.528 5.28967 20.7111L6.29423 14.8541L2.03884 10.7061C1.44532 10.1276 1.77283 9.11961 2.59305 9.00043L8.47386 8.1459L11.1038 2.81699Z"
+									fill="#6BBB41" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+								<path
+									d="M11.1038 2.81699C11.4706 2.07374 12.5305 2.07374 12.8973 2.81699L15.5273 8.1459L21.4081 9.00043C22.2283 9.11961 22.5558 10.1276 21.9623 10.7061L17.7069 14.8541L18.7115 20.7111C18.8516 21.528 17.9941 22.151 17.2605 21.7653L12.0006 19L6.74062 21.7653C6.00699 22.151 5.14956 21.528 5.28967 20.7111L6.29423 14.8541L2.03884 10.7061C1.44532 10.1276 1.77283 9.11961 2.59305 9.00043L8.47386 8.1459L11.1038 2.81699Z"
+									fill="#6BBB41" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+								<path
+									d="M11.1038 2.81699C11.4706 2.07374 12.5305 2.07374 12.8973 2.81699L15.5273 8.1459L21.4081 9.00043C22.2283 9.11961 22.5558 10.1276 21.9623 10.7061L17.7069 14.8541L18.7115 20.7111C18.8516 21.528 17.9941 22.151 17.2605 21.7653L12.0006 19L6.74062 21.7653C6.00699 22.151 5.14956 21.528 5.28967 20.7111L6.29423 14.8541L2.03884 10.7061C1.44532 10.1276 1.77283 9.11961 2.59305 9.00043L8.47386 8.1459L11.1038 2.81699Z"
+									fill="#6BBB41" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+								<path
+									d="M11.1038 2.81699C11.4706 2.07374 12.5305 2.07374 12.8973 2.81699L15.5273 8.1459L21.4081 9.00043C22.2283 9.11961 22.5558 10.1276 21.9623 10.7061L17.7069 14.8541L18.7115 20.7111C18.8516 21.528 17.9941 22.151 17.2605 21.7653L12.0006 19L6.74062 21.7653C6.00699 22.151 5.14956 21.528 5.28967 20.7111L6.29423 14.8541L2.03884 10.7061C1.44532 10.1276 1.77283 9.11961 2.59305 9.00043L8.47386 8.1459L11.1038 2.81699Z"
+									fill="#6BBB41" />
+							</svg>
+						</div>
+						<div class="popup__rates-text-wrapper">
+							<p>
+								Недавно заказали у них кухню для нашего нового дома, и результат превзошёл все ожидания.
+								Качество изготовления, внимание к деталям и профессионализм сотрудников — на высшем
+								уровне. Кухня стала настоящим центром нашего дома. Большое спасибо команде
+								«Мой мебельный № 1» за их отличную работу!Недавно заказали у них кухню для нашего нового
+								дома, и результат превзошёл все ожидания. Качество изготовления, внимание к деталям
+								и профессионализм сотрудников — на высшем уровне. Кухня стала настоящим центром нашего
+								дома. Большое спасибо команде «Мой мебельный № 1» за их отличную работу!
+							</p>
+							<p>
+								Недавно заказали у них кухню для нашего нового дома, и результат превзошёл все ожидания.
+								Качество изготовления, внимание к деталям и профессионализм сотрудников — на высшем
+								уровне. Кухня стала настоящим центром нашего дома. Большое спасибо команде
+								«Мой мебельный № 1» за их отличную работу!
+							</p>
+						</div>
+						<section
+							class="rate-popup-slider splide"
+							aria-label="Splide Basic HTML Example"
+							id="rate-popup-slider">
+							<div class="rate-popup-slider__track splide__track">
+								<ul class="rate-popup-slider__list splide__list">
+									<li class="rate-popup-slider__slide splide__slide">
+										<div class="rate-popup-slider__slide-img">
+											<img src="img/popup/feedbacks/01.jpg" alt="image" />
+										</div>
+										<div class="rate-popup-slider__slide-icon">
+											<img src="img/popup/loupe.svg" alt="icon" />
+										</div>
+									</li>
+									<li class="rate-popup-slider__slide splide__slide">
+										<div class="rate-popup-slider__slide-img">
+											<img src="img/popup/feedbacks/02.jpg" alt="image" />
+										</div>
+										<div class="rate-popup-slider__slide-icon">
+											<img src="img/popup/loupe.svg" alt="icon" />
+										</div>
+									</li>
+									<li class="rate-popup-slider__slide splide__slide">
+										<div class="rate-popup-slider__slide-img">
+											<img src="img/popup/feedbacks/03.jpg" alt="image" />
+										</div>
+										<div class="rate-popup-slider__slide-icon">
+											<img src="img/popup/loupe.svg" alt="icon" />
+										</div>
+									</li>
+									<li class="rate-popup-slider__slide splide__slide">
+										<div class="rate-popup-slider__slide-img">
+											<img src="img/popup/feedbacks/04.jpg" alt="image" />
+										</div>
+										<div class="rate-popup-slider__slide-icon">
+											<img src="img/popup/loupe.svg" alt="icon" />
+										</div>
+									</li>
+									<li class="rate-popup-slider__slide splide__slide">
+										<div class="rate-popup-slider__slide-img">
+											<img src="img/popup/feedbacks/05.jpg" alt="image" />
+										</div>
+										<div class="rate-popup-slider__slide-icon">
+											<img src="img/popup/loupe.svg" alt="icon" />
+										</div>
+									</li>
+									<li class="rate-popup-slider__slide splide__slide">
+										<div class="rate-popup-slider__slide-img">
+											<img src="img/popup/feedbacks/05.jpg" alt="image" />
+										</div>
+										<div class="rate-popup-slider__slide-icon">
+											<img src="img/popup/loupe.svg" alt="icon" />
+										</div>
+									</li>
+									<li class="rate-popup-slider__slide splide__slide">
+										<div class="rate-popup-slider__slide-img">
+											<img src="img/popup/feedbacks/05.jpg" alt="image" />
+										</div>
+										<div class="rate-popup-slider__slide-icon">
+											<img src="img/popup/loupe.svg" alt="icon" />
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div
+								class="rate-popup-slider__controlls slider__controlls splide__arrows splide__arrows--ltr">
+								<button
+									class="slider__arrow-prev slider__arrow splide__arrow splide__arrow--prev"
+									type="button"
+									aria-label="Previous slide">
+									<img
+										width="100"
+										height="100"
+										loading="lazy"
+										src="img/popup/arrow-left.svg"
+										alt="slide-arrow" />
+								</button>
+								<button
+									class="slider__arrow-next slider__arrow splide__arrow splide__arrow--next"
+									type="button"
+									aria-label="Next slide">
+									<img
+										width="100"
+										height="100"
+										loading="lazy"
+										src="img/popup/arrow-right.svg"
+										alt="slide-arrow" />
+								</button>
+							</div>
+						</section>
+						<div class="popup__rate-author">
+							<div class="popup__rate-author-name">Мария</div>
+							<div class="popup__rate-author-date">13 января 2023</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--image-reset" id="feedback-popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<h2 class="popup__title section-title">Оставить отзыв</h2>
+						<div class="popup__conditions">
+							<div class="popup__conditions-text popup__conditions-text--second">
+								Вы можете оставить отзыв о нашей работе
+							</div>
+						</div>
+						<form class="popup__form">
+							<div class="popup__fields">
+								<div class="popup__field popup__field--1">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Почта</span>
+										<input class="input" type="email" placeholder="mymeb1@yandex.ru" />
+									</label>
+								</div>
+								<div class="popup__field-sum">
+									<div class="popup__field popup__field--2">
+										<label class="popup__input input-label">
+											<span class="input-placeholder">Заголовок</span>
+											<textarea class="input" type="text" placeholder="Текст"></textarea>
+										</label>
+									</div>
+									<div class="popup__field popup__field--3">
+										<label class="popup__input popup__textarea popup__input--textarea input-label">
+											<div class="popup__textarea-field">
+												<span class="input-placeholder">Текст отзыва</span>
+												<textarea class="input" type="text" placeholder="Текст"></textarea>
+											</div>
+											<div class="popup__textarea-bottom">
+												<div class="popup__textarea-text">
+													Вы можете прикрепить свой дизайн макет
+												</div>
+												<label class="popup__textarea-bottom-label">
+													<input type="file" />
+													<div class="popup__textarea-bottom-label-wrapper">
+														<div class="popup__textarea-bottom-label-icon">
+															<img src="img/popup/file.svg" alt="icon" />
+														</div>
+														<span>Прикрепить файл</span>
+													</div>
+												</label>
+											</div>
+										</label>
+									</div>
+									<div class="popup__field popup__field--4">
+										<div class="popup__field-title">Оценка:</div>
+										<select name="form[]" data-class-modif="form">
+											<option value="5" selected>5</option>
+											<option value="4">4</option>
+											<option value="3">3</option>
+											<option value="2">2</option>
+											<option value="1">1</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="popup__policy">
+								<label class="checkbox">
+									<input type="checkbox" />
+									<span class="checkbox__inner"></span>
+								</label>
+								<p class="popup__policy-text">
+									Нажимая на кнопку вы соглашаетесь с условиями
+									<a href="#">Политики конфиденциальности</a>
+								</p>
+							</div>
+							<div class="popup__action">
+								<button class="popup__button button button-primary">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup" id="stock-popup--1">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<div class="popup__content-left _ibg">
+							<img src="img/popup/stock/01.jpg" alt="popup-image" />
+						</div>
+						<div class="popup__content-right">
+							<h2 class="popup__title section-title">Наши акции</h2>
+							<div class="popup__sub-title">Бесплатный монтаж</div>
+							<div class="popup__conditions">
+								<div class="popup__conditions-title">Условия акции:</div>
+								<div class="popup__conditions-text">
+									Бесплатный монтаж при мебелировании всей квартиры
+								</div>
+							</div>
+							<div class="popup__clarification"><span>*</span> Подробности уточнять у менеджера</div>
+							<form class="popup__form">
+								<div class="popup__fields">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+								</div>
+								<div class="popup__policy">
+									<label class="checkbox">
+										<input type="checkbox" />
+										<span class="checkbox__inner"></span>
+									</label>
+									<p class="popup__policy-text">
+										Нажимая на кнопку вы соглашаетесь с условиями
+										<a href="#">Политики конфиденциальности</a>
+									</p>
+								</div>
+								<div class="popup__action">
+									<button class="popup__button button button-primary">Заказать консультацию</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="stock-popup--2">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<div class="popup__content-left _ibg">
+							<img src="img/popup/stock/02.jpg" alt="popup-image" />
+						</div>
+						<div class="popup__content-right">
+							<h2 class="popup__title section-title">Наши акции</h2>
+							<div class="popup__sub-title">Мойка в подарок при заказе</div>
+							<div class="popup__conditions">
+								<div class="popup__conditions-title">Условия акции:</div>
+								<div class="popup__conditions-text">При заказе кухни каменная мойка в подарок</div>
+							</div>
+							<div class="popup__clarification"><span>*</span> Подробности уточнять у менеджера</div>
+							<form class="popup__form">
+								<div class="popup__fields">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+								</div>
+								<div class="popup__policy">
+									<label class="checkbox">
+										<input type="checkbox" />
+										<span class="checkbox__inner"></span>
+									</label>
+									<p class="popup__policy-text">
+										Нажимая на кнопку вы соглашаетесь с условиями
+										<a href="#">Политики конфиденциальности</a>
+									</p>
+								</div>
+								<div class="popup__action">
+									<button class="popup__button button button-primary">Заказать консультацию</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="stock-popup--3">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<div class="popup__content-left _ibg">
+							<img src="img/popup/stock/03.jpg" alt="popup-image" />
+						</div>
+						<div class="popup__content-right">
+							<h2 class="popup__title section-title">Наши акции</h2>
+							<div class="popup__sub-title">Вытяжка в подарок при покупке</div>
+							<div class="popup__conditions">
+								<div class="popup__conditions-title">Условия акции:</div>
+								<div class="popup__conditions-text">При покупке кухни с техникой вытяжка в подарок</div>
+							</div>
+							<div class="popup__clarification"><span>*</span> Подробности уточнять у менеджера</div>
+							<form class="popup__form">
+								<div class="popup__fields">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+								</div>
+								<div class="popup__policy">
+									<label class="checkbox">
+										<input type="checkbox" />
+										<span class="checkbox__inner"></span>
+									</label>
+									<p class="popup__policy-text">
+										Нажимая на кнопку вы соглашаетесь с условиями
+										<a href="#">Политики конфиденциальности</a>
+									</p>
+								</div>
+								<div class="popup__action">
+									<button class="popup__button button button-primary">Заказать консультацию</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="designer-popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<div class="popup__content-left _ibg">
+							<img src="img/popup/designer/background.jpg" alt="popup-image" />
+						</div>
+						<div class="popup__content-right">
+							<h2 class="popup__title section-title">Вызов дизайнера</h2>
+							<div class="popup__conditions">
+								<div class="popup__conditions-text">
+									Заполните форму и мы свяжемся с вами в ближайшее время
+								</div>
+							</div>
+							<form class="popup__form">
+								<div class="popup__fields">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+									<label class="popup__input popup__textarea popup__input--textarea input-label">
+										<div class="popup__textarea-field">
+											<span class="input-placeholder">Сообщение</span>
+											<textarea class="input" type="text" placeholder="Текст"></textarea>
+										</div>
+									</label>
+								</div>
+								<div class="popup__policy">
+									<label class="checkbox">
+										<input type="checkbox" />
+										<span class="checkbox__inner"></span>
+									</label>
+									<p class="popup__policy-text">
+										Нажимая на кнопку вы соглашаетесь с условиями
+										<a href="#">Политики конфиденциальности</a>
+									</p>
+								</div>
+								<div class="popup__action">
+									<button class="popup__button button button-primary">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="calculate-popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<div class="popup__content-left _ibg">
+							<img src="img/popup/calculate/background.jpg" alt="popup-image" />
+						</div>
+						<div class="popup__content-right">
+							<h2 class="popup__title section-title">Рассчитать стоимость</h2>
+							<div class="popup__conditions">
+								<div class="popup__conditions-text">
+									Заполните форму и мы свяжемся с вами в ближайшее время
+								</div>
+							</div>
+							<form class="popup__form">
+								<div class="popup__fields">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+									<label class="popup__input popup__textarea popup__input--textarea input-label">
+										<div class="popup__textarea-field">
+											<span class="input-placeholder">Сообщение</span>
+											<textarea class="input" type="text" placeholder="Текст"></textarea>
+										</div>
+										<div class="popup__textarea-bottom">
+											<div class="popup__textarea-text">
+												Вы можете прикрепить свой дизайн макет
+											</div>
+											<label class="popup__textarea-bottom-label">
+												<input type="file" />
+												<div class="popup__textarea-bottom-label-wrapper">
+													<div class="popup__textarea-bottom-label-icon">
+														<img src="img/popup/file.svg" alt="icon" />
+													</div>
+													<span>Прикрепить файл</span>
+												</div>
+											</label>
+										</div>
+									</label>
+								</div>
+								<div class="popup__policy">
+									<label class="checkbox">
+										<input type="checkbox" />
+										<span class="checkbox__inner"></span>
+									</label>
+									<p class="popup__policy-text">
+										Нажимая на кнопку вы соглашаетесь с условиями
+										<a href="#">Политики конфиденциальности</a>
+									</p>
+								</div>
+								<div class="popup__action">
+									<button class="popup__button button button-primary">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="froze-popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<div class="popup__content-left _ibg">
+							<img src="img/popup/froze/background.jpg" alt="popup-image" />
+						</div>
+						<div class="popup__content-right">
+							<h2 class="popup__title section-title">Бесплатный замер</h2>
+							<div class="popup__conditions">
+								<div class="popup__conditions-text">
+									Заполните форму и мы свяжемся с вами в ближайшее время
+								</div>
+							</div>
+							<form class="popup__form">
+								<div class="popup__fields">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+									<label class="popup__input popup__textarea popup__input--textarea input-label">
+										<div class="popup__textarea-field">
+											<span class="input-placeholder">Сообщение</span>
+											<textarea class="input" type="text" placeholder="Текст"></textarea>
+										</div>
+									</label>
+								</div>
+								<div class="popup__policy">
+									<label class="checkbox">
+										<input type="checkbox" />
+										<span class="checkbox__inner"></span>
+									</label>
+									<p class="popup__policy-text">
+										Нажимая на кнопку вы соглашаетесь с условиями
+										<a href="#">Политики конфиденциальности</a>
+									</p>
+								</div>
+								<div class="popup__action">
+									<button class="popup__button button button-primary">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="call-popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<div class="popup__content-left _ibg">
+							<img src="img/popup/call/background.jpg" alt="popup-image" />
+						</div>
+						<div class="popup__content-right">
+							<h2 class="popup__title section-title">Заказать звонок</h2>
+							<div class="popup__conditions">
+								<div class="popup__conditions-text">
+									Заполните форму и мы свяжемся с вами в ближайшее время
+								</div>
+							</div>
+							<form class="popup__form">
+								<div class="popup__fields">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+									<label class="popup__input popup__textarea popup__input--textarea input-label">
+										<div class="popup__textarea-field">
+											<span class="input-placeholder">Сообщение</span>
+											<textarea class="input" type="text" placeholder="Текст"></textarea>
+										</div>
+									</label>
+								</div>
+								<div class="popup__policy">
+									<label class="checkbox">
+										<input type="checkbox" />
+										<span class="checkbox__inner"></span>
+									</label>
+									<p class="popup__policy-text">
+										Нажимая на кнопку вы соглашаетесь с условиями
+										<a href="#">Политики конфиденциальности</a>
+									</p>
+								</div>
+								<div class="popup__action">
+									<button class="popup__button button button-primary">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup" id="kitchen-popup--1">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<div class="popup__content-left _ibg">
+							<img src="img/popup/kitchen/01.jpg" alt="popup-image" />
+						</div>
+						<div class="popup__content-right">
+							<h2 class="popup__title section-title">П-образные кухни</h2>
+							<div class="popup__conditions">
+								<div class="popup__conditions-title">
+									Это кухни при котором гарнитур с непрерывной столешницей занимает три рядом
+									расположенные стены и два угла, называется П-образной. Имеют ряд преимуществ.
+									Возможность реализовать «правило рабочего треугольника» – то есть, разместить
+									холодильник, мойку и плиту так, чтобы они образовывали равносторонний треугольник
+									со сторонами до 1,5 м, что наиболее удачном с точки зрения эргономики. Возможность
+									зонирования, та как позволяет чётко отделить кухню от столовой зоны. Много
+									пространства, чтобы разместить шкафы для хранения. Но такие кухни непросты
+									в проектировании. Не подходит для кухонь площадью менее 7 м2.
+								</div>
+							</div>
+							<form class="popup__form">
+								<div class="popup__fields">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+								</div>
+								<div class="popup__policy">
+									<label class="checkbox">
+										<input type="checkbox" />
+										<span class="checkbox__inner"></span>
+									</label>
+									<p class="popup__policy-text">
+										Нажимая на кнопку вы соглашаетесь с условиями
+										<a href="#">Политики конфиденциальности</a>
+									</p>
+								</div>
+								<div class="popup__action">
+									<button class="popup__button button button-primary">Заказать звонок</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="kitchen-popup--2">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<div class="popup__content-left _ibg">
+							<img src="img/popup/kitchen/02.jpg" alt="popup-image" />
+						</div>
+						<div class="popup__content-right">
+							<h2 class="popup__title section-title">Прямые кухни</h2>
+							<div class="popup__conditions">
+								<div class="popup__conditions-title">
+									Особенностью является идеальные пропорции и чёткие линии. Подойдёт прежде всего
+									для небольших помещений, хотя хорошо смотрятся и в просторных. Простые линии,
+									геометрические формы. Не занимает много места, все ящики, шкафы под рукой. Но если
+									длина кухонного гарнитура будет более 3–4 метров создаётся некий дискомфорт.
+								</div>
+							</div>
+							<form class="popup__form">
+								<div class="popup__fields">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+								</div>
+								<div class="popup__policy">
+									<label class="checkbox">
+										<input type="checkbox" />
+										<span class="checkbox__inner"></span>
+									</label>
+									<p class="popup__policy-text">
+										Нажимая на кнопку вы соглашаетесь с условиями
+										<a href="#">Политики конфиденциальности</a>
+									</p>
+								</div>
+								<div class="popup__action">
+									<button class="popup__button button button-primary">Заказать звонок</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="kitchen-popup--3">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<div class="popup__content-left _ibg">
+							<img src="img/popup/kitchen/03.jpg" alt="popup-image" />
+						</div>
+						<div class="popup__content-right">
+							<h2 class="popup__title section-title">Кухни с островом</h2>
+							<div class="popup__conditions">
+								<div class="popup__conditions-title">
+									Кухни при котором имеется кухонный остров — отдельно стоящая, не примыкающая к стене
+									часть кухонного гарнитура или вовсе отдельный от основной кухни элемент. Имеют
+									плюсы: эргономичность, так как дополнительные рабочие поверхности и шкафы делают
+									приготовление еды более удобным. Функциональность, так как к острову есть свободный
+									доступ с трёх сторон. Эстетичность — кухня с островом красиво и органично выглядит
+									в интерьере. Но занимают много места. Хотя на рынке уже есть совсем небольшие
+									острова, чтобы удобно разместить такую конструкцию, нужно хотя бы 12–15 кв.
+									м площади.
+								</div>
+							</div>
+							<form class="popup__form">
+								<div class="popup__fields">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+								</div>
+								<div class="popup__policy">
+									<label class="checkbox">
+										<input type="checkbox" />
+										<span class="checkbox__inner"></span>
+									</label>
+									<p class="popup__policy-text">
+										Нажимая на кнопку вы соглашаетесь с условиями
+										<a href="#">Политики конфиденциальности</a>
+									</p>
+								</div>
+								<div class="popup__action">
+									<button class="popup__button button button-primary">Заказать звонок</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup" id="kitchen-popup--4">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__content-inner">
+						<div class="popup__content-left _ibg">
+							<img src="img/popup/kitchen/04.jpg" alt="popup-image" />
+						</div>
+						<div class="popup__content-right">
+							<h2 class="popup__title section-title">Угловые кухни</h2>
+							<div class="popup__conditions">
+								<div class="popup__conditions-title">
+									Главная особенность эргономичность рабочего пространства. Создаётся рабочий
+									треугольник, где у хозяйки под рукой будет все необходимое. Целесообразно
+									располагать не только в просторном, но это отличное решение для небольшого
+									помещения. Нет строгой привязки к комплектации, так как всегда можно добавить
+									или убрать модули.
+								</div>
+							</div>
+							<form class="popup__form">
+								<div class="popup__fields">
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Ваше имя</span>
+										<input class="input" type="text" placeholder="Иван Смирнов" />
+									</label>
+									<label class="popup__input input-label">
+										<span class="input-placeholder">Номер телефона</span>
+										<input class="input" type="text" placeholder="+7 ___ ___ __-__" />
+									</label>
+								</div>
+								<div class="popup__policy">
+									<label class="checkbox">
+										<input type="checkbox" />
+										<span class="checkbox__inner"></span>
+									</label>
+									<p class="popup__policy-text">
+										Нажимая на кнопку вы соглашаетесь с условиями
+										<a href="#">Политики конфиденциальности</a>
+									</p>
+								</div>
+								<div class="popup__action">
+									<button class="popup__button button button-primary">Заказать звонок</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup popup--gallery" id="gallery-popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup-content">
+					<button class="popup__close" data-close>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="none">
+							<path d="M1 1L24.9995 24.9999" stroke="#6BBB41" stroke-linecap="square" />
+							<path d="M25 1.00024L1.00047 25.0001" stroke="#6BBB41" stroke-linecap="square" />
+						</svg>
+					</button>
+					<section class="splide" aria-label="Splide Basic HTML Example" id="feedbacks-slider">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<div class="popup__content-image">
+										<img src="img/popup/gallery/image.jpg" alt="background" />
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="popup__content-image">
+										<img src="img/popup/gallery/image.jpg" alt="background" />
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="popup__content-image">
+										<img src="img/popup/gallery/image.jpg" alt="background" />
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="popup__content-image">
+										<img src="img/popup/gallery/image.jpg" alt="background" />
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</div>
 		</div>
 
 		<script src="js/splide.min.js"></script>
@@ -2458,6 +4071,9 @@
 		<script src="js/workSliders.js"></script>
 		<script src="js/feedbackSlider.js"></script>
 		<script src="js/certificateSlider.js"></script>
+		<script src="js/feedback-popup-slider.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/feedbacks-popup-slider.js"></script>
 
 		<script src="js/main.js"></script>
 	</body>
