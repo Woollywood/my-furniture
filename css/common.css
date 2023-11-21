@@ -837,6 +837,10 @@ h6 {
 body .wrapper {
   animation: appearance 1.5s ease;
 }
+body.loading .wrapper {
+  animation: none;
+  opacity: 0;
+}
 
 @keyframes appearance {
   from {
@@ -1164,7 +1168,7 @@ p {
   font-size: var(--text-body-mini-size);
 }
 
-.lock {
+.lock, body.loading {
   overflow: hidden;
   touch-action: none;
   overscroll-behavior: none;

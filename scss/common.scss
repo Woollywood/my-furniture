@@ -57,13 +57,13 @@ body {
 		animation: appearance 1.5s ease;
 	}
 
-	// &.loading {
-	// 	@extend .lock;
-	// 	.wrapper {
-	// 		animation: none;
-	// 		opacity: 0;
-	// 	}
-	// }
+	&.loading {
+		@extend .lock;
+		.wrapper {
+			animation: none;
+			opacity: 0;
+		}
+	}
 }
 
 @keyframes appearance {
