@@ -1016,6 +1016,9 @@
   }
 }
 
+.rate-popup-slider .splide__pagination {
+  display: none !important;
+}
 .rate-popup-slider:not(:last-child) {
   margin-bottom: 2rem;
 }

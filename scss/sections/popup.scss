@@ -817,6 +817,10 @@ $mobileSmall: 479.98px;
 }
 
 .rate-popup-slider {
+	.splide__pagination {
+		display: none !important;
+	}
+
 	&:not(:last-child) {
 		margin-bottom: rem(32);
 
