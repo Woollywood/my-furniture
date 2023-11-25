@@ -790,6 +790,49 @@ $mobileSmall: 479.98px;
 			font-size: rem(12);
 		}
 	}
+
+	&__thanks-wrapper {
+		width: 100%;
+		height: 100%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__thanks {
+		text-align: center
+	}
+
+	&__files-wrapper {
+		display: grid;
+		gap: rem(8);
+		grid-template-columns: repeat(8, 1fr);
+
+		@media (max-width: $mobile) {
+			grid-template-columns: repeat(6, 1fr);
+			margin-top: rem(8);
+		}
+
+		@media (max-width: $mobileSmall) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	&__file-image {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 1;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 }
 
 .popup-content {
