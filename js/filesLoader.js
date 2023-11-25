@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	function appendFile(event, wrapper) {
 		const file = document.createElement('div');
 		file.classList.add('popup__file-image');
-		file.innerHTML = `<img src="${event.target.result}" alt="Файл" />`;
+		file.innerHTML = `<img width="100" height="100" src="${event.target.result}" alt="Файл" />`;
 		wrapper.append(file);
 	}
 });
